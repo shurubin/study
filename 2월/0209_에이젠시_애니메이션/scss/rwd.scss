@@ -1,0 +1,38 @@
+//화면넓이가 1170에 도달하면 글자크기 반응형 단위로 변경 vw vh
+@media all and(max-width:1170px) {
+    #wrap {
+        #section1 {
+            .slide-container {
+                .slide-view {
+                    .slide-wrap {
+                        .slide {
+                            ul {
+                                li {
+                                                                        
+                                    h2 {
+                                        font-size: 6.837606838vw;
+                                    
+                                    }
+                                    hr {
+                                        //width: 48.718%
+                                        width: 48.71794872vw;
+                                        height: 0.512820513vw;
+                                        margin: 4.273504274vw 0;
+                                    }
+                                    h4 {
+                                        font-size: 1.196581197vw;
+                                    }   
+                                }
+                            }
+                        }
+                    
+                    
+                    
+                    }
+
+                
+                }
+            } 
+        }
+    }
+}

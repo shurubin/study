@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/lib/jquery-2.2.4.min.js"></script>
+    <script src="./js/ajax_json.js" defer></script>
+    <script src="./js/ajax_text.js" defer></script>
+    <script src="./js/ajax_csv.js" defer></script>
+    <script src="./js/ajax_xml.js" defer></script>
+
+</head>
+<body>
+    <div id="wrap">
+        <nav>
+            <a href="#" class="member-grade-xml-btn">XML 대학생</a>
+            <i> | </i>
+            <a href="#" class="member-grade-csv-btn">CSV회원 성적표</a>
+            <i> | </i>
+            <a href="#" class="member-grade-txt-btn">TEXT회원 성적표</a>
+            <i> | </i>
+            <a href="#" class="member-grade-json-btn">JSON회원 성적표</a>
+            <i> | </i>
+            <a href="#" class="member-hp-json-btn">JSON회원 연락처</a>        
+        </nav>
+        
+        <table>
+            <caption>회원관리 연락처</caption>
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>이름</th>
+                    <th>휴대폰</th>
+                </tr>
+            </thead>
+            <tbody class="tbody-hp-json">
+
+            </tbody>
+        </table>
+
+        <table>
+            <caption>회원관리 성적표</caption>
+            <thead>
+                <tr>
+                    <th>학번</th>
+                    <th>이름</th>
+                    <th>국어</th>
+                    <th>영어</th>
+                    <th>수학</th>
+                    <th>총점</th>
+                    <th>평균</th>
+                    <th>석차</th>
+                </tr>
+            </thead>
+            <tbody class="tbody-grade-json">
+
+            </tbody>
+        </table>
+
+        <table>
+            <caption>회원관리 성적표</caption>
+            <thead>
+                <tr>
+                    <th>학번</th>
+                    <th>이름</th>
+                    <th>국어</th>
+                    <th>영어</th>
+                    <th>수학</th>
+                    <th>총점</th>
+                    <th>평균</th>
+                    <th>석차</th>
+                </tr>
+            </thead>
+            <tbody class="tbody-grade-txt">
+
+            </tbody>
+        </table>
+
+        <table>
+            <caption>회원관리 성적표</caption>
+            <thead>
+                <tr>
+                    <th>학번</th>
+                    <th>이름</th>
+                    <th>국어</th>
+                    <th>영어</th>
+                    <th>수학</th>
+                    <th>총점</th>
+                    <th>평균</th>
+                    <th>석차</th>
+                </tr>
+            </thead>
+            <tbody class="tbody-grade-csv">
+
+            </tbody>
+        </table>
+
+        <table>
+            <caption>대학교 원적부[AJAX : XML]</caption>
+            <thead>
+                <tr>
+                    <th>학번</th>
+                    <th>이름</th>
+                    <th>학과</th>
+                    <th>거주지</th>
+                    <th>연락처</th>
+                </tr>
+            </thead>
+            <tbody class="tbody-grade-xml">
+                <!-- 대학교 원적부 바인딩 -->
+
+            </tbody>
+        </table>
+
+
+    </div>
+
+</body>
+</html>

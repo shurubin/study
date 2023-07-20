@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트</title>
+    <script src="js/text.js"></script>
+    <!-- 병렬처리 -->
+    <script src="js/text_async.js" async> </script>
+    <script src="js/text.js" defer> </script>
+</head>
+<body>
+
+    <h1>자바스크립트</h1>
+    <h2>자바스크립트 실행 방법</h2>
+    <div id="root">
+        <script>
+            console.log('태그 요소 내에서의 영역 스크립트 실행')
+        </script>
+    </div>
+
+    <p></p>
+
+    <script src="./js/text.js">
+        console.log('태크 요소 맨 아래에서 스크립트 실행')
+    </script>
+
+    <script src="./js/date.js"></script>
+    
+</body>
+</html>

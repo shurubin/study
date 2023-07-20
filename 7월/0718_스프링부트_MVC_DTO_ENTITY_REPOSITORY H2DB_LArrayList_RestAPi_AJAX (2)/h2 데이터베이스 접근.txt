@@ -1,0 +1,13 @@
+h2 데이터베이스 접근
+spring.h2.console.enabled=true
+
+서버구동
+
+localhost:8080/
+localhost:8080/h2-console
+
+JDBC
+console 창에서 검색 
+접속주소를 복사 붙여넣기
+jdbc:h2:mem:df10363c-16e4-4301-97ef-16f4cc52ba5a
+

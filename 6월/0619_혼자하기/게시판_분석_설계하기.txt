@@ -1,0 +1,68 @@
+NoticeComponent.jsx     좌측 카테고리 우측 목록(리스트) 출력 한화면에
+    -NoticeLeftNavComponent.jsx
+    -NoticeRightListComponent.jsx   => 더미데이터 json 페이지네이션 알고리즘 처리
+
+NoticeWriteFormPageComponent.jsx    글쓰기폼
+
+NoticeViewPageComponent.jsx
+NoticeDeletePageComponent.jsx
+NoticeUpdateFormPageComponent.jsx
+
+
+페이지네이션
+
+1.
+1페이지 => 보여줄 줄 수 지정 5행(1페이지)
+1페이지 => 0 1 2 3 4(1 2 3 4 5)
+Math.ceil((idx+1)/list)
+
+1페이지(시작행번호 0 ~ 끝행4)
+cnt = 1;
+startNum = ((cnt-1)*5);
+endNum = startNum + 5;
+
+for(let i=startNum; i<endNum i++){
+
+}
+
+2페이지(시작행번호 0 ~ 끝행4)
+cnt = 2;
+startNum = ((cnt-1)*5);
+endNum = startNum + 5;
+
+for(let i=startNum; i<endNum i++){
+
+}
+
+////////////////////////////
+그룹페이지 : 100개의 줄 수가 있다. 이걸 한 페이지에 5개씩 보여주는 페이지네이션을 구했다
+            그러면 페이지 번호 17개가 있다
+            페이지 번호도 한 화면에 5개씩 묶어서 보이고 싶다.
+
+{cnt > 1 && <a className='prev-btn' href='!#' onClick={onClickPrevGroup}>&lt;</a>}
+
+
+{cnt < Math.ceil(notice.length /list/groupPage) && <a className='next-btn' href='!#' onClick={onClickNextGroup}>&gt;</a>}
+
+페이지그룹 알고리즘
+시작번호0 끝번호4
+cnt = 1;
+group = 5;
+startNum = (cnt-1) * group;
+endNum = startNum + group;
+for(let i=startNum; i<endNum; i++){
+
+}
+
+
+
+현재페이지에 보일 개수
+전체페이지
+1 2 3 4 5 6 .... 20
+그룹 5
+한 화면에 페이지번호 개수
+    1 2 3 4 5 >> 6 7 8 9 10 >> 11 12 13 14 15
+    그룹페이지1  그룹페이지2    그룹페이지3
+    그룹5*페이지1 = 5   // 5*2=10
+    groupCnt > 페이지그룹번호-1
+idx < Math.ceil((notice.length/list)/그룹)

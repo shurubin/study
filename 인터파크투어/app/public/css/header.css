@@ -1,0 +1,93 @@
+#wrap {
+  width: 100%;
+}
+#wrap #header {
+  width: 100%;
+}
+#wrap #header .container {
+  width: 100%;
+  box-shadow: 0 3px 3px 0 #eee;
+}
+#wrap #header .container .back-color {
+  background: #f4f6f9;
+  border-bottom: 1px solid #eee;
+}
+#wrap #header .container .gap {
+  width: 1280px;
+  margin: 0 auto;
+}
+#wrap #header .container .gap .header-1 {
+  height: 34px;
+  line-height: 34px;
+  display: flex;
+  justify-content: flex-end;
+}
+#wrap #header .container .gap .header-1 .sign a {
+  font-size: 8px;
+  padding: 0 7px;
+}
+#wrap #header .container .gap .header-2 {
+  height: 100px;
+  line-height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #header .container .gap .header-2 .left {
+  position: relative;
+}
+#wrap #header .container .gap .header-2 .left .interpark img {
+  width: 173px;
+  height: 30px;
+}
+#wrap #header .container .gap .header-2 .left input {
+  width: 400px;
+  height: 42px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  background: #f8f8f8;
+  margin-left: 60px;
+}
+#wrap #header .container .gap .header-2 .left ::-moz-placeholder {
+  padding-left: 20px;
+  color: #666;
+  font-size: 14px;
+}
+#wrap #header .container .gap .header-2 .left ::placeholder {
+  padding-left: 20px;
+  color: #666;
+  font-size: 14px;
+}
+#wrap #header .container .gap .header-2 .left .search {
+  position: absolute;
+  right: 3px;
+  top: 0;
+}
+#wrap #header .container .gap .header-2 .right .slide-box {
+  width: 200px;
+  height: 60px;
+}
+#wrap #header .container .gap .header-3 {
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #header .container .gap .header-3 .list a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  padding: 0 15px;
+}
+#wrap #header .container .gap .header-3 .sale {
+  width: 190px;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #header .container .gap .header-3 .sale a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
+#wrap #header .container .gap .header-3 .sale a img {
+  height: 20px;
+}

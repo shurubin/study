@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스모델링</title>
+    <meta name="publisher" content="subin">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 제이쿼리 오픈소스 -->
+    <script src="./js/lib/jquery-2.2.4.min.js"></script>
+
+</head>
+<body>
+    <div id="wrap">
+        <header id="header"><h1>헤더영역 오늘도 수고했습니다.</h1></header>
+        <main id="main">
+            <section id="section1"><h2>section1</h2></section>
+            <section id="section2">
+                <div class="left-box"></div>
+                <div class="right-box"></div>
+            </section>
+            <section id="section3"><h2>section3</h2></section>
+            <section id="section4"><h2>section4</h2></section>
+            <section id="section5">
+                <div class="left-box">
+                    <img src="./img/221220_pc_reserve_left_bg.png" alt="">
+                </div>
+                <div class="center-box">
+                    <img src="./img/2212201_pc_reserve_coffee_bg.png" alt="">
+                </div>
+                <div class="right-box"></div>
+            </section>
+            <section id="section6"><h2>section6</h2></section>
+            <section id="section7"><h2>section7</h2></section>
+            <section id="section8"><h2>section8</h2></section>
+        </main>
+        <footer id="footer">footer</footer>
+    </div>
+
+    <!-- 제이쿼리 사용법 script 입력 후 $(); 또는 jQuery();입력 -->
+<script>
+    $(function(){
+        console.log('제이쿼리 $', $);
+    });
+    jQuery(function(){
+        console.log('제이쿼리', jQuery);
+    });
+</script>    
+</body>
+</html>

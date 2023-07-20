@@ -1,0 +1,82 @@
+#wrap {
+  width: 100%;
+}
+#wrap #header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+#wrap #header .container {
+  width: 100%;
+}
+#wrap #header .container .gap {
+  width: 100%;
+  padding: 0 40px;
+}
+#wrap #header .container .gap .content {
+  width: 100%;
+  padding: 0 311.5px;
+}
+#wrap #header .container .gap .content ul .header-1 {
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #header .container .gap .content ul .header-1 .h1-left {
+  width: auto;
+}
+#wrap #header .container .gap .content ul .header-1 .h1-left a {
+  color: #494f60;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "OneShinhanL";
+}
+#wrap #header .container .gap .content ul .header-1 .h1-left a img {
+  width: 16px;
+  height: 16px;
+}
+#wrap #header .container .gap .content ul .header-1 .h1-left span {
+  color: #ddd;
+  padding: 0 13px;
+}
+#wrap #header .container .gap .content ul .header-1 .h1-right {
+  width: auto;
+}
+#wrap #header .container .gap .content ul .header-1 .h1-right a {
+  width: auto;
+  color: #494f60;
+  font-size: 14px;
+  font-weight: 600;
+}
+#wrap #header .container .gap .content ul .header-1 .h1-right span {
+  color: #ddd;
+  padding: 0 10px;
+}
+#wrap #header .container .gap .content ul .header-2 {
+  width: 100%;
+  height: 74px;
+  line-height: 74px;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #header .container .gap .content ul .header-2 .h2logo a img {
+  width: 160px;
+  height: 39px;
+}
+#wrap #header .container .gap .content ul .header-2 .h2menu {
+  display: flex;
+}
+#wrap #header .container .gap .content ul .header-2 .h2menu h3 {
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 15px;
+}
+#wrap #header .container .gap .content ul .header-2 .h2bar a img {
+  width: 32px;
+  height: 32px;
+}

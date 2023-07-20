@@ -1,0 +1,25 @@
+#wrap {width: 100%;}
+#wrap #skip{
+    position: fixed;
+    left: 0;
+    top:0;
+    z-index: 4;
+    width: 100%;
+    font-size:0;
+}
+#wrap #skip li{
+    width: 100%;
+}
+#wrap #skip li a{
+    width: 100%;
+    background: rgb(0,0,0);
+    color: rgb(255,255,255);
+    display: block;
+    text-align: center;
+    line-height: 0;
+}
+
+#wrap #skip li a:focus{
+    font-size: 20px;
+    line-height: 50px;
+}

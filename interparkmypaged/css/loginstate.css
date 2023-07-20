@@ -1,0 +1,107 @@
+.loginstate {
+  width: 100%;
+  background: #f8f8f8;
+  padding: 50px 0 60px 0;
+}
+.loginstate .shape {
+  width: 770px;
+  margin: 0 auto;
+  background: #fff;
+  display: flex;
+}
+.loginstate .shape .left-box {
+  width: 170px;
+  border-right: 1px solid #eee;
+}
+.loginstate .shape .left-box .my-info {
+  width: 100%;
+  padding: 25px 0 25px 20px;
+  border-bottom: 1px solid #eee;
+}
+.loginstate .shape .left-box .my-info h4 {
+  color: #707070;
+  font-size: 14px;
+}
+.loginstate .shape .left-box .my-info h4 span {
+  color: #ef3e42;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.loginstate .shape .left-box .tap {
+  width: 100%;
+  padding: 25px 0 0 20px;
+}
+.loginstate .shape .left-box .tap .tap-menu {
+  padding-bottom: 10px;
+}
+.loginstate .shape .left-box .tap .tap-menu img {
+  width: 30px;
+  height: 30px;
+  background: url(../img/menu_icon.png) 0% 0%;
+  border-radius: 50%;
+}
+.loginstate .shape .left-box .tap .tap-menu a {
+  font-size: 14px;
+  color: #202020;
+}
+.loginstate .shape .right-box {
+  width: 600px;
+}
+.loginstate .shape .right-box .right-wrap {
+  width: 100%;
+  padding: 50px;
+}
+.loginstate .shape .right-box .right-wrap .title {
+  height: 40px;
+  border-bottom: 2px solid #707070;
+}
+.loginstate .shape .right-box .right-wrap .title h3 {
+  font-size: 20px;
+  color: #202020;
+}
+.loginstate .shape .right-box .right-wrap .content .top-txt {
+  padding: 25px 0 10px 0;
+}
+.loginstate .shape .right-box .right-wrap .content .top-txt h3 {
+  font-size: 20px;
+  color: #202020;
+  text-align: center;
+}
+.loginstate .shape .right-box .right-wrap .content .top-txt :last-child {
+  color: #ef3e42;
+}
+.loginstate .shape .right-box .right-wrap .content .bottom-txt {
+  padding-bottom: 25px;
+}
+.loginstate .shape .right-box .right-wrap .content .bottom-txt h6 {
+  font-size: 13px;
+  color: #707070;
+  text-align: center;
+}
+.loginstate .shape .right-box .right-wrap .content .bottom-txt h5 {
+  font-size: 14px;
+  color: #202020;
+  text-align: center;
+}
+.loginstate .shape .right-box .right-wrap .content hr {
+  border: 1px solid #eee;
+}
+.loginstate .shape .right-box .right-wrap .content ul {
+  padding-top: 25px;
+}
+.loginstate .shape .right-box .right-wrap .content ul li {
+  display: flex;
+  padding-bottom: 10px;
+}
+.loginstate .shape .right-box .right-wrap .content ul li span {
+  width: 150px;
+  font-size: 14px;
+  color: #707070;
+}
+.loginstate .shape .right-box .right-wrap .content ul li p {
+  font-size: 15px;
+  color: #202020;
+}
+.loginstate .shape .right-box .right-wrap .content ul li .using {
+  color: #ef3e42;
+}

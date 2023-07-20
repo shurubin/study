@@ -1,0 +1,135 @@
+#Main1{
+    width: 100%;
+    #section1{
+        width: 100%;
+        .container{
+            width: 100%;
+            .gap{
+                width: 100%;
+                .back-image{
+                    width: 100%;
+                    background: url(../img/section1/638189658902432489.jpg);
+                    background-size: cover;                  
+                    .back-gap{
+                        width: 1280px;
+                        margin: 0 auto;                        
+                        display: flex;
+                        h4{}
+                        button{
+                            img{}
+                        }
+                    }
+                    .ticketing{
+                        width: 1280px;
+                        margin: 0 auto;
+                        background: #fff;
+                        border-radius: 5px;
+                        .ticketing-gap{
+                            .up{
+                                height: 75px;
+                                line-height: 75px;
+                                display: flex;
+                                justify-content: space-between;
+                                .btn{
+                                    button{
+                                        height: 40px;
+                                        border: 0;
+                                        border-radius: 20px;
+                                        background: #eee;
+                                        padding: 9px 20px;
+                                    }
+                                }
+                                span{
+                                    input{}
+                                }
+                            }
+                            .down{
+                                display: flex;
+                                .start-end{
+                                    display: flex;
+                                    .start{                                        
+                                        h4{}
+                                        a{}
+                                    }
+                                    .airplane{}
+                                    .arrive{
+                                        h4{}
+                                        a{}
+                                    }
+                                }
+                                .date{
+                                    h4{}
+                                    a{}
+                                }
+                                .people{
+                                    h4{}
+                                    a{}
+                                }
+                                .btn-box{
+                                    button{}
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #section2{
+        .container{
+            .gap{
+
+            }
+        }
+    }
+    #section3{
+        .container{
+            .gap{
+
+            }
+        }
+    }
+    #section4{
+        .container{
+            .gap{
+
+            }
+        }
+    }
+    #section5{
+        .container{
+            .gap{
+
+            }
+        }
+    }
+    #section6{
+        .container{
+            .gap{
+
+            }
+        }
+    }
+    #section7{
+        .container{
+            .gap{
+
+            }
+        }
+    }
+    #section8{
+        .container{
+            .gap{
+
+            }
+        }
+    }
+    #section9{
+        .container{
+            .gap{
+
+            }
+        }
+    }
+}

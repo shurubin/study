@@ -1,0 +1,124 @@
+정규표현식
+
+   // 아이디 onChange 이벤트
+    const onChangeUserId=(e)=>{
+
+        const {value} = e.target; 
+        const regExp1 = /[  `~!@#$%^&*()\-_=+[{\]}\\|;:'",<.>/?  ]/g; 
+        const regExp2 = /^.{6,16}$/g; 
+        const regExp3 = /[가-힣ㄱ-ㅎㅏ-ㅣ]/g; 
+        const regExp4 = /[A-Za-z]+[0-9]*/g;  
+        const regExp5 = /\s/g;  
+
+        let 아이디 = '';
+        let isIdError = false;
+        let errorMsg = '';
+
+        
+        아이디 = e.target.value.replace(regExp1,'');
+ 
+        if(regExp2.test(value)===false || regExp3.test(value)===true || regExp4.test(value)===false || regExp5.test(value)===true){
+            isIdError = true;
+            errorMsg = '6자 이상 16자 이하의 영문 혹은 영문과 숫자를 조합';
+        }
+        else{
+            isIdError = false;
+            errorMsg = '';
+        }
+        
+        setState({
+            ...state,
+            아이디: 아이디,
+            isIdError: isIdError,
+            errorMsg: errorMsg
+        })
+    }
+
+    // 2. 아이디 중복확인 onClick 이벤트
+    const onClickUserIdOk=(e)=>{
+        e.preventDefault();
+        const value = state.아이디;  // 상태관리 값 변수에 대입
+        const regExp1 = /[  `~!@#$%^&*()\-_=+[{\]}\\|;:'",<.>/?  ]/g; //특수문자
+        const regExp2 = /^.{6,16}$/g; //6자 이상 16자 이하
+        const regExp3 = /[가-힣ㄱ-ㅎㅏ-ㅣ]/g;  //한글
+        const regExp4 = /[A-Za-z]+[0-9]*/g;  //영문필수 한자이상+, 숫자선택 0자이상*
+        const regExp5 = /\s/g;  //공백
+
+        if(regExp2.test(value)===false || regExp3.test(value)===true || regExp4.test(value)===false || regExp5.test(value)===true){
+            
+            alert( '6자 이상 16자 이하의 영문 혹은 영문과 숫자를 조합');
+        }
+        else{
+            // 아이디 중복검사 실시
+            // 가져오는 방법은 REST API 사용 AJAX 또는
+            // AXIOS JSON 데이터처리에 가장 좋은 패키지
+            // 서버에서 DB(데이터베이스)에 저장된 아이디데이터를 가져온다
+            // 서버사이드 스크립트언어가 MYSQL SQL 명령문을 이용 가져온다.
+            // 그리고 비교한다. 입력된 아이디랑
+            // axios({}).then(()=>{}).catch(()=>{});
+            // 정보요청 Request
+            axios({
+                url:'http://susubini03.dothome.co.kr/signup_db/select.php',
+                method: 'GET'
+            })
+            .then((res)=>{
+                
+                // 맵함수이용 화살표함수 중괄호빼고 사용하면
+                // 비교결과 true, false 배열로 곧바로 리턴값
+
+                const result = res.data.map((item)=> item.아이디===state.아이디);
+                console.log(result);
+                // result[false, false, false,.....true있으면 사용불가능]
+                if( result.includes(true)){
+                    alert('사용 불가능한 아이디입니다.');
+                }   
+                else {
+                    alert('사용 가능한 아이디입니다.');
+                }             
+                
+            })
+            // .then((res)=>{
+            //     console.log(res);
+                
+            // })
+            .catch((err)=>{
+                console.log(`AXIOUS 실패!${err} `);
+            });
+            
+        }
+
+
+    }
+
+    const onChangeUserId=(e)=>{
+
+        const {value} = e.target;  
+        const regExp1 = /[  `~!@#$%^&*()\-_=+[{\]}\\|;:'",<.>/?  ]/g; 
+        const regExp2 = /^.{6,16}$/g; 
+        const regExp3 = /[가-힣ㄱ-ㅎㅏ-ㅣ]/g;  
+        const regExp4 = /[A-Za-z]+[0-9]*/g;  
+        const regExp5 = /\s/g; 
+
+        let 아이디 = '';
+        let isIdError = false;
+        let isIdMsg = '';
+
+     
+        아이디 = e.target.value.replace(regExp1,'');
+  
+        if(regExp2.test(value)===false || regExp3.test(value)===true || regExp4.test(value)===false || regExp5.test(value)===true){
+            isIdError = true;
+            isIdMsg = '6자 이상 16자 이하의 영문 혹은 영문과 숫자를 조합';
+        }
+        else{
+            isIdError = false;
+            isIdMsg = '';
+        }
+        
+        setState({
+            ...state,
+            아이디: 아이디,
+            isIdError: isIdError,
+            isIdMsg: isIdMsg
+        })
+    }

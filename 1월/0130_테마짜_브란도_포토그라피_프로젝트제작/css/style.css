@@ -1,0 +1,136 @@
+@charset "utf-8";
+@import url('./fonts.css');
+@import url('./reset.css');
+@import url('./skip.css');
+
+#wrap #header {
+    width:100%;
+    height:76px;
+    border-bottom:1px solid rgba(255,255,255, 0.15);
+    background:rgba(0,0,0,0);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:3;
+}
+
+#wrap #header .container {
+    width:100%;max-width:1170px; height: 100%;
+    margin: 0 auto 0 auto; /*박스 가운데 정렬*/
+    margin: 0 0 0 auto; /*박스 오른쪽 정렬*/
+    margin: 0 auto 0 0; /*박스 왼쪽 정렬*/
+    margin: 0 auto; /*박스 가운데 정렬*/
+
+}
+#wrap #header .container .gap {padding : 0 15px; height: 100%;}
+#wrap #header .container .gap .content {
+    width: 100%; height: 100%; display:flex;/*인라인*/
+    justify-content: space-between; /*양쪽으로 배분*/
+    align-items: center;    
+}
+
+/* 로고 왼쪽 시작 */
+#wrap #header .container .gap .content .logo {width: 156px}
+#wrap #header .container .gap .content .logo h1 {width:100%;}
+#wrap #header .container .gap .content .logo h1 a {display: block;width: 100%;}
+#wrap #header .container .gap .content .logo h1 a img {width:100%;}
+
+
+/* 네비게이션 오른쪽 끝 */
+#wrap #header .container .gap .content .nav {}
+#wrap #header .container .gap .content .nav ul {
+    display: flex;/*메뉴 한 줄로*/
+}
+#wrap #header .container .gap .content .nav ul li {
+    margin: 0 0 0 28px;
+}
+#wrap #header .container .gap .content .nav ul li a {
+    color: rgba(255,255,255,1);
+    font-size: 12px;
+}
+#wrap #header .container .gap .content .nav ul li a:hover {
+    color:rgba(255,255,255,0.5)
+}
+
+
+
+#wrap #main {
+    width:100%;
+    position: relative;
+    z-index: 2;
+}
+/* 섹션1234 공통 스타일 */
+/* 창높이 반응형 단위 100vh 100vw */
+#wrap #main .sec1234  {
+    position:relative;
+    width:100%;
+    height:100vh;
+    background: url() no-repeat 50% 50% fixed;
+    background-size:cover;
+    display: flex;
+    justify-content: center; /* 수평정렬 */
+    align-items: center;  /* 수직정렬 */
+}
+#wrap #main .sec1234  h2 {
+    font-size:10.50972vw;
+    color:rgba(0,255,151, 0.5);
+    font-weight: 600;}
+
+
+#wrap #main .sec1234 .foot-box{
+    position:absolute;
+    /* bottom:60px; x좌표(수직) */
+    bottom:50px; /*x좌표(수직)*/
+    left:0;  /*y좌표(수평)*/
+    /* background-color: indianred; */
+    width: 100%;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    flex-flow: column; */
+}
+#wrap #main .sec1234 .foot-box h5{
+    font-size: 5vh; 
+    font-weight: 500;
+    color:rgb(255,255,255);
+    padding: 0 0 20px 0;
+}
+
+#wrap #main .sec1234 .foot-box i{
+    display: inline-block; /* inline-block 글자와 같이 정렬이 가능함*/
+    width: 80px; 
+    height:0.3vh; 
+    background: rgba(0,239,255,0.5);
+}
+
+
+
+#wrap #main #section1 {background-image: url(../img/photography-img1.jpg);}
+#wrap #main #section2 {background-image: url(../img/photography-img2.jpg);}
+#wrap #main #section3 {background-image: url(../img/photography-img3.jpg);}
+#wrap #main #section3 h2 {color:rgba(0,239,255, 0.5);}
+
+#wrap #main #section4 {background-image: url(../img/photography-img4.jpg);}
+
+#wrap #main #section5 {width: 100%; height:100vh; background-color: rgba(200,0,0,1);}
+#wrap #main #section6 {width: 100%; height:100vh; background-color: rgba(0,200,0,1);}
+#wrap #main #section7 {width: 100%; height:100vh; background-color: rgba(0,0,200,1);}
+#wrap #main #section8 {width: 100%; height:100vh; background-color: rgba(200,200,0,1);}
+#wrap #main #section9 {width: 100%; height:100vh; background-color: rgba(200,0,200,1);}
+#wrap #main #section10 {width: 100%; height:100vh; background-color: rgba(0,200,200,1);}
+#wrap #main #section11 {width: 100%; height:100vh; background-color: rgba(200,200,200,1);}
+#wrap #main #section12 {width: 100%; height:100vh; background-color: rgba(50,5,0,1);}
+#wrap #main #section13 {width: 100%; height:100vh; background-color: rgba(20,70,0,1);}
+#wrap #main #section14 {width: 100%; height:100vh; background-color: rgba(80,0,200,1);}
+#wrap #main #section15 {width: 100%; height:100vh; background-color: rgba(255,50,255,1);}
+
+
+
+
+#wrap #footer {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0,255,255,1)
+}

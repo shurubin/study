@@ -1,0 +1,42 @@
+#modal {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    .wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container {
+            width: 960px;
+            height: 640px;
+            text-align: right;
+            background: rgba(243, 139, 139, 0.3);
+            .img-box {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            button {
+                padding: 0 30px;
+                height: 50px;
+                background: #000;
+                color: #fff;
+                font-size: 20px;
+                border: none;
+                transition: all 0.3s;
+                &:hover {
+                    background-color: #555;
+                }
+            }
+
+        }
+    }
+
+}

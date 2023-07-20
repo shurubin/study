@@ -1,0 +1,42 @@
+#wrap {width: 100%;
+    #top {
+        width: 100%;
+        background: #5f0080;            
+        .container {
+            width: 100%;
+            max-width: 1050px;
+            margin: 0 auto;
+        
+            .gap {
+                width: 100%;
+                margin: 0 auto;  
+                vertical-align: middle;  
+                h1 {                                    
+                    height: 42px;
+                    text-align: center;
+                    position: relative;
+                    a {
+                        color: #fff;
+                        font-size: 13px;
+                        font-weight: 500;
+                        vertical-align: bottom;
+                        span{
+                            font-weight: 700;
+            
+                        }
+                        svg {
+                            position: absolute;                            
+                            top: 10px;
+                            right: 0;
+                        }
+                    }
+
+                }
+
+            }
+
+            
+        }
+
+    }
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 05 제어문(반복문, 조건문)</title>
+
+    
+</head>
+<body>
+
+    <h1>반복문 for(){}</h1>
+    <h1>구구단 2단</h1>
+
+
+    <!-- 컴포넌트 탬플릿트 -->
+    <ul id="table1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+    </ul>
+
+    <!-- 스크립트 -->
+    <script>
+
+    </script>
+
+    <!-- 스타일 -->
+    <style>
+        * {margin:0;padding:0;vertical-align: middle;box-sizing: border-box;}
+        ul {list-style: none;}
+
+        #table1 {width: 250px;display: flex;flex-flow: row wrap;margin:0 auto;}
+        #table1 li {
+            width: 50px;height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top:1px solid #ccc;
+            border-left:1px solid #ccc;            
+        }
+        /* 
+        #table1 li:nth-child(even) 짝수    
+        #table1 li:nth-child(odd) 짝수     
+        */
+
+        /* #table1 li:nth-child(5),     
+        #table1 li:nth-child(10),     
+        #table1 li:nth-child(15),     
+        #table1 li:nth-child(20),     
+        #table1 li:nth-child(25) {border-right:1px solid #ccc;} */
+     
+        /* #table1 li:nth-child(5n),      */
+        /* #table1 li:nth-child(5*1),     
+        #table1 li:nth-child(5*2),     
+        #table1 li:nth-child(5*3),     
+        #table1 li:nth-child(5*4),     
+        #table1 li:nth-child(5*5) {border-right:1px solid #ccc;}
+ */   
+        #table1 li:nth-child(5n) {border-right:1px solid #ccc;}
+        /* 
+        #table1 li:nth-child(n+1) {border-right:1px solid #ccc;}
+        #table1 li:nth-child(0+1) {border-right:1px solid #ccc;}
+        #table1 li:nth-child(1+1) {border-right:1px solid #ccc;}
+        #table1 li:nth-child(2+1) {border-right:1px solid #ccc;} 
+        */
+     
+        #table1 li:nth-child(21),     
+        #table1 li:nth-child(22),     
+        #table1 li:nth-child(23),     
+        #table1 li:nth-child(24),     
+        #table1 li:nth-child(25) {border-bottom:1px solid #ccc;}
+
+        /* #table1 li:nth-child(n+21),      */
+
+/* 
+        #table1 li:nth-child(0+21),     
+        #table1 li:nth-child(1+21),     
+        #table1 li:nth-child(2+21),     
+        #table1 li:nth-child(3+21),     
+        #table1 li:nth-child(4+21) {border-bottom:1px solid #ccc;}
+ */
+        #table1 li:nth-child(n+21) {border-bottom:1px solid #ccc;}
+
+    </style>
+
+
+    <table id="table2" class="table">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+
+
+    <!-- 테이블 돔 컨테이너 -->
+    <div id="root"></div>  
+
+
+
+    <style>
+        .table {border-collapse: collapse;width:250px;margin:50px auto;}
+        .table td {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+    </style>
+
+
+
+    <script>
+        'use strict';
+
+        // 1. for(let i=시작값; i<=종료값; 증감값i++){스코프}
+        for(let i=1; i<=9; i++){
+            console.log( `${2}*${i}=${2*i}` );
+        }
+
+        // 2. 2단 ~ 9단 => 다중 for문 단과  증가값 i(행) / j(열)
+        // \n 뉴라인 새로운줄   
+        // 발상 전환
+        // 행과 열 고정이 아니다        
+        for(let i=2; i<=9; i++){ // 2단, ....  9단
+            console.log(``);
+            console.log(`${i}단 `);
+            for(let j=1; j<=9; j++){ // 1 .. 9
+                console.log(`${i} × ${j} = ${ i*j<10 ? `0${i*j}`:i*j }`);
+            }
+        }
+
+        // 3. 2단 ~ 9단 가로로 출력하시오.
+        let txt='';
+        for(let i=1; i<=9; i++ ){
+            for(let j=2; j<=9; j++){
+                txt += `${j}*${i}=${j*i<10? `0${i*j}`:i*j}  `; // 2*1=2  3*1=3 .....    9*1=9
+            }
+            // 줄 전환
+            txt += '\n';  //줄전환       이스케이프 문자                 
+        }
+        console.log( txt );
+
+        // 4. 증가값 배열에 저장하기
+        // 10 ~ 100 까지 저장 10개의 배열(배열 인덱스번호 0 ~ 9) 증가값 10
+        // 1차원 배열 선언
+        // let arr = new Array();
+        // let obj = new Object();
+        let a = []; // 리터럴 Array 권장 1차원  a[배열인수0~9]
+        let b = 0;  // 초기값 Number
+        for(let i=0; i<=9; i++){ // 10회 회전(반복)
+            b+=10; //10 20 30 ... 100  
+            a[i] = b;
+        }
+        console.log( a ); // 배열이름만 출력하면 배열값 모두 출력
+
+
+        // 5. 5행 5열 배열에 저장하기
+        // 증가값 1 ~ 25  저장
+        // 자릿수 채우기 문자열string.padStart(2, 0)  문자열string.padEnd(2, 0)
+        // 숫자를 문자열로 변환 숫자Number.toString();
+        let arr = []; // 1차원
+        let cnt = 0;  // 1 ~ 25
+        for(let i=0; i<=4; i++){
+            arr[i]=[]; //2차원 배열 행[열]만들기
+            for(let j=0; j<=4; j++){
+                cnt++;
+                // arr[i][j] = cnt<10?`0${cnt}`:`${cnt}`;
+                // arr[i][j] = cnt<10? cnt.toString().padStart(2,0) : cnt.toString() ;
+                arr[i][j] = cnt<10? String(cnt).padStart(2,0) : String(cnt) ;
+                // arr[i][j] = cnt<10? cnt.toString().padEnd(2,0) : cnt ;
+            }
+        }
+        console.log( arr ); // 5행 5열 2차원 배열 출력
+
+
+        // 테이블 태그 출력 
+        // 1. 돔컨테이너 생성 : 선택자 #table3
+        // 2. 1 ~ 25 증가 값
+        // 3. 테이블 안에 td에  넣고 출력
+        // 4. 5행 5열
+        // const table3 = document.getElementById('table3');
+    
+        cnt = 0;  // 값만 초기화 사용
+        txt = ``; // 값만 초기화 사용
+        
+        for(let i=0; i<=4; i++){
+            // 줄 시작
+            txt += `<tr>`;
+                for(let j=0; j<=4; j++){
+                    // 칸시작 ~ 컨끝
+                    cnt++;
+                    txt += `<td>${cnt}</td>`;
+                }
+            txt += `</tr>`; // 줄끝
+        }
+        
+
+        
+
+        // 테이블 생성
+        // 크레이트(생성) create  태그요소 element('태그이름 tabale')
+        let table = document.createElement('table');        
+        // 아이디 table3 추가하기 클래스 table 추가하기
+        // table.속성(Attribute)지정아이디
+        // table.속성(Attribute)지정클래스
+        // table.setAttribute('속성이름','생성될이름');
+        table.setAttribute('id','table3');
+        table.setAttribute('class','table');
+
+
+        // 돔 컨테이너#root에 만들어진 테이블을 포함시킨다.(부착시킨다.)
+        let root = document.getElementById('root');        
+        root.appendChild( table );
+
+        const table3 = document.querySelector('#table3');
+        // const table3 = document.getElementById('table3');
+        table3.innerHTML = txt; //돔컨테이너에 데이터 넣기 tr td  숫자 입력
+        // console.log( txt );
+    </script>
+
+
+
+
+</body>
+</html>

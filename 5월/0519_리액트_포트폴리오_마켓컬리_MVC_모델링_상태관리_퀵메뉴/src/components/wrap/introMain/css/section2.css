@@ -1,0 +1,18 @@
+#section2 {
+  width: 100%;
+  padding: 80px 0 0 0;
+}
+#section2 .container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+#section2 .container .gap {
+  width: 100%;
+}
+#section2 .container .gap .content a {
+  cursor: pointer;
+}
+#section2 .container .gap .content a img {
+  width: 100%;
+}

@@ -1,0 +1,47 @@
+#Main1 {
+  width: 100%;
+}
+#Main1 #section1 {
+  width: 100%;
+}
+#Main1 #section1 .container {
+  width: 100%;
+}
+#Main1 #section1 .container .gap {
+  width: 100%;
+}
+#Main1 #section1 .container .gap .back-image {
+  width: 100%;
+  background: url(../img/section1/638189658902432489.jpg);
+  background-size: cover;
+}
+#Main1 #section1 .container .gap .back-image .back-gap {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+}
+#Main1 #section1 .container .gap .back-image .ticketing {
+  width: 1280px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 5px;
+}
+#Main1 #section1 .container .gap .back-image .ticketing .ticketing-gap .up {
+  height: 75px;
+  line-height: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+#Main1 #section1 .container .gap .back-image .ticketing .ticketing-gap .up .btn button {
+  height: 40px;
+  border: 0;
+  border-radius: 20px;
+  background: #eee;
+  padding: 9px 20px;
+}
+#Main1 #section1 .container .gap .back-image .ticketing .ticketing-gap .down {
+  display: flex;
+}
+#Main1 #section1 .container .gap .back-image .ticketing .ticketing-gap .down .start-end {
+  display: flex;
+}

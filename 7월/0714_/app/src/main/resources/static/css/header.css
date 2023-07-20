@@ -1,0 +1,6 @@
+#header {width:100%;height:80px;background:#fff;border-bottom:1px solid #ccc;}
+#header nav {width:70%;height:100%;margin:0 auto;display:flex;}
+#header nav span.left {margin: auto auto auto 0;}
+#header nav span.right {margin: auto 0 auto auto;}
+#header nav span a {color:#37a;font-size:17px;font-weight:600;}
+#header nav span.right a {margin:0 0 0 25px;}

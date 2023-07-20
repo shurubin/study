@@ -1,0 +1,155 @@
+@import url("./fonts.css");
+@import url("./reset.css");
+@import url("./skip.css");
+#wrap {
+  width: 100%;
+}
+#wrap #messageform {
+  width: 100%;
+  padding: 130px 0;
+}
+#wrap #messageform .container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+#wrap #messageform .container .gap {
+  width: 100%;
+}
+#wrap #messageform .container .gap .title {
+  width: 100%;
+  text-align: center;
+  padding: 0 15px 100px 15px;
+}
+#wrap #messageform .container .gap .title h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #614c45;
+}
+#wrap #messageform .container .gap .title span {
+  display: block;
+  padding: 10px 0 0 0;
+}
+#wrap #messageform .container .gap .title span img {
+  width: auto;
+}
+#wrap #messageform .container .gap .content {
+  width: 100%;
+  display: flex;
+}
+#wrap #messageform .container .gap .content .left-box {
+  width: 517.5px;
+}
+#wrap #messageform .container .gap .content .left-box .col-gap {
+  width: 100%;
+  padding: 0 15px;
+}
+#wrap #messageform .container .gap .content .left-box .col-gap ul {
+  width: 100%;
+}
+#wrap #messageform .container .gap .content .left-box .col-gap ul li {
+  position: relative;
+  width: 100%;
+  padding: 0 0 60px 90px;
+  display: flex;
+}
+#wrap #messageform .container .gap .content .left-box .col-gap ul li i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 45px;
+  margin: 0 40px 0 0;
+  color: #c8a648;
+}
+#wrap #messageform .container .gap .content .left-box .col-gap ul li div h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+}
+#wrap #messageform .container .gap .content .left-box .col-gap ul li div h4,
+#wrap #messageform .container .gap .content .left-box .col-gap ul li div h5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #626262;
+  font-family: "Roboto";
+}
+#wrap #messageform .container .gap .content .left-box .col-gap ul li div h4 {
+  padding: 7px 0;
+}
+#wrap #messageform .container .gap .content .right-box {
+  width: 652.5px;
+}
+#wrap #messageform .container .gap .content .right-box .col-gap {
+  width: 100%;
+}
+#wrap #messageform .container .gap .content .right-box .col-gap form ul li {
+  padding: 0 0 20px 0;
+}
+#wrap #messageform .container .gap .content .right-box .col-gap form ul li input {
+  width: 100%;
+  height: 48px;
+  background: #fff;
+  color: #626262;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 0 15px;
+  outline: 2px solid transparent;
+  transition: all 0.3s;
+  outline-offset: -1px;
+}
+#wrap #messageform .container .gap .content .right-box .col-gap form ul li input:focus {
+  outline: 2px solid #999;
+}
+#wrap #messageform .container .gap .content .right-box .col-gap form ul li select {
+  width: 100%;
+  height: 48px;
+  background: #fff;
+  color: #626262;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #fff url(../img/select-arrow.png) no-repeat 98% 50%;
+  background-size: auto auto;
+  padding: 0 15px;
+}
+#wrap #messageform .container .gap .content .right-box .col-gap form ul li select:focus {
+  outline: 0;
+}
+#wrap #messageform .container .gap .content .right-box .col-gap form ul li textarea {
+  width: 100%;
+  height: 90px;
+  background: #fff;
+  color: #626262;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #fff;
+  padding: 15px;
+  resize: none;
+  outline: 2px solid transparent;
+  transition: all 0.3s;
+  outline-offset: -1px;
+}
+#wrap #messageform .container .gap .content .right-box .col-gap form ul li textarea:focus {
+  outline: 2px solid #999;
+}
+#wrap #messageform .container .gap .content .right-box .col-gap form ul li button {
+  width: auto;
+  height: 48px;
+  padding: 0 20px;
+  background: #000;
+  color: #fff;
+  border-radius: 3px;
+  border: 2px solid #000;
+  transition: all 0.3s;
+  font-weight: 600;
+  cursor: pointer;
+}
+#wrap #messageform .container .gap .content .right-box .col-gap form ul li button:hover {
+  background: #fff;
+  color: #000;
+}

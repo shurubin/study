@@ -1,0 +1,53 @@
+@import url('../css/fonts.css');
+@import url('../css/reset.css');
+
+#wrap{
+    width: 100%;
+    padding: 100px 0;
+    a{
+        width: 1300px;
+        display: block;
+        margin: 0 auto;
+        text-align: right;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(44, 160, 255);
+    }
+    h1{
+        text-align: center;
+        padding: 30px 0 60px 0;
+        font-size: 40px;
+        font-weight: 600;
+        color: rgb(26, 0, 87);
+    }
+    table{
+        width: 1300px;
+        margin: 0 auto;
+        border-collapse: collapse;
+        border: 2px solid #333;
+        th{
+            height: 40px;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            background: rgb(89, 189, 255);
+            color: #000;
+            font-size: 16px;
+        }
+        td{
+            text-align: center;
+            height: 25px;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000; 
+            font-size: 14px;
+            font-weight: 600;    
+            background: rgba(89, 189, 255, 0.2); 
+        }
+ 
+       
+        
+        
+        
+   
+
+    }
+}

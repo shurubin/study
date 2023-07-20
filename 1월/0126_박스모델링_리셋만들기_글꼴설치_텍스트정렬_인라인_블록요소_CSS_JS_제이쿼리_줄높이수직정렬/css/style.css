@@ -1,0 +1,84 @@
+#wrap{
+    width:100%;
+    text-align: center;
+}
+#wrap #header {
+    width:100%;
+    height: 123px;
+    background-color: rgba(246,245,239,1);
+    /* border-top: 선두께 선종류(실선 solid, 점선 dotted 선색상; */
+    border-top: 2px solid rgb(0,0,0);
+    border-bottom: 1px solid rgb(229,229,229);
+    color: rgb(0,0,0);
+    line-height: 120px; /* 수직정렬 */
+    text-align: center;/*수평정렬 shift+alt+a*/
+}
+
+#wrap #main {width:100%;}
+
+#wrap #main #section1 {
+    width:100%;
+    height: 652.797px;
+    background-color: rgba(230,150,0,1);
+    line-height: 652.797px;
+}
+
+#wrap #main #section2 {
+    width:100%;
+    height: 62px;
+    background-color: rgba(130,180,0,1);
+    line-height: 62px;
+}
+
+#wrap #main #section3 {
+    width:100%;
+    height: 240.172px;
+    background-color: rgba(140,0,220,1);
+    padding: 30px 0 40px 0;
+    line-height: 170.172px;
+
+}
+
+#wrap #main #section4 {
+    width:100%;
+    height:573px;
+    background-color: rgb(0,150,200);
+    line-height: 573px;
+}
+
+#wrap #main #section5 {
+    width:100%;
+    height:400px;
+    background-color: rgb(0,200,150);
+    line-height: 400px;
+}
+
+#wrap #main #section6 {
+    width:100%;
+    height:800px;
+    background-color: rgb(220,100,100);
+    line-height: 800px;
+}
+
+#wrap #main #section7 {
+    width:100%;
+    height:400px;
+    background-color: rgb(150,150,220);
+    line-height: 400px;
+}
+
+#wrap #main #section8 {
+    width:100%;
+    height:400px;
+    background-color: rgb(150,220,150);
+    line-height: 400px;
+}
+
+#wrap #footer {
+    width:100%;
+    height:601px;
+    background-color: rgb(44,42,41);
+    padding: 32px 0 35px 0;
+    line-height: 534px; /* 패딩 위아래 값 빼준 줄높이 */
+}
+

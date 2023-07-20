@@ -1,0 +1,109 @@
+#wrap {
+  width: 100%;
+}
+#wrap #header {
+  width: 100%;
+}
+#wrap #header .container {
+  width: 100%;
+}
+#wrap #header .container .gap {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+#wrap #header .container .gap .headerT {
+  width: 100%;
+  text-align: right;
+  padding: 8px 0;
+}
+#wrap #header .container .gap .headerT span {
+  padding: 3px;
+  color: #d9d9d9;
+}
+#wrap #header .container .gap .headerT span a {
+  font-size: 11px;
+  font-weight: 600;
+}
+#wrap #header .container .gap .headerT span a img {
+  width: 8px;
+  height: 5px;
+  margin-left: 3px;
+}
+#wrap #header .container .gap .headerM {
+  width: 100%;
+  height: 63px;
+  line-height: 63px;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #header .container .gap .headerM .left span a {
+  font-size: 17px;
+  font-weight: 600;
+  padding: 0 10px;
+}
+#wrap #header .container .gap .headerM .left span a i {
+  font-size: 5px;
+  font-weight: 800;
+  color: #f00;
+}
+#wrap #header .container .gap .headerM .center {
+  position: relative;
+  width: 400px;
+  height: 48px;
+}
+#wrap #header .container .gap .headerM .center #search {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #5f0080;
+  border-radius: 3px;
+  padding: 0 10px;
+  color: #ccc;
+  font-size: 15px;
+  font-weight: 600;
+}
+#wrap #header .container .gap .headerM .center a {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+#wrap #header .container .gap .headerM .right span a img {
+  padding-left: 20px;
+}
+#wrap #header .container .gap .headerB {
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #header .container .gap .headerB .left span a {
+  font-size: 15px;
+  font-weight: 700;
+  color: #333;
+}
+#wrap #header .container .gap .headerB .left span a img {
+  margin-right: 13px;
+}
+#wrap #header .container .gap .headerB .center span {
+  padding: 0 50px;
+}
+#wrap #header .container .gap .headerB .center span a {
+  font-size: 15px;
+  font-weight: 700;
+  color: #333;
+}
+#wrap #header .container .gap .headerB .right .pass a {
+  font-size: 12px;
+  font-weight: 700;
+  color: #666;
+  border: 1px solid #ddd;
+}
+#wrap #header .container .gap .headerB .right .pass a span {
+  color: #5f0080;
+  margin: 5px;
+}

@@ -1,0 +1,7 @@
+* {margin: 0; padding: 0; vertical-align: middle;box-sizing: border-box;}
+body {font: normal 14px/1 'Nanum Gothic','Noto Sans','Roboto';color: rgb(60, 60, 60);}
+a {color:rgb(60,60,60);text-decoration: none;}
+a:visited {color:rgb(160,160,160);}/*진입한 탭은 색깔바뀜*/
+a:hover {color:rgb(0,0,0); text-decoration:underline;}/*마우스 올리면 색깔바뀜*/
+a:focus {color:rgb(170,0,0);} /* 클릭 시 색깔바뀜*/
+a:active {color:rgb(100,0,170);} /* 클릭 시 색깔바뀜*/

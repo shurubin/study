@@ -1,0 +1,1 @@
+console.log('test_async.js 파일 내용 실행')

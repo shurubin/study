@@ -1,0 +1,42 @@
+mysql> desc bbs;
++-----------+---------------+------+-----+---------+-------+
+| Field     | Type          | Null | Key | Default | Extra |
++-----------+---------------+------+-----+---------+-------+
+| bbsId     | int           | NO   | PRI | NULL    |       |
+| userId    | varchar(16)   | NO   |     | NULL    |       |
+| subject   | varchar(1000) | NO   |     | NULL    |       |
+| conent    | varchar(4096) | NO   |     | NULL    |       |
+| writeDate | datetime      | YES  |     | NULL    |       |
+| deleteOk  | int           | YES  |     | NULL    |       |
+| hit       | int           | YES  |     | NULL    |       |
++-----------+---------------+------+-----+---------+-------+
+
+삭제된 데이터 레코드(한행 튜플 Tuple == Record) bbsId는 이제 건너뛰는 번호가 된다
+그래서 페이지네이션에 문제가 생김
+해결방법 새로운 가상번호(no)를 만들어서 순차처리하면 디버깅됨
+
+deleteOk=1 가용데이터만
+새로운 인덱스번호를 부여한다. 1씩 증가해야한다.
+DB 변수 사용 @no:=@no+1 as no => 초기값 설정 (@no:=0)
+
+SELECT * FROM
+(SELECT *, @no:=@no+1 as no FROM bbs, (SELECT @no:=0) as v_format_no WHERE deleteOk=1) as v_table
+WHERE no <=19  ORDER BY bbsId DESC LIMIT 
+
+SELECT * FROM
+(SELECT @no := @no+1 as no, bbsId, userId, deleteOk, hit FROM bbs, 
+(SELECT @no:=0) as no WHERE deleteOk=1) as v_table
+WHERE no <=19  ORDER BY bbsId DESC LIMIT 50;
+
+
+SELECT * FROM
+(SELECT *, @no := @no+1 as no FROM bbs, 
+(SELECT @no:=0) as v_format_no WHERE deleteOk=1) as v_table
+WHERE no <=?  ORDER BY bbsId DESC LIMIT 5
+
+
+SQL 줄바꿈 처리 ""+""+"";
+String SQL = "SELECT * FROM"
++"(SELECT *, @no := @no+1 as no FROM bbs, "
++"(SELECT @no:=0) as v_format_no WHERE deleteOk=1) as v_table"
++"WHERE no <=?  ORDER BY bbsId DESC LIMIT 5"

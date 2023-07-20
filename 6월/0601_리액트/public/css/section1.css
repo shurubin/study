@@ -1,0 +1,18 @@
+#wrap {
+  width: 100%;
+}
+#wrap .intro {
+  width: 100%;
+}
+#wrap .intro #section1 {
+  width: 100%;
+}
+#wrap .intro #section1 .container {
+  width: 100%;
+}
+#wrap .intro #section1 .container .gap {
+  width: 100%;
+}
+#wrap .intro #section1 .container .gap .content {
+  width: 100%;
+}

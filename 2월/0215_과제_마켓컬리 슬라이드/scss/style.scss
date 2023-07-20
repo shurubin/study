@@ -1,0 +1,55 @@
+@import url('./reset.css');
+@import url('./skip.css');
+
+
+#main {
+    width: 100%;
+    #section1 {
+        width: 100%;
+        height: 100vh;        
+        .container {
+            width: 100%;
+            height: 100%;            
+            .slide-container {
+                position: relative;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                .slide-view {
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    .slide-wrap {
+                        width: 100% * 16; 
+                        height: 100%;
+                        position: relative;
+                        display: flex;
+                        .slide {
+                            width: 100%;
+                            height: 100%;
+                            max-height: 370px;
+                            background: url() no-repeat 50% 50%;
+                            background-size: cover;
+                            &.slide1 {background-image: url(../img/no1.jpg);}
+                            &.slide2 {background-image: url(../img/no2.jpg);}
+                            &.slide3 {background-image: url(../img/no3.jpg);}
+                            &.slide4 {background-image: url(../img/no4.jpg);}
+                            &.slide5 {background-image: url(../img/no5.jpg);}
+                            &.slide6 {background-image: url(../img/no6.jpg);}
+                            &.slide7 {background-image: url(../img/no7.jpg);}
+                            &.slide8 {background-image: url(../img/no8.jpg);}
+                            &.slide9 {background-image: url(../img/no9.jpg);}
+                            &.slide10 {background-image: url(../img/no10.jpg);}
+                            &.slide11 {background-image: url(../img/no11.png);}
+                            &.slide12 {background-image: url(../img/no12.jpg);}
+                            &.slide13 {background-image: url(../img/no13.jpg);}
+                            &.slide14 {background-image: url(../img/no14.jpg);}
+                            &.slide15 {background-image: url(../img/no15.jpg);}
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

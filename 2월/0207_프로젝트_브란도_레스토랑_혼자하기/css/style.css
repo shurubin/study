@@ -1,0 +1,157 @@
+@import url("./fonts.css");
+@import url("./reset.css");
+@import url("./skip.css");
+#wrap {
+  width: 100%;
+}
+#wrap #section {
+  width: 100%;
+}
+#wrap #section .container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+#wrap #section .container .gap {
+  width: 100%;
+  padding: 0 15px;
+}
+#wrap #section .container .gap .title {
+  width: 100%;
+  text-align: center;
+  padding: 0 15px 100px 15px;
+}
+#wrap #section .container .gap .title h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #614c45;
+  padding: 10px 0;
+}
+#wrap #section .container .gap .title p {
+  display: block;
+}
+#wrap #section .container .gap .title p img {
+  width: auto;
+}
+#wrap #section .container .gap .content {
+  width: 100%;
+  display: flex;
+}
+#wrap #section .container .gap .content .left-box {
+  width: 487.5px;
+  background-color: gold;
+}
+#wrap #section .container .gap .content .left-box .col-gap {
+  width: 100%;
+}
+#wrap #section .container .gap .content .left-box .col-gap ul {
+  width: 100%;
+}
+#wrap #section .container .gap .content .left-box .col-gap ul li {
+  width: 100%;
+}
+#wrap #section .container .gap .content .left-box .col-gap ul li .map i {
+  color: #c8a64b;
+}
+#wrap #section .container .gap .content .left-box .col-gap ul li .map h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+}
+#wrap #section .container .gap .content .left-box .col-gap ul li .map h4 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #626262;
+}
+#wrap #section .container .gap .content .left-box .col-gap ul li .map h5 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #626262;
+}
+#wrap #section .container .gap .content .left-box .col-gap ul li .clip i {
+  color: #c8a64b;
+}
+#wrap #section .container .gap .content .left-box .col-gap ul li .clip h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+}
+#wrap #section .container .gap .content .left-box .col-gap ul li .clip h4 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #626262;
+}
+#wrap #section .container .gap .content .left-box .col-gap ul li .phone i {
+  color: #c8a64b;
+}
+#wrap #section .container .gap .content .left-box .col-gap ul li .phone h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+}
+#wrap #section .container .gap .content .left-box .col-gap ul li .phone h4 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #626262;
+}
+#wrap #section .container .gap .content .right-box {
+  width: 682.5px;
+}
+#wrap #section .container .gap .content .right-box .col-gap {
+  width: 100%;
+}
+#wrap #section .container .gap .content .right-box .col-gap ul li {
+  padding: 0 0 15px 0;
+}
+#wrap #section .container .gap .content .right-box .col-gap ul li input {
+  width: 100%;
+  height: 48px;
+  background: #fff;
+  color: #626262;
+  font-size: 14px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  padding: 0 15px;
+  transition: all 0.3s;
+  outline-offset: -1px;
+}
+#wrap #section .container .gap .content .right-box .col-gap ul li input:focus {
+  outline: 2px solid #999;
+}
+#wrap #section .container .gap .content .right-box .col-gap ul li select {
+  width: 100%;
+  height: 48px;
+  background: #fff;
+  color: #626262;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  padding: 0 15px;
+}
+#wrap #section .container .gap .content .right-box .col-gap ul li select option {
+  font-size: 14px;
+}
+#wrap #section .container .gap .content .right-box .col-gap ul li textarea {
+  width: 100%;
+  height: 90px;
+  background: #fff;
+  color: #626262;
+  font-size: 14px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  padding: 15px;
+}
+#wrap #section .container .gap .content .right-box .col-gap ul li button {
+  width: 86.72px;
+  height: 46.56;
+  padding: 12px 15px;
+  background: #000;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: Montserrat;
+  transition: all 0.3s;
+}
+#wrap #section .container .gap .content .right-box .col-gap ul li button:hover {
+  background: #fff;
+  color: #000;
+}

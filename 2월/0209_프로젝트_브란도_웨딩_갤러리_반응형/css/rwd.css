@@ -1,0 +1,18 @@
+@media all and (max-width: 800px) {
+  #wrap #main #section5 .container .gap .content .gallery-box ul li {
+    float: left;
+    width: 33.3333333333%;
+  }
+}
+@media all and (max-width: 600px) {
+  #wrap #main #section5 .container .gap .content .gallery-box ul li {
+    float: left;
+    width: 50%;
+  }
+}
+@media all and (max-width: 500px) {
+  #wrap #main #section5 .container .gap .content .gallery-box ul li {
+    float: left;
+    width: 100%;
+  }
+}

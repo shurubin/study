@@ -1,0 +1,238 @@
+#intro{
+    width: 100%;
+    #section1{
+        width: 100%;
+        .container{
+            width: 100%;
+            .gap{
+                width: 100%;
+                .slide-container{
+                    width: 100%;
+                    .slide-view{
+                        width: 100% * 6;
+                        overflow: hidden;
+                        .slide-wrap{
+                            width: 100%;
+                            display: flex;
+                            position: relative;
+                            .slide{
+                                width: 100%;   
+                                position: relative;                             
+                                img{
+                                    width: 100%;
+                                    height: 1089px;
+                                }
+                                .text{
+                                    width: 1510px;
+                                    margin: auto;
+                                    position: absolute;
+                                    top: 328px;
+                                    left: 202px;                                    
+                                    h2{
+                                        font-size: 53px;
+                                        font-weight: 700;
+                                        padding-bottom: 20px;
+                                    }
+                                    h4{
+                                        font-size: 26px;
+                                        font-weight: 300;
+                                        padding-bottom: 20px;
+                                    }
+                                    h6{
+                                        font-size: 13px;
+                                        font-weight: 300;
+                                    }
+                                    button{
+                                        width: 200px;
+                                        height: 50px;
+                                        border-radius: 50px;
+                                        margin-top: 130px;
+                                        background: none;
+                                        font-size: 19px;
+                                        font-weight: 600;
+                                        padding: 0 25px;
+                                        text-align: left; 
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;                                    
+                                        span{
+                                            display: block;
+                                            width: 9.5px;
+                                            font-size: 20px;
+                                            font-family: 'Spoqa Han Sans Neo', 'Noto Sans KR', sans-serif;
+                                            transform: translateY(-1px);
+                                        }
+                                    }
+                                }
+                                &:nth-child(1){
+                                    color: #f0ffb6;
+                                    button{
+                                        border: 2px solid #f0ffb6;
+                                        color: #f0ffb6;
+                                    }
+                                }
+                                &:nth-child(2){
+                                    color: #3d3a35;
+                                    button{
+                                        border: 2px solid #3d3a35;
+                                        color: #3d3a35;
+                                    }
+                                }
+                                &:nth-child(3){
+                                    color: #fdf2d5;
+                                    button{
+                                        border: 2px solid #fdf2d5;
+                                        color: #fdf2d5;
+                                    }
+                                }
+                                &:nth-child(4){
+                                    color: #3d3a35;
+                                    button{
+                                        border: 2px solid #3d3a35;
+                                        color: #3d3a35;
+                                    }
+                                }
+                                &:nth-child(5){
+                                    color: #ef81ba;
+                                    button{
+                                        border: 2px solid #ef81ba;
+                                        color: #ef81ba;
+                                    }
+                                }
+                                &:nth-child(6){
+                                    color: #3d3a35;
+                                    button{
+                                        border: 2px solid #3d3a35;
+                                        color: #3d3a35;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    #section2{
+        width: 100%;
+        .container{
+            width: 100%;
+            padding: 60px 0 100px 0;
+            .gap{
+                width: 1510px;
+                margin: 0 auto;
+                .content{
+                    width: 100%;
+                    .all-view{
+                        width: 100%;
+                        button{
+                            width: 155px;
+                            height: 50px;
+                            border: 1px solid #3d3a35;
+                            border-radius: 50px;
+                            padding: 0 20px 0 40px;
+                            color: #3d3a35;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            img{
+                                width: 6px;
+                                height: 10px;
+                            }
+                        }
+                    }
+                    .menu-list{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        h3{
+                            font-size: 46px;
+                            font-family: 'Nomina-bold', 'sans-serif';
+                            font-weight: 600;
+                            color: #b60217;
+                        }
+                        .menus{
+                            font-size: 16px;
+                            a{
+                                color: #777;
+                                padding-left: 50px;                                
+                                &.on{
+                                    color: #b60217;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+                    .slide-container{
+                        width: 100%;
+                        .slide-view{
+                            width: 100%;
+                            // overflow: hidden;
+                            .slide-wrap{
+                                position: relative;
+                                width: 100% * 5;
+                                display: flex;
+                                .slide{
+                                    .item-img{
+                                        display: block;
+                                        margin: 0 13px 0 0;
+                                        width: 367px;
+                                        background: #eceaeb;                                        
+                                        img{
+                                            width: 100%;
+                                            height: 412px;
+                                        }
+
+                                    }
+                                    .item-txt{
+                                        width: 367px;
+                                        h4{
+                                            font-size: 22px;
+                                            font-weight: 500;
+                                            color: 22px;
+                                        }
+                                        .price-list{
+                                            display: flex;
+                                            justify-content: space-between;
+                                            .price{
+                                                font-size: 26px;
+                                                font-weight: 600;
+                                                color: #3d3a35;
+                                            }
+                                            .sale{
+                                                .sale-price{
+                                                    font-size: 22px;
+                                                    color: #3d3a35;
+                                                }
+                                                .sale-per{
+                                                    font-size: 22px;
+                                                    font-weight: 600;
+                                                    color: #b60217;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .pagenation{
+                        .pagenation-bar{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #section3{
+
+    }
+    #section4{}
+    #section5{}
+    #section6{}
+    #section7{}
+    #section8{}
+
+}

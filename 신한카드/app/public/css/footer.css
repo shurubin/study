@@ -1,0 +1,140 @@
+#wrap {
+  width: 100%;
+}
+#wrap #footer {
+  width: 100%;
+  height: 430px;
+  background: #f4f7fc;
+}
+#wrap #footer hr {
+  color: #aaa;
+}
+#wrap #footer .container {
+  width: 100%;
+}
+#wrap #footer .container .gap {
+  width: 100%;
+  padding: 0 351.5px;
+}
+#wrap #footer .container .gap .footer1 {
+  width: 100%;
+  padding: 25px 0;
+}
+#wrap #footer .container .gap .footer1 > ul {
+  display: flex;
+}
+#wrap #footer .container .gap .footer1 > ul > li {
+  padding: 0 30px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "OneShinhanL";
+}
+#wrap #footer .container .gap .footer1 > ul :nth-child(1) {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "OneShinhanM";
+}
+#wrap #footer .container .gap .footer2 {
+  width: 100%;
+  padding: 0 0 25px 0;
+}
+#wrap #footer .container .gap .footer2 > ul {
+  display: flex;
+}
+#wrap #footer .container .gap .footer2 > ul > li {
+  padding: 0 15px 0 0;
+}
+#wrap #footer .container .gap .footer2 > ul > li a {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "OneShinhanL";
+}
+#wrap #footer .container .gap .footer2 > ul > li .bold {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "OneShinhanM";
+}
+#wrap #footer .container .gap .footer3 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+#wrap #footer .container .gap .footer3 .footersns {
+  width: 100%;
+}
+#wrap #footer .container .gap .footer3 .footersns a {
+  padding: 0 15px 0 0;
+}
+#wrap #footer .container .gap .footer3 .footersns a img {
+  width: 28px;
+}
+#wrap #footer .container .gap .footer3 .choicebox {
+  width: 350px;
+  display: flex;
+  justify-content: flex-end;
+}
+#wrap #footer .container .gap .footer3 .choicebox .member-box {
+  width: 160px;
+  margin: 0 10px;
+}
+#wrap #footer .container .gap .footer3 .choicebox .member-box #member {
+  width: 100%;
+  height: 32px;
+  border: 1px solid #ddd;
+}
+#wrap #footer .container .gap .footer3 .choicebox .member-box #member option {
+  font-size: 12px;
+  font-weight: 600;
+  padding-left: 5px;
+}
+#wrap #footer .container .gap .footer3 .choicebox .group-box {
+  width: 160px;
+}
+#wrap #footer .container .gap .footer3 .choicebox .group-box #group {
+  width: 100%;
+  height: 32px;
+  border: 1px solid #ddd;
+}
+#wrap #footer .container .gap .footer3 .choicebox .group-box #group option {
+  font-size: 12px;
+  font-weight: 600;
+  padding-left: 5px;
+}
+#wrap #footer .container .gap .footer4 {
+  width: 100%;
+  vertical-align: middle;
+}
+#wrap #footer .container .gap .footer4 p {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+#wrap #footer .container .gap .footer4 p a img {
+  width: 28px;
+  transform: scaleY(-1);
+}
+#wrap #footer .container .gap .footer5 {
+  width: 100%;
+}
+#wrap #footer .container .gap .footer5 p {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 100%;
+  padding: 10px 0;
+}
+#wrap #footer .container .gap .footer5 :nth-child(3) {
+  padding: 30px 0;
+}
+#wrap #footer .container .gap .footer5 .award {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  line-height: 10px;
+}
+#wrap #footer .container .gap .footer5 .award a {
+  width: 100%;
+}
+#wrap #footer .container .gap .footer5 .award a img {
+  padding: 0 10px;
+}

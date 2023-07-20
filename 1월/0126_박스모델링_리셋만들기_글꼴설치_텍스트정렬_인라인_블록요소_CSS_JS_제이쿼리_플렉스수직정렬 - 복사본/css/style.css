@@ -1,0 +1,137 @@
+#wrap{
+    width:100%;
+    text-align: center;
+}
+#wrap #header {
+    width:100%;
+    height: 123px;
+    background-color: rgba(246,245,239,1);
+    /* border-top: 선두께 선종류(실선 solid, 점선 dotted 선색상; */
+    border-top: 2px solid rgb(0,0,0);
+    border-bottom: 1px solid rgb(229,229,229);
+    color: rgb(0,0,0);
+    /* 수직, 수평정렬 레이아웃 
+    현재의 자식요소를 수평정렬과 수직정렬을 할 수 있다
+    단 자신의 너비 높이가 설정되어야 가능하다.*/
+    /* 플렉스를 지정하면 자식요소는 인라인요소로 변경된다 */
+    display: flex;
+    justify-content: center; /* 수평 가운데 */
+    justify-content: flex-end; /* 수평 오른쪽 */
+    justify-content: flex-start; /* 수평 왼쪽 */
+    justify-content: center;
+    align-items: center;/* 수직 가운데 */
+    align-items: flex-end;/* 수직 아래 */
+    align-items: flex-start;/* 수직 위 */
+    align-items: center;
+}
+
+#wrap #main {width:100%;}
+
+#wrap #main #section1 {
+    width:100%;
+    height: 652.797px;
+    /* background: 색상 url(이미지경로(path)와 이미지 파일이름.확장자) 이미지 반복여부 X(수평)좌표 Y(수직)좌표 */
+    /* background: rgb(255,255,255) url() no-repeat left top;
+    background: rgb(255,255,255) url() no-repeat center center;
+    background: rgb(255,255,255) url() no-repeat right bottom; 교육용 %로 사용하는 게 좋음*/
+    /* background: rgb(255,255,255) url() no-repeat 0 0;
+    background: rgb(255,255,255) url() no-repeat 50% 50%;
+    background: rgb(255,255,255) url() no-repeat 100% 100%;  */
+    background: rgb(255,255,255) url(../img/2023_newyear_top_bg.jpg) no-repeat 0% 50%;
+    /* 배경이미지 크기 설정 */
+    background-size: cover;
+    background-size: auto;
+    background-size: contain;
+    /* background-size: 100% auto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrap #main #section2 {
+    width:100%;
+    height: 62px;
+    background-color: rgba(130,180,0,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 자식요소는 부모요소의 높이 너비에 상대적이다
+부모 높이가 없다면 자식요소에서 높이 100%는 0이다 즉 높이는 없다 */
+#wrap #main #section2 .left-box {width: 50%; height: 100%;background: rgb(0,0,0);}
+#wrap #main #section2 .right-box{width: 50%; height: 100%;background: rgb(255,255,255);}
+
+#wrap #main #section3 {
+    /* 투명설정 */
+    opacity: 1;
+    width:100%;
+    height: 240.172px;
+    background-color: rgba(30,57,50,1);
+    padding: 30px 0 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#wrap #main #section4 {
+    width:100%;
+    height:573px;
+    background:url(../img/2023_newyear_promotion_bg.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrap #main #section5 {
+    width:100%;
+    height:400px;
+    background:url(../img/221220_pc_reserve_bg.png) no-repeat 50% 50%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrap #main #section6 {
+    width:100%;
+    height:800px;
+    background:url(../img/2022_Chrismas2_PTF_bg.png) no-repeat 50% 50% fixed;/* 이미지 위치가 고정되어 이미지가 잘림 */
+    background:url(../img/2022_Chrismas2_PTF_bg.png) no-repeat 50% 50% scroll;/* 미입력 시 기본설정 상태 스크롤 시 이미지가 계속 있음 */
+    background-size:cover;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#wrap #main #section7 {
+    width:100%;
+    height:400px;
+    background:url(../img/reserve_bg_pc.png) no-repeat 50% 100%;
+    background-size: auto 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrap #main #section8 {
+    width:100%;
+    height:400px;
+    background:url(../img/store_bg.jpg) no-repeat 50% 50%;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrap #footer {
+    width:100%;
+    height:601px;
+    background-color: rgb(44,42,41);
+    padding: 32px 0 35px 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+

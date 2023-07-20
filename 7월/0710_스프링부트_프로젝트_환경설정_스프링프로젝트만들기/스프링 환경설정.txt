@@ -1,0 +1,50 @@
+스프링 환경설정
+
+JAVA_HOME
+CLASSPATH
+CATALINA_HOME
+
+자바 버전별
+open jdk
+
+톰켓 버전별
+tomcat
+
+http://localhost:8080/
+http://localhost:8080/index.html
+
+
+()
+style={{}}
+
+뷰 탬플릿
+{{}}
+login.mustache
+logout.mustache
+
+doc
+tab키 젠코딩(자동코딩)
+
+콘트롤러(메서드(loginMethod(){}) > 맵핑("/login.do") > 웹페이지를 띄운다)
+controller 패키지 생성 > 매서드 생성한다.
+
+맵핑이름 ("/login.do")
+리턴 login
+
+
+////////////////////////////
+인덱스페이지
+index.html
+
+링크
+로그인(/login.do) / 로그아웃(/logout.do)
+
+- 뷰 탬플릿(View Template)
+1. logout.mustache
+
+- 컨트롤러
+- 메소드생성
+2. 리턴 "logout";
+3. 겟맵핑("/logout.do")
+4. 모델 Model model.속성(Attribute)추가(add)
+    키와(userName) 키값("황수빈")

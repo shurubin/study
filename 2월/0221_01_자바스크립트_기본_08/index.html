@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열과 객체</title>
+</head>
+<body>
+    
+    <script>
+
+        //배열 제거와 추가 재구성
+        //splice()
+
+        let arr1 = ['딸기','사과','자몽','포도','바나나'];
+
+        // 배열 arr2 1차원배열을 2차원 1배열로 재구성하라
+
+ 
+
+        // arr1.splice(인덱스번호, 삭제할 개수, '앵두');
+
+        console.log(arr1);
+        //결과 (5) ['딸기', '사과', '자몽', '포도', '바나나']
+  
+        arr1.splice(2, 0, '앵두');
+        console.log(`arr1.splice(2,0,'앵두'), ${arr1}`);
+        //결과 arr1.splice(2,0,'앵두'), 딸기,사과,앵두,자몽,포도,바나나
+        //세 번째 위치에 앵두를 끼워넣어라 삭제할 항목은 없음.
+
+        arr1.splice(1, 2, '홍시');
+        console.log(`arr1.splice(1,2,'홍시'), ${arr1}`);
+        //결과 arr1.splice(1,2,'홍시'), 딸기,홍시,자몽,포도,바나나
+        
+        arr1.splice(0, 0, '산딸기');
+        console.log(`arr1.splice(0,0,'산딸기'), ${arr1}`);
+        //결과 arr1.splice(0,0,'산딸기'), 산딸기,딸기,홍시,자몽,포도,바나나
+
+        // 음수는 뒤에서부터 뒤에서 3번재 배열항목 1개를 삭제
+        arr1.splice(-3, 1);
+        console.log(`arr1.splice(-3, 1), ${arr1}`);
+        //결과 arr1.splice(-3, 1), 산딸기,딸기,홍시,포도,바나나
+        
+        arr1.splice(-4, 3);
+        console.log(`arr1.splice(-4, 3), ${arr1}`);
+        //결과 arr1.splice(-4, 3), 산딸기,바나나
+
+
+        // splice() 응용처리
+        // 
+        // splice & ...(전개연산자) 이용하여 1차원 배열을 2차원으로 재구성
+        let arr2 = [
+            1,2,3,4,5,
+            6,7,8,9,10,
+            11,12,13,14,15,
+            16,17,18,19,20,
+            21,22,23,24,25
+        ];
+        // while로 회전 시 arr2의 0번부터 5개의 항목을 가져감
+        
+        // 1회전 : arr3 = [...arr3, arr2.splice(0,5)]; 1,2,3,4,5
+        // 2회전 : arr3 = [...arr3, arr2.splice(0,5)]; 6,7,8,9,10
+        // 3회전 : arr3 = [...arr3, arr2.splice(0,5)]; 11,12,13,14,15
+        // 4회전 : arr3 = [...arr3, arr2.splice(0,5)]; 16,17,18,19,20
+        // 5회전 : arr3 = [...arr3, arr2.splice(0,5)]; 21,22,23,24,25
+
+        
+        let arr3 = [];
+        // splice & ...(전개연산자) 이용하여 1차원 배열을 2차원으로 재구성
+        // 반복문은 for문 또는 while문 이용
+        // 조건이 만족할 때까지 수행 while
+
+        console.log(arr3); //빈배열
+        while(arr2.length){ //배열 개수가 하나도 없을 때까지 수행
+            arr3 = [...arr3, arr2.splice(0,5)]; //arr2에서 삭제한 내용을 arr3 뒤에 추가하라
+            // console.log(arr2.length, arr2);
+        }
+
+        console.log(arr3); //2차원 배열
+        //3행에 3열을 출력
+        console.log(`arr3[2][2] : ${arr3[2][2]}`);
+
+        // 13이라는 배열에 항목을 검색하라
+        // filter(); 사용
+        // 5행 5열 행단위로 검색하고
+        // 필터로 검색 시 결과가 배열로 출력
+        const result = arr3.filter((item,idx)=>item[idx]===25);
+        // 검색된 결과를 가지고
+        console.log(result);
+        // includes() 25숫자를 검색하여 결과를 true false로 반환한다.
+        const result2 = result[0].includes(25);
+        // console.log(result2===true ? 'found':'not found'); 아래와 동일
+        console.log(result2 ? 'found':'not found');
+
+        let result3 = []
+        result3 = [...result3, result[0][0]];
+        result3 = [...result3, result[0][1]];
+        result3 = [...result3, result[0][2]];
+        result3 = [...result3, result[0][3]];
+        result3 = [...result3, result[0][4]];
+
+        console.log(result3);
+
+
+        // includes 참 거짓 : true, false 결과 리턴
+        const a = [1,2,3,4,5];
+        console.log(a.includes(25) ? '찾았다':'없다');
+
+
+        // split() 공백, 구분기호로 배열을 생성
+        const txt = `이순신, 충무, 거북선, 장군`;
+        // 문자열 사이 구분기호는 콤마를 기본으로 배열 생성
+        // split 매서드 
+
+        const babo1 = txt.split(',');
+        console.log(babo1);
+
+        // 배열에 공백이 포함된 상태 => 공백제거 글자앞 글자 뒤
+        // 배열항목 4개를 반복수행
+        // trim매서드
+        const babo2 = babo1.map(function(item){
+            return item.trim();
+        });
+
+        console.log( babo2 );
+
+        //전화번호
+        const hp1 = '010-7942-5308';
+        const hp2 = hp1.split('-');
+        console.log(hp2);
+
+        //이메일
+        const email1 = 'susu@naver.com';
+        const email2 = email1.split('@');
+        console.log(email2);
+
+        //상담내용 텍스트
+        //중간 사이사이 구분 기호 ! ? ,
+
+
+        //여러 기호를 구분기호로 분류하는 작업은 정규표현식으로 한다.
+        // REGEXP 정규표현식 패턴 언어
+        // 문자열의 집합을 표현하는데 사용하는 형식언어
+        //문자열의 검색과 치환을 
+
+        //곽괄호(브라켓)은 범위지정
+
+        // [a-z] 영문소문자 a-z 범위(Range)
+        // [A-Z] 영문소문자 A-Z 범위(Range)
+
+        // [0-9] 숫자 0-9 범위(Range) 
+        // [^0-9] 숫자가 아닌 것 
+
+        // [\d] 숫자 0-9 범위(Range) decimal 10진수
+        // [^\d] 숫자가 아닌 것
+
+        // [a-zA-Z0-9] 영문대소문자와 숫자 
+        // [^a-zA-Z0-9] 영문대소문자와 숫자 곽괄호 안에 맨 앞 의미는 부정(not) !
+
+        //[!?,] 느낌표, 물음표, 콤마 범위
+
+        // \s  공백
+        // \S  공백이 아닌 것
+        // \s* 공백
+        // +   1자 이상
+        // *   0자 이상
+        // .   1자
+        // ?   0자 or 1자
+
+
+        // 정규표현식 표현기본 문법
+        // / [!?,] /슬래쉬로 시작과 끝 지정 감싼다.
+
+        const text1 = '안녕! 좋은아침! 어디 아프세요? 오늘은, 열공하세요.'
+        //const text2 = text1.split(/[!?,]/)
+        const text2 = text1.split(/[!|?|,]/); //각괄호안에 a A 숫자로 구분도 가능  |또는 or
+        console.log(text2);
+
+        const text3 = ' 안녕 ! 좋은아침 ! 어디 아프세요 ? 오늘은 , 열공하세요. , '
+        const text4 = text3.split(/\s*[!?,]\s*/); // 양쪽 0개 이상 모두 제거
+        // const text5 = text3.split(/\S*[!?,]\S*/); // 양쪽 0개 이상 공백이 아닌 것 모두 제거
+        console.log(text4);
+        // console.log(text5);
+
+        //특정 위치까지 배열 생성
+        const text5 = ' 안녕, 좋은아침, 어디 아프세요, 오늘은, 열공하세요 .'
+        console.log(`text5.split(',',0) ${text5.split(',',0)}`);
+        console.log(`text5.split(',',1) ${text5.split(',',1)}`);
+        console.log(`text5.split(',',2) ${text5.split(',',2)}`);
+        console.log(`text5.split(',',3) ${text5.split(',',3)}`);
+        console.log(`text5.split(',',4) ${text5.split(',',4)}`);
+        console.log(`text5.split(',',5) ${text5.split(',',5)}`);
+
+        const text6 = 'Green Computer Academy';
+        // Green 0 1 2 3 4 5 미만까지 글자
+        
+        // 문자열 추출 : substr();
+        console.log(`text6.substr(0,6) ${text6.substr(0,6)}`);
+        
+        // 문자열 추출 : substring();
+        console.log(`text6.substring(0,6) ${text6.substring(0,6)}`);
+
+        
+        // 문자열 추출 : substr(); 지정한 위치부터 15글자
+        console.log(`text6.substr(6,15) ${text6.substr(6,15)}`);
+        // Computer Academ
+        
+        // 문자열 추출 : substring(); 선택된 위치의 처음부터 끝까지
+        console.log(`text6.substring(6,15) ${text6.substring(6,15)}`);
+        // Computer 
+
+
+        let arr = ['딸기', '사과', '포도'];
+        console.log(arr);
+
+        arr.splice(1,1,'메론');
+        console.log(arr);
+        
+        arr.splice(-2,1);
+        console.log(arr);
+
+
+       
+        
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

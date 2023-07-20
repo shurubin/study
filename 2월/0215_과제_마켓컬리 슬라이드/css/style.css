@@ -1,0 +1,82 @@
+@import url("./reset.css");
+@import url("./skip.css");
+#main {
+  width: 100%;
+}
+#main #section1 {
+  width: 100%;
+  height: 100vh;
+}
+#main #section1 .container {
+  width: 100%;
+  height: 100%;
+}
+#main #section1 .container .slide-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+#main #section1 .container .slide-container .slide-view {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#main #section1 .container .slide-container .slide-view .slide-wrap {
+  width: 1600%;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+#main #section1 .container .slide-container .slide-view .slide-wrap .slide {
+  width: 100%;
+  height: 100%;
+  max-height: 370px;
+  background: url() no-repeat 50% 50%;
+  background-size: cover;
+}
+#main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide1 {
+  background-image: url(../img/no1.jpg);
+}
+#main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide2 {
+  background-image: url(../img/no2.jpg);
+}
+#main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide3 {
+  background-image: url(../img/no3.jpg);
+}
+#main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide4 {
+  background-image: url(../img/no4.jpg);
+}
+#main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide5 {
+  background-image: url(../img/no5.jpg);
+}
+#main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide6 {
+  background-image: url(../img/no6.jpg);
+}
+#main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide7 {
+  background-image: url(../img/no7.jpg);
+}
+#main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide8 {
+  background-image: url(../img/no8.jpg);
+}
+#main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide9 {
+  background-image: url(../img/no9.jpg);
+}
+#main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide10 {
+  background-image: url(../img/no10.jpg);
+}
+#main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide11 {
+  background-image: url(../img/no11.png);
+}
+#main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide12 {
+  background-image: url(../img/no12.jpg);
+}
+#main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide13 {
+  background-image: url(../img/no13.jpg);
+}
+#main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide14 {
+  background-image: url(../img/no14.jpg);
+}
+#main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide15 {
+  background-image: url(../img/no15.jpg);
+}

@@ -1,0 +1,302 @@
+#wrap {
+  width: 100%;
+}
+#wrap #main {
+  width: 100%;
+}
+#wrap #main #section1 {
+  width: 100%;
+  padding: 130px 0 0 0;
+}
+#wrap #main #section1 .contatiner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background: url(../images/main_bg_pc.png) no-repeat 50%;
+  padding: 0 0 50px 0;
+}
+#wrap #main #section1 .contatiner .gap {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 0 351.5px;
+  margin: 0 auto;
+}
+#wrap #main #section1 .contatiner .gap .content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+#wrap #main #section1 .contatiner .gap .content .search-box {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 60px 0;
+  text-align: center;
+}
+#wrap #main #section1 .contatiner .gap .content .search-box #search {
+  width: 700px;
+  height: 62px;
+  border: 2px solid #486eff;
+  border-radius: 5px;
+  padding: 15px;
+}
+#wrap #main #section1 .contatiner .gap .content .search-box ::-moz-placeholder {
+  font-size: 20px;
+  font-weight: 600;
+  transform: translateY(3px);
+  color: #aaa;
+}
+#wrap #main #section1 .contatiner .gap .content .search-box ::placeholder {
+  font-size: 20px;
+  font-weight: 600;
+  transform: translateY(3px);
+  color: #aaa;
+}
+#wrap #main #section1 .contatiner .gap .content .search-box img {
+  width: 32px;
+  height: 32px;
+}
+#wrap #main #section1 .contatiner .gap .content .menu-icon-box {
+  width: 100%;
+  height: 135px;
+  position: relative;
+  background: #fff;
+}
+#wrap #main #section1 .contatiner .gap .content .menu-icon-box .arrow {
+  position: absolute;
+  z-index: 4;
+  width: 40px;
+  height: 40px;
+}
+#wrap #main #section1 .contatiner .gap .content .menu-icon-box .arrow.preview {
+  top: 30%;
+  left: -20px;
+}
+#wrap #main #section1 .contatiner .gap .content .menu-icon-box .arrow.next {
+  top: 30%;
+  right: -20px;
+}
+#wrap #main #section1 .contatiner .gap .content .menu-icon-box .arrow a {
+  width: 100%;
+}
+#wrap #main #section1 .contatiner .gap .content .menu-icon-box .arrow a img {
+  width: 100%;
+}
+#wrap #main #section1 .contatiner .gap .content .menu-icon-box .only-icon {
+  width: 1058px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+#wrap #main #section1 .contatiner .gap .content .menu-icon-box .only-icon .menu-icon {
+  width: 200%;
+  height: 135px;
+  display: flex;
+  padding: 12px 71px;
+  background: #fff;
+  border-radius: 5px;
+}
+#wrap #main #section1 .contatiner .gap .content .menu-icon-box .only-icon .menu-icon li {
+  width: 132px;
+  display: block;
+  text-align: center;
+  margin: auto 0;
+}
+#wrap #main #section1 .contatiner .gap .content .menu-icon-box .only-icon .menu-icon li a img {
+  width: 100%;
+  padding: 0 35%;
+}
+#wrap #main #section1 .contatiner .gap .content .menu-icon-box .only-icon .menu-icon li a p {
+  font-size: 15px;
+  font-family: "OneShinhanM";
+  padding: 15px 0 0 0;
+}
+#wrap #main #section1 .contatiner .gap .content .menu-icon-box .pagepoint {
+  width: 100%;
+  height: 26px;
+}
+#wrap #main #section1 .contatiner .gap .content .menu-icon-box .pagepoint .bar-position {
+  width: 28px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#wrap #main #section1 .contatiner .gap .content .menu-icon-box .pagepoint .bar-position .bar {
+  width: 6px;
+  height: 6px;
+  background: #ddd;
+  border-radius: 10px;
+}
+#wrap #main #section1 .contatiner .gap .content .menu-icon-box .pagepoint .bar-position .bar.on {
+  width: 16px;
+  height: 6px;
+  background: #383b5a;
+}
+#wrap #main #section2 {
+  width: 100%;
+}
+#wrap #main #section2 .contatiner {
+  width: 100%;
+}
+#wrap #main #section2 .contatiner .gap {
+  width: 100%;
+  padding: 0 351.5px;
+}
+#wrap #main #section2 .contatiner .gap .content {
+  width: 100%;
+  padding: 60px 0;
+}
+#wrap #main #section2 .contatiner .gap .content .slide {
+  width: 100%;
+  overflow: hidden;
+}
+#wrap #main #section2 .contatiner .gap .content .slide .slide-box {
+  width: 150%;
+  height: 200px;
+}
+#wrap #main #section2 .contatiner .gap .content .slide .slide-box a {
+  position: relative;
+  display: inline-block;
+  width: 410px;
+  height: 170px;
+  padding: 0 30px;
+  border-radius: 15px;
+}
+#wrap #main #section2 .contatiner .gap .content .slide .slide-box a .slide {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-family: "OneShinhanM";
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+#wrap #main #section2 .contatiner .gap .content .slide .slide-box a .slide h4 {
+  font-size: 20px;
+  padding-left: 36px;
+}
+#wrap #main #section2 .contatiner .gap .content .slide .slide-box a .slide img {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 140px;
+  height: 140px;
+}
+#wrap #main #section3 {
+  width: 100%;
+}
+#wrap #main #section3 .contatiner {
+  width: 100%;
+}
+#wrap #main #section3 .contatiner .gap {
+  width: 100%;
+  padding: 0 351.5px;
+}
+#wrap #main #section3 .contatiner .gap .title {
+  display: flex;
+  padding: 0 0 60px 0;
+}
+#wrap #main #section3 .contatiner .gap .title .card-bdp {
+  font-size: 20px;
+  font-family: "OneShinhanM";
+  color: #888;
+  padding: 0 30px 0 0;
+}
+#wrap #main #section3 .contatiner .gap .title .card-bdp.on {
+  color: #000;
+  text-decoration: underline;
+  font-family: "OneShinhanB";
+  padding-bottom: 10px;
+}
+#wrap #main #section3 .contatiner .gap .content {
+  width: 100%;
+  position: relative;
+}
+#wrap #main #section3 .contatiner .gap .content .card {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#wrap #main #section3 .contatiner .gap .content .card.box2 {
+  display: none;
+}
+#wrap #main #section3 .contatiner .gap .content .card.box3 {
+  display: none;
+}
+#wrap #main #section3 .contatiner .gap .content .card .card-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #main #section3 .contatiner .gap .content .card .card-info a {
+  display: inline-block;
+}
+#wrap #main #section3 .contatiner .gap .content .card .card-info a img {
+  width: 175px;
+  height: 278px;
+}
+#wrap #main #section3 .contatiner .gap .content .card .card-info a p {
+  font-size: 16px;
+  font-family: "OneShinhanM";
+  padding: 20px 0;
+  text-align: center;
+}
+#wrap #main #section3 .contatiner .gap .content .card-forsell {
+  width: 100%;
+}
+#wrap #main #section3 .contatiner .gap .content .card-forsell a {
+  width: 585px;
+  height: 80px;
+  background: #494f60;
+}
+#wrap #main #section3 .contatiner .gap .content .card-forsell a .ingi {
+  width: 100%;
+  height: 100%;
+}
+#wrap #main #section4 {
+  width: 100%;
+}
+#wrap #main #section4 .contatiner {
+  width: 100%;
+}
+#wrap #main #section4 .contatiner .gap {
+  width: 100%;
+  padding: 0 351.5px;
+}
+#wrap #main #section5 {
+  width: 100%;
+}
+#wrap #main #section5 .contatiner {
+  width: 100%;
+}
+#wrap #main #section5 .contatiner .gap {
+  width: 100%;
+  padding: 0 351.5px;
+}
+#wrap #main #section5 .contatiner .gap .content {
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #main #section5 .contatiner .gap .content .alim {
+  width: 560px;
+  margin: 0 40px;
+}
+#wrap #main #section5 .contatiner .gap .content .alim h2 {
+  font-size: 14px;
+}
+#wrap #main #section5 .contatiner .gap .content .alim p {
+  height: 46px;
+  font-size: 16px;
+}
+#wrap #main #section5 .contatiner .gap .content .alim p span {
+  font-size: 11px;
+  color: #fc180f;
+  background: #ffdde2;
+  border-radius: 3px;
+}

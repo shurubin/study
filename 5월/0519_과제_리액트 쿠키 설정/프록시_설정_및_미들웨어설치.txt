@@ -1,0 +1,17 @@
+setupProxy.js     //파일이름!!  
+  
+  
+  
+  "proxy":{ //포록시 서버 주소가 1개만 지원 미들웨어(패키지) 설치
+    "/jsp":{  // npm i http-proxy-middleware
+    "/jsp":{  // npm i -g yarn yarn add http-proxy-middleware
+      "target":"http://susubini03.co.kr"
+    },
+    "/php":{
+      "target":"http://susubini03.com"
+    },
+    "/asp":{
+      "target":"http://localhost:8080"
+    }
+
+  }

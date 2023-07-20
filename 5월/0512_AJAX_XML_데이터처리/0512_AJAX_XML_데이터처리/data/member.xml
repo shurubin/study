@@ -1,0 +1,44 @@
+<member>
+<list>
+    <name>이순신</name><kor> 90</kor><eng> 90</eng><mat> 88</mat>
+</list>
+<list>
+    <name>김유신</name><kor> 99</kor><eng> 87</eng><mat> 87</mat>
+</list>
+<list>
+    <name>김두한</name><kor>100</kor><eng>91</eng><mat>64</mat>
+</list>
+<list>
+    <name>유재석</name><kor> 88</kor><eng> 92</eng><mat> 88</mat>
+</list>
+<list>
+    <name>박명수</name><kor> 78</kor><eng> 64</eng><mat> 70</mat>
+</list>
+<list>
+    <name>노홍철</name><kor> 80</kor><eng> 58</eng><mat> 80</mat>
+</list>
+</member>
+
+
+<school>
+    <row>
+        <name>김</name>
+        <jumsu>100</jumsu>
+    </row>
+    <row>
+        <name>이</name>
+        <jumsu>90</jumsu>
+    </row>
+    <row>
+        <name>박</name>
+        <jumsu>80</jumsu>
+    </row>
+    <row>
+        <name>최</name>
+        <jumsu>70</jumsu>
+    </row>
+    <row>
+        <name>정</name>
+        <jumsu>60</jumsu>
+    </row>
+</school>

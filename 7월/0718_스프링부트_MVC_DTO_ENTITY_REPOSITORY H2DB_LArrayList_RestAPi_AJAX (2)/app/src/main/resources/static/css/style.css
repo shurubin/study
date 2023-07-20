@@ -1,0 +1,8 @@
+@import url("./fonts.css");
+@import url("./reset.css");
+
+#wrap {width:100vw;height:100vh;display:flex;}
+#wrap .container {margin:auto;width:70%;background:#fff;padding:100px;text-align:center;}
+#wrap .title {font-size:32px;font-weight:600;}
+#wrap #nav {padding:50px 0;}
+#wrap #nav a {font-size:17px;color:#37a;font-size:20px;font-weight:500;margin:0 15px;}

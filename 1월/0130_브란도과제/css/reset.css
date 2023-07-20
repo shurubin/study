@@ -1,0 +1,5 @@
+* {margin: 0;padding: 0;vertical-align: middle;box-sizing: border-box;}
+body{font:normal 14px/1 'Montserrat','Nanum Gothic','Noto Sans';color: rgb(60,60,60);}
+a{color: rgb(60,60,60);text-decoration: none;}
+ul{list-style: none;}
+html{scroll-behavior: smooth;}

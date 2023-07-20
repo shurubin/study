@@ -1,0 +1,154 @@
+#wrap {
+  width: 100%;
+}
+#wrap .intro {
+  width: 100%;
+}
+#wrap .intro #section1 {
+  width: 100%;
+}
+#wrap .intro #section1 .container {
+  width: 100%;
+}
+#wrap .intro #section1 .container .gap {
+  width: 100%;
+}
+#wrap .intro #section1 .container .gap .content {
+  width: 100%;
+}
+#wrap .intro #section1 .container .gap .content .slide-container {
+  width: 100%;
+}
+#wrap .intro #section1 .container .gap .content .slide-container .slide-view {
+  width: 100%;
+  overflow: hidden;
+}
+#wrap .intro #section1 .container .gap .content .slide-container .slide-view .slide-wrap {
+  width: 2500%;
+  display: flex;
+  margin: 0 0 0 -100%;
+  position: relative;
+}
+#wrap .intro #section1 .container .gap .content .slide-container .slide-view .slide-wrap .slide {
+  width: 100%;
+}
+#wrap .intro #section1 .container .gap .content .slide-container .slide-view .slide-wrap .slide a {
+  width: 100%;
+}
+#wrap .intro #section1 .container .gap .content .slide-container .slide-view .slide-wrap .slide a img {
+  width: 100%;
+}
+#wrap .intro #sectionTopBanner {
+  width: 100%;
+  padding: 80px 0 0 0;
+}
+#wrap .intro #sectionTopBanner .container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+#wrap .intro #sectionTopBanner .container .gap {
+  width: 100%;
+}
+#wrap .intro #sectionTopBanner .container .gap .content a {
+  cursor: pointer;
+}
+#wrap .intro #sectionTopBanner .container .gap .content a img {
+  width: 100%;
+}
+#wrap .intro #section2 {
+  width: 100%;
+  padding: 80px 0;
+  position: relative;
+}
+#wrap .intro #section2 .container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1068px;
+  margin: 0 auto;
+}
+#wrap .intro #section2 .container .gap {
+  width: 100%;
+}
+#wrap .intro #section2 .container .gap .title {
+  width: 100%;
+  text-align: center;
+  padding: 0 0 30px 0;
+}
+#wrap .intro #section2 .container .gap .title h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+}
+#wrap .intro #section2 .container .gap .content {
+  width: 100%;
+}
+#wrap .intro #section2 .container .gap .content .slide-container {
+  width: 100%;
+}
+#wrap .intro #section2 .container .gap .content .slide-container .slide-view {
+  width: 100%;
+  overflow: hidden;
+}
+#wrap .intro #section2 .container .gap .content .slide-container .slide-view .slide-wrap {
+  width: 900%;
+  margin: 0 0 0 -200%;
+  display: flex;
+}
+#wrap .intro #section2 .container .gap .content .slide-container .slide-view .slide-wrap .slide {
+  width: 100%;
+}
+#wrap .intro #section2 .container .gap .content .slide-container .slide-view .slide-wrap .slide .col-gap {
+  padding: 0 9px;
+  width: 100%;
+}
+#wrap .intro #section2 .container .gap .content .slide-container .slide-view .slide-wrap .slide .col-gap a {
+  display: block;
+  width: 100%;
+}
+#wrap .intro #section2 .container .gap .content .slide-container .slide-view .slide-wrap .slide .col-gap a .img-box {
+  width: 100%;
+  position: relative;
+}
+#wrap .intro #section2 .container .gap .content .slide-container .slide-view .slide-wrap .slide .col-gap a .img-box > img {
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+#wrap .intro #section2 .container .gap .content .slide-container .slide-view .slide-wrap .slide .col-gap a .img-box > span {
+  z-index: 2;
+  position: absolute;
+  right: 20px;
+  bottom: 25px;
+}
+#wrap .intro #section2 .container .gap .content .slide-container .slide-view .slide-wrap .slide .col-gap a .img-box > span img {
+  width: auto;
+}
+#wrap .intro #section2 .container .gap .content .slide-container .slide-view .slide-wrap .slide .col-gap a .tex-box {
+  width: 100%;
+}
+#wrap .intro #section2 .container .gap .content .slide-container .slide-view .slide-wrap .slide .col-gap a .tex-box ul {
+  padding: 10px 0 0 0;
+}
+#wrap .intro #section2 .left-arrow-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  margin: -25px 0 0 -558px;
+}
+#wrap .intro #section2 .left-arrow-btn img {
+  width: auto;
+}
+#wrap .intro #section2 .right-arrow-btn {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  z-index: 2;
+  margin: -25px -558px 0 0;
+  transform: rotate(180deg);
+}
+#wrap .intro #section2 .right-arrow-btn img {
+  width: auto;
+}

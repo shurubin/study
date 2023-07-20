@@ -1,0 +1,241 @@
+@charset "utf-8";
+@import url('./fonts.css');
+@import url('./reset.css');
+@import url('./skip.css');
+
+#wrap #header{
+    width: 100%;
+    height: 75px;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    background:rgb(0,0,0,0);
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+#wrap #header .container {
+    width: 100%;
+    max-width: 1170px;
+    height: 100%; 
+    margin: 0 auto 0 auto; 
+}
+#wrap #header .container .gap {
+    padding: 0 15px;
+    height: 100%;
+}
+#wrap #header .container .gap .content { 
+    width: 100%;
+    height: 100%;
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;
+}
+
+#wrap #header .container .gap .content .logo {width: 156px;}
+#wrap #header .container .gap .content .logo h1 {width: 100%;}
+#wrap #header .container .gap .content .logo h1 a {display: block;width:100%;}
+#wrap #header .container .gap .content .logo h1 a img {width:100%;}
+
+#wrap #header .container .gap .content .nav  {}
+#wrap #header .container .gap .content .nav ul {
+    display: flex;
+}
+#wrap #header .container .gap .content .nav ul li {
+    margin: 0 0 0 40px;
+}
+#wrap #header .container .gap .content .nav ul li a {
+    color:rgba(255,255,255, 1);
+    font-size: 12px;
+    font-weight: 600;
+}
+#wrap #header .container .gap .content .nav ul li a:hover {
+    color:rgba(255,255,255, 0.5);
+}
+
+#wrap #main{
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+#wrap #main .sec1234{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url() no-repeat 50% 50% fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrap #main .sec1234  h2 {
+    font-size:10.50972149vw;
+    color:rgba(0,255,151, 0.5);
+    font-weight: 600;
+}
+
+#wrap #main .sec1234 .foot-box {
+    position: absolute;
+    bottom: 5.15995872vh;
+    left:0;
+    width:100%;
+    text-align: center;
+}
+#wrap #main .sec1234 .foot-box h6 {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(255,255,255);
+    padding:0 0 1.547987616vh 0;
+}
+#wrap #main .sec1234 .foot-box i {
+    display: inline-block;
+    width: 80px;
+    height: 3px;
+    background: rgba(0,239,255,0.5);
+}
+
+
+#wrap #main #section1{background-image: url(../img/photography-img1.jpg);}
+#wrap #main #section2{background-image: url(../img/photography-img2.jpg);}
+#wrap #main #section3{background-image: url(../img/photography-img3.jpg);}
+#wrap #main #section3 h2 {color: rgba(0,239,255,0.5);}
+
+#wrap #main #section4{background-image: url(../img/photography-img4.jpg);}
+#wrap #main #section5{width: 100%; height: 100vh; background-color: rgba(200,0,0,1);}
+#wrap #main #section6{width: 100%; height: 100vh; background-color: rgb(255, 154, 2);}
+#wrap #main #section7{width: 100%; height: 100vh; background-color: rgb(255, 251, 1);}
+#wrap #main #section8{width: 100%; height: 100vh; background-color: rgb(0, 253, 42);}
+#wrap #main #section9{width: 100%; height: 100vh; background-color: rgb(4, 0, 255);}
+
+#wrap #main .sec-10-14{
+    width: 100%;
+    height: 246.391px;
+    color: rgb(255,255,255);
+    position:relative;
+
+
+}
+
+#wrap #main .sec-10-14 .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: url() no-repeat 50% 40%;
+    background-size: cover;
+    filter: brightness(50%) grayscale(0) blur(0);
+    transition: all 0.3s;
+}
+#wrap #main .sec-10-14:hover .bg{
+    background-position: 50% 20%;
+}
+#wrap #main .sec-10-14 .bg-up{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(70,70,70,0.4);
+    transition: all 0.3s;
+}
+
+#wrap #main .sec-10-14:hover .bg-up{
+    background: rgba(70,70,70,0.1);
+
+}
+
+#wrap #main .sec-10-14 .container{
+    z-index: 3;
+    position: relative;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+#wrap #main .sec-10-14 .container .gap{
+    padding: 0 15px;
+}
+#wrap #main .sec-10-14 .container .gap .content{
+    width: 100%;
+    height: 246.391px;
+    display: flex;
+    align-items: center;
+}
+
+#wrap #main .sec-10-14 .container .gap .content .left{
+    width: 50%;
+    display: flex;
+}
+#wrap #main .sec-10-14 .container .gap .content .left h2{
+    font-size: 80px;
+    color: rgb(133,238,165);
+    margin: 0 50px 0 0;
+}
+#wrap #main .sec-10-14 .container .gap .content .left div{
+    display: flex;
+    flex-flow: column nowrap;
+    /* flex-flow: row(가로) column(세로) nowrap(줄바꿈 없음) wrap(줄바꿈 있음); */
+    /* 정렬방식을 세로로 방향 전환 */
+    justify-content: center;
+}
+#wrap #main .sec-10-14 .container .gap .content .left div h4{
+    width: 100%;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0 0 5px 0;
+}
+#wrap #main .sec-10-14 .container .gap .content .left div i{
+    display: block;
+    width: 132.281px;
+    height: 2px;
+    background: rgba(0,255,151,0.6);
+    transition: all 0.3s;
+}
+#wrap #main .sec-10-14:hover .container .gap .content .left div i{
+    width: 157.281px;
+}
+
+
+#wrap #main .sec-10-14 .container .gap .content .right{width: 50%;}
+#wrap #main .sec-10-14 .container .gap .content .right p{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 140%;
+    padding: 0 0 20px 0;
+    cursor: pointer;
+    color: rgb(255,255,255);
+    transition: color 0.3s;/*마우스올릴 때 그라데이션으로 효과*/
+}
+#wrap #main .sec-10-14 .container .gap .content .right p:hover{
+    color: rgba(255,255,255,0.6);
+
+}
+
+
+#wrap #main .sec-10-14 .container .gap .content .right h5{
+    font-size: 11px;
+    font-weight: bold;
+    color: rgb(255,255,255,0.6);
+}
+#wrap #main .sec-10-14 .container .gap .content .right h5 span {
+    cursor: pointer;
+}
+
+#wrap #main #section10 .bg{background-image: url(../img/photography-img35.jpg);}
+#wrap #main #section11 .bg{background-image: url(../img/photography-img36.jpg);}
+#wrap #main #section12 .bg{background-image: url(../img/photography-img37.jpg);}
+#wrap #main #section13 .bg{background-image: url(../img/photography-img38.jpg);}
+#wrap #main #section14 .bg{background-image: url(../img/photography-img39.jpg);}
+#wrap #main #section15 {width: 100%; height: 100vh; background-color: rgb(0, 238, 255);}
+
+#wrap #footer {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+}
+
+

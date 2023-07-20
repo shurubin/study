@@ -1,0 +1,60 @@
+@import url("./fonts.css");
+@import url("./reset.css");
+@import url("./skip.css");
+#wrap {
+  width: 100%;
+}
+#wrap #header {
+  width: 100%;
+  height: 100px;
+}
+#wrap #main {
+  width: 100%;
+}
+#wrap #main #sectionCounter {
+  width: 100%;
+  padding: 130px 0;
+  background-color: #f0f0f0;
+}
+#wrap #main #sectionCounter .container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+#wrap #main #sectionCounter .container .gap {
+  width: 100%;
+}
+#wrap #main #sectionCounter .container .gap .title {
+  text-align: center;
+}
+#wrap #main #sectionCounter .container .gap .title h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2283d4;
+}
+#wrap #main #sectionCounter .container .gap .title h2 s {
+  color: #6ca8da;
+}
+#wrap #main #sectionCounter .container .gap .content {
+  width: 100%;
+}
+#wrap #main #sectionCounter .container .gap .content ul {
+  width: 100%;
+  display: flex;
+}
+#wrap #main #sectionCounter .container .gap .content ul li {
+  width: 25%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap #main #sectionCounter .container .gap .content ul li span {
+  font-size: 35px;
+  font-weight: 600;
+  color: #000;
+}
+#wrap #footer {
+  width: 100%;
+  height: 300px;
+}

@@ -1,0 +1,18 @@
+#wrap{width: 100%; background: #f0f0f0;}
+#wrap .container{width: 100%;}
+#wrap .container .gap{width: 460px; margin: 0 auto;}
+#wrap .container .gap .title h1{color: #03c75a; font-size: 50px; font-size: 900;text-align: center; padding: 20px 0;}
+#wrap .container .gap form{width: 100%;}        
+#wrap .container .gap form p{font-size: 14px; font-weight: 800; padding: 19px 0 8px 0;}
+#wrap .container .gap form input{width: 426px; height: 51px; border: 1px solid #dadada; padding: 0 14px;}        
+#wrap .container .gap form input:active{border: 1px solid #03c75a;}        
+#wrap .container .gap form #id::placeholder{text-align: right;}        
+#wrap .container .gap form select{width: 100%; height: 51px; padding: 0 14px; border: 1px solid #dadada;}
+#wrap .container .gap form select:active{border: 1px solid #03c75a;}
+#wrap .container .gap form .birth_box{width: 100%; display: flex; justify-content: space-between;}
+#wrap .container .gap form .birth_box #birth{width: 128px; height: 51px;}        
+#wrap .container .gap form .injung-box{width: 100%; height: 51px; display: flex; justify-content: space-between;}
+#wrap .container .gap form .injung-box .injung_num{width: 310px;}
+#wrap .container .gap form .injung-box .injung_btn{width: 110px; background: #03c75a; color: #fff; border: 0;font-size: 14px; font-weight: 900;}
+#wrap .container .gap form #hp{margin-bottom: 10px;}
+#wrap .container .gap form .sub-btn{width: 100%; height: 53px; background: #03c75a; color: #fff; border: 0; margin: 30px 0; font-size: 18px; font-weight: 900;}

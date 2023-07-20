@@ -1,0 +1,136 @@
+#wrap {
+    width: 100%;
+    #header {
+        width: 100%;
+        .container {
+            width: 100%;
+            .gap {
+                width: 100%;
+                max-width: 1050px;
+                margin: 0 auto;                
+                .headerT {
+                    width: 100%;
+                    text-align: right;
+                    padding: 8px 0;
+                    span {
+                        padding: 3px;
+                        color: #d9d9d9;
+                        a {
+                            font-size: 11px;
+                            font-weight: 600;
+                            img {
+                                width: 8px;
+                                height: 5px;
+                                margin-left: 3px;
+                            }
+                        }
+                    }
+                }
+                .headerM {
+                    width: 100%;
+                    height: 63px;
+                    line-height: 63px;
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    .left{
+                        
+                        span {
+                            a {
+                                font-size: 17px;
+                                font-weight: 600;
+                                padding: 0 10px;
+                                img {}
+                                i {
+                                    font-size: 5px;
+                                    font-weight: 800;
+                                    color: #f00;                                    
+                                }
+                            }
+                        }
+                    }
+                    .center{
+                        position: relative;
+                        width: 400px;
+                        height: 48px;
+                        #search {
+                            position: absolute;
+                            top: 10px;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            border: 1px solid #5f0080;
+                            border-radius: 3px;
+                            padding: 0 10px;
+                            color: #ccc;
+                            font-size: 15px;
+                            font-weight: 600;
+
+                        }
+                        a {
+                            display: inline-block;
+                            position: absolute;
+                            top: 0px;
+                            right: 10px;
+                        }
+                    }
+                    .right{
+                        span {
+                            a {
+                                img {
+                                    padding-left: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .headerB {
+                    width: 100%;
+                    height: 55px;
+                    line-height: 55px;
+                    display: flex;
+                    justify-content: space-between;
+                    .left {
+                        span {
+                            a {
+                                font-size: 15px;
+                                font-weight: 700;
+                                color: #333;
+                                img {
+                                    margin-right: 13px;
+                                }
+                            }
+                        }
+                    }
+                    .center {
+                        span {
+                            padding: 0 50px;
+                            a {
+                                font-size: 15px;
+                                font-weight: 700;
+                                color: #333;
+                            }
+                        }
+                    }
+                    .right {
+                        .pass {
+                                                     
+                            a {
+                                font-size: 12px;
+                                font-weight: 700;
+                                color: #666;
+                                border: 1px solid #ddd;   
+                                span {
+                                    color: #5f0080;
+                                    margin: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}

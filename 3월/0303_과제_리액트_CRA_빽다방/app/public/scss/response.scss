@@ -1,0 +1,67 @@
+@media all and (max-width:1200px) {
+    #wrap #header {
+        height: 70px;    
+        float: left;
+        padding-top: 20px         
+    }
+    #wrap #header .container .gap {
+        display: inline-block;      
+        
+      }
+    #wrap #header .container .gap .logo {
+        width: 97px;
+        height: 100%;
+        padding: 0 10px;                
+    }
+    #wrap #header .container .gap .logo a img {
+        width: 100%;
+        height: 50%;
+    }
+    #wrap #header .container .gap .prmenu {
+        display: none;
+    }
+    #wrap #main #section1 {
+        padding-top: 70px;
+    }
+
+    #wrap #main #section1 {
+        width: 100%;
+        height: 70vh;
+        padding-top: 70px;        
+      }
+
+    #wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide1 {
+        background-image: url(../img/빽다방_예산사과샌드_모바일_main.jpg);
+      }
+      #wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide2 {
+        background-image: url(../img/빽다방_모바일_main_오트라떼.jpg);
+      }
+      #wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide3 {
+        background-image: url(../img/빽다방_사과당근예천사과주스_모바일_main.jpg);
+      }
+      #wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide4 {
+        background-image: url(../img/main_멤버십활성화_mo-2.jpg);
+      }
+    
+}
+
+@media all and (max-width:500px) {
+
+    #wrap #main #section1 {
+        width: 100%;
+        height: 500px;
+        padding-top: 70px;        
+    }
+    #wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide {
+        width: 100%;
+        height: 50vh;
+        background: url() no-repeat 50%;
+        background-size: cover;
+      }
+
+
+}
+@media all and (max-width:400px) {
+
+
+}

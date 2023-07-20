@@ -1,0 +1,793 @@
+@charset "UTF-8";
+@import url(./font.css);
+@import url(./reset.css);
+@import url(./skip.css);
+#wrap {
+  width: 100%;
+  height: 100%;
+}
+#wrap #header {
+  z-index: 4;
+  width: 100%;
+  height: 123px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+#wrap #header .container {
+  width: 100%;
+  height: 100%;
+}
+#wrap #header .container .gap {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+#wrap #header .container .gap .logo {
+  width: 25%;
+  height: 100%;
+  padding: 35px 0 0 0;
+}
+#wrap #header .container .gap .logo a {
+  background-size: 100%;
+}
+#wrap #header .container .gap .prmenu {
+  width: 75%;
+  height: 100%;
+  padding: 18px 0 0 0;
+}
+#wrap #header .container .gap .prmenu .headerpr {
+  width: 100%;
+  height: 50%;
+  text-align: end;
+}
+#wrap #header .container .gap .prmenu .headerpr .sns {
+  width: 30%;
+  display: inline-block;
+}
+#wrap #header .container .gap .prmenu .headerpr .sns ul {
+  width: 254px;
+  display: flex;
+}
+#wrap #header .container .gap .prmenu .headerpr .sns ul .the {
+  width: 100%;
+  color: #8b8b8b;
+  font-size: 9px;
+}
+#wrap #header .container .gap .prmenu .headerpr .sns ul .the a {
+  font-size: 12px;
+  color: #8b8b8b;
+  font-family: "Montserrat", "Noto Sans KR";
+}
+#wrap #header .container .gap .prmenu .headerpr .sns ul .face {
+  width: 20%;
+}
+#wrap #header .container .gap .prmenu .headerpr .sns ul .face img {
+  width: 20px;
+}
+#wrap #header .container .gap .prmenu .headerpr .sns ul .instar {
+  width: 30%;
+}
+#wrap #header .container .gap .prmenu .headerpr .sns ul .instar img {
+  width: 20px;
+  margin-right: 50%;
+}
+#wrap #header .container .gap .prmenu .headermenu {
+  width: 100%;
+  height: 50%;
+}
+#wrap #header .container .gap .prmenu .headermenu .menulist {
+  width: 100%;
+}
+#wrap #header .container .gap .prmenu .headermenu .menulist ul {
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+#wrap #header .container .gap .prmenu .headermenu .menulist ul li {
+  width: 100%;
+  display: inline-block;
+  padding: 5px 0.7882%;
+}
+#wrap #header .container .gap .prmenu .headermenu .menulist ul li a {
+  width: 100%;
+  font-size: 15px;
+  color: #202020;
+  font-family: "Montserrat", "Noto Sans KR";
+}
+#wrap #main {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+}
+#wrap #main #section1 {
+  width: 100%;
+  height: 86.2765vh;
+  padding-top: 123px;
+}
+#wrap #main #section1 .container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#wrap #main #section1 .container .slide-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+#wrap #main #section1 .container .slide-container .slide-view {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap {
+  width: 600%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  margin: 0 0 0 -100%;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide {
+  width: 100%;
+  height: 100%;
+  background: url() no-repeat 50%;
+  background-size: cover;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide1 {
+  background-image: url(../img/빽다방_예산사과샌드_홈페이지_main.jpg);
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide2 {
+  background-image: url(../img/빽다방_홈페이지_main_오트라떼.jpg);
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide3 {
+  background-image: url(../img/빽다방_사과당근예천사과주스_홈페이지_main_O-확인용-1920x600.jpg);
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide4 {
+  background-image: url(../img/main_멤버십활성화-1.jpg);
+}
+#wrap #main #section1 .container .pagenation {
+  z-index: 3;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  display: flex;
+  text-align: center;
+}
+#wrap #main #section1 .container .pagenation span {
+  width: 100%;
+}
+#wrap #main #section1 .container .pagenation span a {
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  background: #fff;
+  border-radius: 50%;
+  margin: 0 10px;
+  border: 1px solid #000;
+}
+#wrap #main #section1 .container .pagenation span a.on {
+  background: #e9e500;
+}
+#wrap #main #section2 {
+  z-index: 1;
+  width: 100%;
+  height: 30.3191vh;
+  background: url(../img/main_sec1.jpg) no-repeat 50%;
+  background-size: cover;
+}
+#wrap #main #section2 .container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#wrap #main #section2 .container .gap {
+  width: 100%;
+  height: 100%;
+  padding: 2% 17% 0 17%;
+}
+#wrap #main #section2 .container .gap h4 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #564e00;
+  font-family: "Noto Sans KR";
+}
+#wrap #main #section2 .container .gap h2 {
+  font-size: 50px;
+  font-weight: 900;
+  color: #071f60;
+  font-family: "Noto Sans KR";
+  margin: 5px 0 15px 0;
+}
+#wrap #main #section2 .container .gap h3 {
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+}
+#wrap #main #section2 .container .gap .plus-btn {
+  position: absolute;
+  z-index: 2;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 40px;
+  text-align: center;
+}
+#wrap #main #section2 .container .gap .plus-btn a {
+  z-index: 3;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url(../img/view_icon.png) no-repeat 50%;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+#wrap #main #section2 .container .gap .plus-btn :hover {
+  width: 50px;
+  height: 50px;
+  background: url(../img/btn1-on.png);
+  transform: rotate(360deg);
+}
+#wrap #main #section3 {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 60.2127vh;
+  background: url(../img/main_sec2.jpg) no-repeat;
+  background-size: cover;
+  transition: all 1s;
+}
+#wrap #main #section3:hover {
+  transform: scale(1.03);
+}
+#wrap #main #section3 .text-box {
+  width: 100%;
+  height: 100%;
+  padding: 50px 0 0 320px;
+}
+#wrap #main #section3 .text-box h2 {
+  font-size: 50px;
+  font-weight: 900;
+  color: #6b4d30;
+  text-transform: uppercase;
+}
+#wrap #main #section3 .text-box h5 {
+  width: 40px;
+  height: 2px;
+  background-color: #6b4d30;
+  margin: 20px 0;
+}
+#wrap #main #section3 .text-box h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #202020;
+  font-family: "Noto Sans KR";
+}
+#wrap #main #section3 .text-box .plus-btn {
+  position: absolute;
+  z-index: 2;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 40px;
+}
+#wrap #main #section3 .text-box .plus-btn a {
+  z-index: 3;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url(../img/view_icon.png) no-repeat 50%;
+  transition: all 0.5s;
+}
+#wrap #main #section3 .text-box .plus-btn :hover {
+  width: 50px;
+  height: 50px;
+  background: url(../img/btn1-on.png);
+  transform: rotate(-720deg);
+}
+#wrap #main #section4 {
+  width: 100%;
+  height: 60.4255vh;
+}
+#wrap #main #section4 .container {
+  width: 100%;
+  height: 100%;
+}
+#wrap #main #section4 .container .gap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#wrap #main #section4 .container .gap .various {
+  width: 60%;
+  height: 100%;
+  background: url(../img/main_sec3.jpg) no-repeat 50%;
+  position: relative;
+  transition: all 1s;
+}
+#wrap #main #section4 .container .gap .various:hover {
+  transform: scale(1.03);
+}
+#wrap #main #section4 .container .gap .various .text-box {
+  width: 100%;
+  height: 100%;
+  padding: 50px 0 0 320px;
+}
+#wrap #main #section4 .container .gap .various .text-box h2 {
+  font-size: 50px;
+  font-weight: 900;
+  color: #071f60;
+  text-transform: uppercase;
+}
+#wrap #main #section4 .container .gap .various .text-box h5 {
+  width: 40px;
+  height: 2px;
+  background-color: #071f60;
+  margin: 20px 0;
+}
+#wrap #main #section4 .container .gap .various .text-box h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #202020;
+  font-family: "Noto Sans KR";
+}
+#wrap #main #section4 .container .gap .various .text-box .plus-btn {
+  position: absolute;
+  z-index: 2;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 40px;
+}
+#wrap #main #section4 .container .gap .various .text-box .plus-btn a {
+  z-index: 3;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url(../img/view_icon.png) no-repeat 50%;
+  transition: all 0.3s;
+  border-radius: 50%;
+}
+#wrap #main #section4 .container .gap .various .text-box .plus-btn :hover {
+  width: 50px;
+  height: 50px;
+  background: url(../img/btn1-on.png);
+  transform: rotate3d(1, 0, 0, 360deg);
+}
+#wrap #main #section4 .container .gap .sweet {
+  width: 40%;
+  height: 100%;
+  background: url(../img/main_sec4.jpg) no-repeat 50%;
+  transition: all 1s;
+}
+#wrap #main #section4 .container .gap .sweet:hover {
+  transform: scale(1.03);
+}
+#wrap #main #section4 .container .gap .sweet .text-box {
+  width: 100%;
+  height: 100%;
+  padding: 50px 0 0 50px;
+  position: relative;
+}
+#wrap #main #section4 .container .gap .sweet .text-box h2 {
+  font-size: 50px;
+  font-weight: 900;
+  color: #f1ae1d;
+  text-transform: uppercase;
+}
+#wrap #main #section4 .container .gap .sweet .text-box h5 {
+  width: 40px;
+  height: 2px;
+  background-color: #f1ae1d;
+  margin: 20px 0;
+}
+#wrap #main #section4 .container .gap .sweet .text-box h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #202020;
+  font-family: "Noto Sans KR";
+}
+#wrap #main #section4 .container .gap .sweet .text-box .plus-btn {
+  position: absolute;
+  z-index: 2;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 40px;
+}
+#wrap #main #section4 .container .gap .sweet .text-box .plus-btn a {
+  z-index: 3;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url(../img/view_icon.png) no-repeat 50%;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+#wrap #main #section4 .container .gap .sweet .text-box .plus-btn :hover {
+  width: 50px;
+  height: 50px;
+  background: url(../img/btn1-on.png);
+  transform: rotate3d(0, 1, 0, 360deg);
+}
+#wrap #main #section5 {
+  width: 100%;
+  height: 65.4255vh;
+}
+#wrap #main #section5 .container {
+  width: 100%;
+  height: 100%;
+  margin: 15px 0 0 0;
+}
+#wrap #main #section5 .container .gap {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  float: right;
+}
+#wrap #main #section5 .container .gap ul {
+  width: 35%;
+  height: 100%;
+  margin: 0 15px;
+}
+#wrap #main #section5 .container .gap ul .store {
+  width: 100%;
+  height: 49%;
+  margin-bottom: 14px;
+  border: 2px solid #071f60;
+  position: relative;
+}
+#wrap #main #section5 .container .gap ul .store .text-box {
+  width: 100%;
+  height: 100%;
+  padding: 35px 0 0 50px;
+}
+#wrap #main #section5 .container .gap ul .store .text-box h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #071f60;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+#wrap #main #section5 .container .gap ul .store .text-box h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #202020;
+  font-family: "Noto Sans KR";
+}
+#wrap #main #section5 .container .gap ul .store form {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+#wrap #main #section5 .container .gap ul .store form .sesp {
+  width: 320px;
+  height: 50px;
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #071f60;
+  align-items: center;
+}
+#wrap #main #section5 .container .gap ul .store form .sesp input {
+  width: 90%;
+  height: 100%;
+  border: none;
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: 400;
+}
+#wrap #main #section5 .container .gap ul .store form .sesp input:active {
+  border: none;
+}
+#wrap #main #section5 .container .gap ul .store form .sesp a {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background: url(../img/search-ico.png) no-repeat 3%;
+  background-size: cover;
+  margin-right: 15px;
+}
+#wrap #main #section5 .container .gap ul .fran {
+  width: 100%;
+  height: 49%;
+  border: 2px solid #071f60;
+  position: relative;
+}
+#wrap #main #section5 .container .gap ul .fran .text-box {
+  width: 100%;
+  height: 100%;
+  padding: 35px 0 0 50px;
+}
+#wrap #main #section5 .container .gap ul .fran .text-box h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #071f60;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+#wrap #main #section5 .container .gap ul .fran .text-box h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #202020;
+  font-family: "Noto Sans KR";
+}
+#wrap #main #section5 .container .gap ul .fran .text-box .plus-btn {
+  position: absolute;
+  z-index: 2;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 40px;
+}
+#wrap #main #section5 .container .gap ul .fran .text-box .plus-btn a {
+  z-index: 3;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url(../img/store-ico.png) no-repeat 50%;
+  background-size: 25px;
+  transition: all 0.3s;
+  border-radius: 50%;
+  box-shadow: 4px 4px 4px #bbb;
+}
+#wrap #main #section5 .container .gap ul .fran .text-box .plus-btn :hover {
+  width: 50px;
+  height: 50px;
+  background: url(../img/btn1-on.png);
+}
+#wrap #main #section5 .container .gap ul .fran .text-box .img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 220px;
+  height: 220px;
+  background: url(../img/main_sec6.png) no-repeat;
+  background-size: cover;
+}
+#wrap #main #section5 .container .gap .tasty {
+  width: 65%;
+  height: 100%;
+  background: url(../img/main_sec5.jpg) no-repeat 50%;
+  background-size: cover;
+  position: relative;
+  transition: all 1s;
+}
+#wrap #main #section5 .container .gap .tasty:hover {
+  transform: scale(1.03);
+  overflow: hidden;
+}
+#wrap #main #section5 .container .gap .tasty .text-box {
+  width: 100%;
+  height: 100%;
+  padding: 70px 0 0 50px;
+}
+#wrap #main #section5 .container .gap .tasty .text-box h2 {
+  font-size: 50px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+}
+#wrap #main #section5 .container .gap .tasty .text-box h5 {
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+  margin: 20px 0;
+}
+#wrap #main #section5 .container .gap .tasty .text-box h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Noto Sans KR";
+}
+#wrap #main #section5 .container .gap .tasty .text-box .plus-btn {
+  position: absolute;
+  z-index: 2;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 40px;
+}
+#wrap #main #section5 .container .gap .tasty .text-box .plus-btn a {
+  z-index: 3;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url(../img/view_icon.png) no-repeat 50%;
+  transition: all 0.3s;
+}
+#wrap #main #section5 .container .gap .tasty .text-box .plus-btn :hover {
+  width: 50px;
+  height: 50px;
+  background: url(../img/btn1-on.png);
+  transform: rotate(360deg);
+}
+#wrap #main #section6 {
+  width: 100%;
+  height: 32.6595vh;
+  padding: 60px 72px 80px 72px;
+}
+#wrap #main #section6 .text-box {
+  width: 100%;
+  text-align: center;
+}
+#wrap #main #section6 .text-box .text-box-gap {
+  width: 20%;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+#wrap #main #section6 .text-box .text-box-gap h3 {
+  font-size: 24px;
+  font-weight: 800;
+  font-family: "Nanum Myeongjo", "sans-serif";
+  color: #202020;
+}
+#wrap #main #section6 .text-box .text-box-gap h4 {
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: #999999;
+  margin: 10px 0;
+}
+#wrap #main #section6 .text-box .text-box-gap span {
+  display: inline-block;
+  width: 100%;
+  height: 45px;
+  text-align: center;
+}
+#wrap #main #section6 .text-box .text-box-gap span h5 {
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  background-color: #071f60;
+  margin-top: 20px;
+}
+#wrap #main #section6 .text-box .text-box-gap .sixsns {
+  width: 100%;
+}
+#wrap #main #section6 .text-box .text-box-gap .sixsns i {
+  width: 100%;
+}
+#wrap #main #section6 .text-box .text-box-gap .sixsns i img {
+  width: 15%;
+  padding: 10px;
+}
+#wrap hr {
+  border: 2px solid #e9e500;
+}
+#wrap #footer {
+  width: 100%;
+  height: 27.1276vh;
+}
+#wrap #footer .container {
+  width: 100%;
+}
+#wrap #footer .container .gap {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+#wrap #footer .container .gap .companyinfo {
+  width: 100%;
+  padding: 30px 0;
+  position: relative;
+}
+#wrap #footer .container .gap .companyinfo a {
+  width: 179px;
+  height: 47px;
+}
+#wrap #footer .container .gap .companyinfo a img {
+  width: 179px;
+  height: 47px;
+}
+#wrap #footer .container .gap .companyinfo .footer-text {
+  width: 100%;
+  padding: 30px 0;
+}
+#wrap #footer .container .gap .companyinfo .footer-text p {
+  font-size: 13px;
+  font-family: "Montserrat", "Noto Sans KR";
+  color: #262626;
+  margin: 10px 0;
+}
+#wrap #footer .container .gap .companyinfo h5 {
+  font-size: 13px;
+  font-family: "Montserrat", "Noto Sans KR";
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+#wrap #footer .container .gap .companyinfo .gamang {
+  position: absolute;
+  top: 30px;
+  right: 400px;
+  width: 175px;
+}
+#wrap #footer .container .gap .companyinfo .gamang .col-gap {
+  width: 100%;
+}
+#wrap #footer .container .gap .companyinfo .gamang .col-gap form ul li {
+  padding: 4px 2px;
+  vertical-align: middle;
+}
+#wrap #footer .container .gap .companyinfo .gamang .col-gap form ul li select {
+  width: 100%;
+  height: 24px;
+  font-size: 12px;
+  font-family: "Montserrat", "Noto Sans KR";
+  color: #202020;
+  border: 1px solid #000;
+  padding: 1px 2px 2px 2px;
+}
+#wrap #footer .container .gap .companyinfo .gamang .col-gap form ul li select option {
+  font-size: 12px;
+  font-family: "Montserrat", "Noto Sans KR";
+  color: #202020;
+  margin: 4px 0;
+}
+#wrap #gotop {
+  z-index: 4;
+  position: fixed;
+  right: 300px;
+  bottom: 40px;
+  width: 60px;
+  height: 60px;
+}
+#wrap #gotop a {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  background: url(../img/off.png) no-repeat;
+  background-size: auto;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+#wrap #gotop a:hover {
+  width: 60px;
+  height: 60px;
+  background: url(../img/on.png) no-repeat;
+  background-size: auto;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+#wrap .newopen {
+  z-index: 4;
+  position: fixed;
+  right: 20px;
+  top: 200px;
+  width: 140px;
+  height: 300px;
+}
+#wrap .newopen a {
+  position: fixed;
+  width: 140px;
+  height: 140px;
+  display: inline-block;
+  border-radius: 50%;
+}
+#wrap .newopen .up {
+  background: url(../img/presentation_btn.png) no-repeat;
+  background-size: auto;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+#wrap .newopen .down {
+  background: url(../img/counsel_btn.png) no-repeat;
+  background-size: auto;
+  margin-top: 160px;
+}

@@ -1,0 +1,187 @@
+@import url('./fonts.css');
+@import url('./reset.css');
+@import url('./skip.css');
+
+#wrap {
+    width:100%;
+    #header {
+        width:100%;
+    }
+
+    #main {
+        width:100%;
+        #sectionGallery {
+            width:100%;
+            padding: 130px 0;
+            .container {
+                width:100%;
+                .gap {
+                    width:100%;
+                    .title   {
+                        width:100%;
+                        text-align: center;
+                        padding: 0 0 60px 0;
+                        h2 {
+                            width:100%;
+                            font-size: 24px;
+                            color: #2283d4;
+                            font-weight: 600;
+                            // text-decoration: line-through;
+                        }
+                    }
+                    .content {
+                        width:100%;
+                        #gallery-nav {
+                            width:100%;
+                            display: flex;
+                            justify-content: center;
+                            padding: 0 0 60px 0;
+                            ul {    
+                                display: flex;                            
+                                li {
+                                    margin: 0 25px;
+                                    a {
+                                        color:#9b9b9b;
+                                        font-size: 13px;
+                                        font-weight: 600;
+                                        transition: all 0.3s;
+                                        display: block;                                        
+                                        &::after {
+                                            content:'';
+                                            margin: 6px 0 0 0;
+                                            display: block;
+                                            width: 100%;
+                                            height: 2px;
+                                            /* background: transparent; */ /* 투명색상 */
+                                            background: rgba(34, 131, 212, 0); /* 투명색상 */
+                                            transition: all 0.3s;
+                                        }
+                                        &:hover {
+                                            color:#626262;                                           
+                                        }
+                                        &.on {
+                                            color:#626262;
+                                        }
+                                        &:hover::after {
+                                            background-color: rgba(34, 131, 212, 1);                                        
+                                        }
+                                        &.on::after {
+                                            background-color: rgba(34, 131, 212, 1);
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                        }
+                        #gallery-box {
+                            width: 100%;
+                            ul {
+                                width: 100%;
+                                height: 356.8125px *  2 ;    // 8게 4칸 = 2줄  높이*줄수
+                                //height: 475.75px *  3 ; // 8게 3칸 = 3줄
+                                //height: 713.625px *  4 ; // 8게 2칸 = 4줄
+                                //height: 1427.25px *  8 ; // 8게 1칸 = 8줄
+                                position: relative;
+                                overflow: hidden; 
+                                li {  // 해상도에 따라 칸수 지정
+                                    position: absolute;                                    
+                                    width: calc(100% /4);  /* 25% */
+                                    //width: calc(100% /3);  /* 33.333% */
+                                    //width: calc(100% /2);  /* 50% */
+                                    //width: calc(100% /1);  /* 100% */
+                                    height: 356.8125px;      // 4칸인경우
+                                    //height: 634.3333333px;  // 3칸인경우
+                                    //height: 713.625px;      // 2칸인경우
+                                    //height: 1427.25px;      // 1칸인경우
+
+                                    // 8개 4칸인경우 : 2줄
+                                    &:nth-child(1){top: 356.8125px * 0;left: 25% * 0;}
+                                    &:nth-child(2){top: 356.8125px * 0;left: 25% * 1;}
+                                    &:nth-child(3){top: 356.8125px * 0;left: 25% * 2;}
+                                    &:nth-child(4){top: 356.8125px * 0;left: 25% * 3;}
+
+                                    &:nth-child(5){top: 356.8125px * 1;left:  25% * 0;}
+                                    &:nth-child(6){top: 356.8125px * 1;left:  25% * 1;}
+                                    &:nth-child(7){top: 356.8125px * 1;left:  25% * 2;}
+                                    &:nth-child(8){top: 356.8125px * 1;left:  25% * 3;}
+
+
+                                    // 8개 3칸인경우 :  3줄
+                                    // &:nth-child(1){top: 475.75px * 0;left: 33.333% * 0;}
+                                    // &:nth-child(2){top: 475.75px * 0;left: 33.333% * 1;}
+                                    // &:nth-child(3){top: 475.75px * 0;left: 33.333% * 2;}
+
+                                    // &:nth-child(4){top: 475.75px * 1;left: 33.333% * 0;}
+                                    // &:nth-child(5){top: 475.75px * 1;left: 33.333% * 1;}
+                                    // &:nth-child(6){top: 475.75px * 1;left: 33.333% * 2;}
+
+                                    // &:nth-child(7){top: 475.75px * 2;left: 33.333% * 0;}
+                                    // &:nth-child(8){top: 475.75px * 2;left: 33.333% * 1;}
+
+
+                                    // 8개 2칸인경우 :  4줄
+                                    // &:nth-child(1){top: 713.625px * 0;left: 50% * 0;}
+                                    // &:nth-child(2){top: 713.625px * 0;left: 50% * 1;}
+
+                                    // &:nth-child(3){top: 713.625px * 1;left: 50% * 0;}
+                                    // &:nth-child(4){top: 713.625px * 1;left: 50% * 1;}
+
+                                    // &:nth-child(5){top: 713.625px * 2;left: 50% * 0;}
+                                    // &:nth-child(6){top: 713.625px * 2;left: 50% * 1;}
+
+                                    // &:nth-child(7){top: 713.625px * 3;left: 50% * 0;}
+                                    // &:nth-child(8){top: 713.625px * 3;left: 50% * 1;}
+
+
+                                    // 8개 1칸인경우 :  8줄
+                                    // &:nth-child(1){top: 1427.25px * 0;left: 100% * 0;}
+                                    // &:nth-child(2){top: 1427.25px * 1;left: 100% * 0;}
+                                    // &:nth-child(3){top: 1427.25px * 2;left: 100% * 0;}
+                                    // &:nth-child(4){top: 1427.25px * 3;left: 100% * 0;}
+                                    // &:nth-child(5){top: 1427.25px * 4;left: 100% * 0;}
+                                    // &:nth-child(6){top: 1427.25px * 5;left: 100% * 0;}
+                                    // &:nth-child(7){top: 1427.25px * 6;left: 100% * 0;}
+                                    // &:nth-child(8){top: 1427.25px * 7;left: 100% * 0;}
+
+
+
+
+
+
+
+                                    .col-gap {
+                                        width: 100%;
+                                        height: 100%;
+                                        overflow: hidden; 
+                                        .img-box {
+                                            width: 100%;
+                                            height: 100%;
+                                            transition: all 0.3s;
+                                            // 스케일
+                                            &:hover {
+                                                margin: -86px 0 0 0;
+                                            }
+                                            img {
+                                                width: 100%;
+                                            }
+                                            figcaption {
+                                                padding: 25px;
+                                                text-align: center;
+                                                h3 {font-size: 15px;color: #000;font-weight: 600;padding: 0 0 10px 0;}
+                                                h4 {font-size: 11px;color: #626262;font-weight: 500;}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    #footer {
+        width:100%;
+    }
+}

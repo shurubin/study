@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\학생방\풀스택과정_황수빈\7월\마켓컬리\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3685837580.index
+259450161.index
+3802157673.index
+3479776976.index
+2124358431.index
+804943211.index

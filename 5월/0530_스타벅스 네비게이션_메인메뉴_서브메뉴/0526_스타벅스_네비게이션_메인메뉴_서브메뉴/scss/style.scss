@@ -1,0 +1,15 @@
+@import url('../css/fonts.css');
+@import url('../css/reset.css');
+@import url('../css/header.css');
+
+#wrap {
+    section {
+        width:100%;
+        height:100vh;
+        &#section1 {
+            background: #fff;
+            background-size: cover;
+        }
+    }
+}
+

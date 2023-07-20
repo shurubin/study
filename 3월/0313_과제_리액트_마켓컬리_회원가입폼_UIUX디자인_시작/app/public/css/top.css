@@ -1,0 +1,36 @@
+#wrap {
+  width: 100%;
+}
+#wrap #top {
+  width: 100%;
+  background: #5f0080;
+}
+#wrap #top .container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+#wrap #top .container .gap {
+  width: 100%;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+#wrap #top .container .gap h1 {
+  height: 42px;
+  text-align: center;
+  position: relative;
+}
+#wrap #top .container .gap h1 a {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  vertical-align: bottom;
+}
+#wrap #top .container .gap h1 a span {
+  font-weight: 700;
+}
+#wrap #top .container .gap h1 a svg {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}

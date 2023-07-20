@@ -1,0 +1,45 @@
+#modal {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+#modal .wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#modal .wrap .container {
+  position: relative;
+  width: 500px;
+  height: 800px;
+  background: #fff;
+  text-align: right;
+}
+#modal .wrap .container .img-box {
+  width: 100%;
+}
+#modal .wrap .container .img-box img {
+  width: 100%;
+}
+#modal .wrap .container button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0, 30px;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  font-size: 17px;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#modal .wrap .container button:hover {
+  background-color: #444;
+}

@@ -1,0 +1,13 @@
+127.0.0.1 - - [10/Jul/2023:17:03:53 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [10/Jul/2023:17:03:55 +0900] "GET /kurly/idSearchForm.jsp HTTP/1.1" 200 3427
+0:0:0:0:0:0:0:1 - - [10/Jul/2023:17:05:23 +0900] "POST /kurly/idSearchAction.jsp HTTP/1.1" 200 163
+0:0:0:0:0:0:0:1 - - [10/Jul/2023:17:05:24 +0900] "GET /kurly/idSearchResult.jsp?user_id=moonjongmaga33 HTTP/1.1" 200 3171
+127.0.0.1 - - [10/Jul/2023:17:17:21 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [10/Jul/2023:17:17:21 +0900] "GET /kurly/kurly_user_signin.jsp HTTP/1.1" 500 2658
+0:0:0:0:0:0:0:1 - - [10/Jul/2023:17:20:36 +0900] "GET /kurly/kurly_user_signin.jsp HTTP/1.1" 200 1160
+0:0:0:0:0:0:0:1 - - [10/Jul/2023:17:20:36 +0900] "GET /kurly/public/css/style.css HTTP/1.1" 404 845
+0:0:0:0:0:0:0:1 - - [10/Jul/2023:17:21:13 +0900] "POST /kurly/kurly_user_signin_action.jsp HTTP/1.1" 200 237
+0:0:0:0:0:0:0:1 - - [10/Jul/2023:18:02:08 +0900] "POST /kurly/user_signin_action.jsp HTTP/1.1" 200 106
+0:0:0:0:0:0:0:1 - - [10/Jul/2023:18:02:40 +0900] "POST /kurly/user_signin_action.jsp HTTP/1.1" 200 106
+127.0.0.1 - - [10/Jul/2023:18:04:59 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [10/Jul/2023:18:05:12 +0900] "POST /kurly/user_signin_action.jsp HTTP/1.1" 200 106

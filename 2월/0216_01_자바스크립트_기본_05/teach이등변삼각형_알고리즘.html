@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 05 제어문(반복문, 조건문)</title>
+
+    
+</head>
+<body>
+
+    <h1>반복문 for(){} 이등변 삼각형 알고리즘</h1>
+ 
+    <!-- 테이블 돔 컨테이너 -->
+    <div id="root"></div>  
+
+
+    <script>
+        'use strict';
+
+    
+        // 테이블 태그 출력 
+        // 1. 돔컨테이너 생성 : 선택자 #table3
+        // 2. 1 ~ 25 증가 값
+        // 3. 테이블 안에 td에  넣고 출력
+        // 4. 5행 5열
+        // 알고리즘 문제
+        // 행이 증가 / 열 들여쓰기
+        // 1   2	3	4	5
+        //     6	7	8	9
+        //          10	11	12
+        //              13	14
+        //                  15
+
+    
+        let cnt = 0;  // 값만 초기화 사용
+        let txt = ``; // 값만 초기화 사용
+        let txt2 = ``; // 값만 초기화 사용
+        let txt3 = ``; // 값만 초기화 사용
+        
+        for(let i=0; i<=4; i++){
+            // 줄 시작
+            txt += `<tr>`;
+
+                for(let j=0; j<=4-i; j++){
+                    // 칸시작 ~ 컨끝
+                    cnt++;
+                    txt += `<td>${cnt}</td>`;
+                }
+
+                for(let j=0; j<i; j++){
+                    // 들여쓰기한 빈칸
+                    txt += `<td></td>`;
+                }
+
+
+            txt += `</tr>`; // 줄끝
+        }
+
+        cnt=0;
+        for(let i=0; i<=4; i++){
+            // 줄 시작
+            txt2 += `<tr>`;
+
+                for(let j=0; j<=i; j++){
+                    // 칸시작 ~ 컨끝
+                    cnt++;
+                    txt2 += `<td>${cnt}</td>`;
+                }
+
+                for(let j=1+i; j<=4; j++){
+                    // 들여쓰기한 빈칸
+                    txt2 += `<td></td>`;
+                }
+
+
+            txt2 += `</tr>`; // 줄끝
+        }
+        
+        cnt=0;
+        for(let i=0; i<=4; i++){
+            // 줄 시작
+            txt2 += `<tr>`;
+
+
+                for(let j=0; j<=3-i; j++){
+                    // 들여쓰기한 빈칸
+                    txt2 += `<td></td>`;
+                }
+
+                for(let j=4-i; j<=4; j++){
+                    // 칸시작 ~ 컨끝
+                    cnt++;
+                    txt2 += `<td>${cnt}</td>`;
+                }
+
+
+
+            txt2 += `</tr>`; // 줄끝
+        }
+        
+
+        
+
+        // 테이블 생성
+        // 크레이트(생성) create  태그요소 element('태그이름 tabale')
+        let table = document.createElement('table');        
+        let table2 = document.createElement('table');        
+        let table3 = document.createElement('table');        
+        // 아이디 table3 추가하기 클래스 table 추가하기
+        // table.속성(Attribute)지정아이디
+        // table.속성(Attribute)지정클래스
+        // table.setAttribute('속성이름','생성될이름');
+        table.setAttribute('id','table3');
+        table.setAttribute('class','table');
+
+        table2.setAttribute('id','table4');
+        table2.setAttribute('class','table');
+
+        table3.setAttribute('id','table5');
+        table3.setAttribute('class','table');
+
+
+        // 돔 컨테이너#root에 만들어진 테이블을 포함시킨다.(부착시킨다.)
+        let root = document.getElementById('root');        
+        root.appendChild( table );
+        root.appendChild( table2 );
+        root.appendChild( table3 );
+
+        const idtable3 = document.querySelector('#table3');
+        const idtable4 = document.querySelector('#table4');
+        const idtable5 = document.querySelector('#table5');
+        // const table3 = document.getElementById('table3');
+        idtable3.innerHTML = txt; //돔컨테이너에 데이터 넣기 tr td  숫자 입력
+        idtable4.innerHTML = txt2; //돔컨테이너에 데이터 넣기 tr td  숫자 입력
+        idtable5.innerHTML = txt3; //돔컨테이너에 데이터 넣기 tr td  숫자 입력
+        // console.log( txt );
+
+        // 미션
+        
+
+
+    </script>
+
+
+    <style>
+        .table {border-collapse: collapse;width:250px;margin:50px auto;}
+        .table td {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+    </style>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+class Phone{
+    
+    // 1. 필드(멤버변수)
+    : class Phone 내부의 가장 위에 선언된 변수들
+    멤버변수(Variable)(필드(Field)라한다) => 프로퍼티(Property) 라고도 한다.
+    String name = "알뜰폰";
+    String name2 = "lg";
+
+    // 2. 생성자
+    클래스 이름에 괄호를 붙인다. 그리고 스코프(프로그램 실행영역범위){}
+    // 기본생성자
+    Phone(){}
+
+    Phone(매개변수1){
+        this.name = 매개변수1;
+    }
+
+    Phone(매개변수1, 매개변수2){
+        this.name = 매개변수1;
+        this.name2 = 매개변수2;
+    }
+
+    // 3. 메소드 => 메소드 호출 => 메인 메소드
+    public void output(){
+        system.out.println();
+        system.out.println("폰기종 : " + this.name );
+        
+        system.out.println();
+        system.out.println("통신사 : " + this.telecom );
+        
+        system.out.println();
+        system.out.println("서비스시간 : " + this.service + "분" );
+    }
+
+
+
+
+
+
+}

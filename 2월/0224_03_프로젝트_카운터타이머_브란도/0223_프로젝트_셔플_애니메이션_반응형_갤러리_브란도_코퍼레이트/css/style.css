@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@import url("./fonts.css");
+@import url("./reset.css");
+@import url("./skip.css");
+#wrap {
+  width: 100%;
+}
+#wrap #header {
+  width: 100%;
+}
+#wrap #main {
+  width: 100%;
+}
+#wrap #main #sectionGallery {
+  width: 100%;
+  padding: 130px 0;
+}
+#wrap #main #sectionGallery .container {
+  width: 100%;
+}
+#wrap #main #sectionGallery .container .gap {
+  width: 100%;
+}
+#wrap #main #sectionGallery .container .gap .title {
+  width: 100%;
+  text-align: center;
+  padding: 0 0 60px 0;
+}
+#wrap #main #sectionGallery .container .gap .title h2 {
+  width: 100%;
+  font-size: 24px;
+  color: #2283d4;
+  font-weight: 600;
+}
+#wrap #main #sectionGallery .container .gap .content {
+  width: 100%;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 0 60px 0;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-nav ul {
+  display: flex;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-nav ul li {
+  margin: 0 25px;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-nav ul li a {
+  color: #9b9b9b;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s;
+  display: block;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-nav ul li a::after {
+  content: "";
+  margin: 6px 0 0 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  /* background: transparent; */ /* 투명색상 */
+  background: rgba(34, 131, 212, 0); /* 투명색상 */
+  transition: all 0.3s;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-nav ul li a:hover {
+  color: #626262;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-nav ul li a.on {
+  color: #626262;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-nav ul li a:hover::after {
+  background-color: rgb(34, 131, 212);
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-nav ul li a.on::after {
+  background-color: rgb(34, 131, 212);
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-box {
+  width: 100%;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-box ul {
+  width: 100%;
+  height: 713.625px;
+  position: relative;
+  overflow: hidden;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-box ul li {
+  position: absolute;
+  width: 25%; /* 25% */
+  height: 356.8125px;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-box ul li:nth-child(1) {
+  top: 0px;
+  left: 0%;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-box ul li:nth-child(2) {
+  top: 0px;
+  left: 25%;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-box ul li:nth-child(3) {
+  top: 0px;
+  left: 50%;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-box ul li:nth-child(4) {
+  top: 0px;
+  left: 75%;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-box ul li:nth-child(5) {
+  top: 356.8125px;
+  left: 0%;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-box ul li:nth-child(6) {
+  top: 356.8125px;
+  left: 25%;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-box ul li:nth-child(7) {
+  top: 356.8125px;
+  left: 50%;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-box ul li:nth-child(8) {
+  top: 356.8125px;
+  left: 75%;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-box ul li .col-gap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-box ul li .col-gap .img-box {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-box ul li .col-gap .img-box:hover {
+  margin: -86px 0 0 0;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-box ul li .col-gap .img-box img {
+  width: 100%;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-box ul li .col-gap .img-box figcaption {
+  padding: 25px;
+  text-align: center;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-box ul li .col-gap .img-box figcaption h3 {
+  font-size: 15px;
+  color: #000;
+  font-weight: 600;
+  padding: 0 0 10px 0;
+}
+#wrap #main #sectionGallery .container .gap .content #gallery-box ul li .col-gap .img-box figcaption h4 {
+  font-size: 11px;
+  color: #626262;
+  font-weight: 500;
+}
+#wrap #footer {
+  width: 100%;
+}

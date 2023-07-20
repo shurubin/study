@@ -1,0 +1,2 @@
+CLASSPATH
+%JAVA_HOME%\lib\tools.jar

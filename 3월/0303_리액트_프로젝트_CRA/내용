@@ -1,0 +1,56 @@
+리액트 프로젝트 생성
+npx create-react-app app
+
+경로이동  
+cd app
+
+리액트 서버 구동
+npm start
+
+react app 서버
+http://localhost:3000/
+http://127.0.0.1:3000/
+http://192.168.40.126:3000/  (ipconfig IPv4 주소)
+
+
+
+
+
+정적파일
+public
+css
+fonts
+img
+jsx
+scss
+
+index.html > root 돔컨테이너
+
+
+
+SRC(동적파일) 안에 폴더 컴포넌트 관리
+
+모듈관리(컴포넌트 파일관리 .jsx) 설계
+
+SRC
+폴더 components
+   WrapComponent.jsx
+     폴더 wrap
+        SkipComponent.jsx
+        HeaderComponent.jsx
+        MainComponent.jsx
+            폴더 main
+                Section1Component.jsx
+                Section2Component.jsx
+                Section3Component.jsx
+                Section4Component.jsx
+                Section5Component.jsx
+                Section6Component.jsx
+                Section7Component.jsx
+                Section8Component.jsx
+                Section9Component.jsx
+                Section10Component.jsx
+                Section11Component.jsx
+        FooterComponent.jsx
+        GotopComponent.jsx
+

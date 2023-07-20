@@ -1,0 +1,45 @@
+@import url("./fonts.css");
+@import url("./reset.css");
+@import url("./skip.css");
+#wrap #header {
+  width: 100%;
+}
+#wrap #main {
+  width: 100%;
+}
+#wrap #main #designHotel {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+#wrap #main #designHotel .container {
+  width: 100%;
+}
+#wrap #main #designHotel .container .gap {
+  width: 100%;
+}
+#wrap #main #designHotel .container .gap .title {
+  width: 100%;
+}
+#wrap #main #designHotel .container .gap .content {
+  width: 100%;
+}
+#wrap #main #designHotel2 {
+  padding: 100px 0;
+  width: 100%;
+}
+#wrap #main #designHotel2 .container {
+  width: 500px;
+  margin: 0 auto;
+}
+#wrap #main #designHotel2 .container .gap {
+  width: 100%;
+}
+#wrap #main #designHotel2 .container .gap .content {
+  width: 100%;
+}
+#wrap #main #designHotel2 .container .gap .content iframe {
+  width: 100%;
+  height: 281.25px;
+  border: 0;
+}

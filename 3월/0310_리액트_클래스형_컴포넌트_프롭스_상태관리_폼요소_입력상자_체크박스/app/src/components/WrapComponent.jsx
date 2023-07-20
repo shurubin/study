@@ -1,0 +1,310 @@
+import React, { Component } from 'react';
+import '../scss/style.scss';
+
+
+class WrapComponent extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            아이디:'',
+            비밀번호:'',
+            비밀번호확인:'',
+            이름:'',
+            이메일:'',
+            휴대폰:'',
+
+            가입정보: [],
+            checked1: false, 
+            checked2: false, 
+            checked3: false, 
+            checked4: false, 
+            checked5: false,
+            좋아하는과일: [] // 체크된 과일 저장하는 배열
+        }
+    }
+
+    onChangeUserId=(e)=>{
+        this.setState({
+            아이디: e.target.value
+        })
+    }
+
+    onChangeUserPw=(e)=>{
+        this.setState({
+            비밀번호: e.target.value
+        });
+    }
+
+    onChangeUserPwOk=(e)=>{
+        this.setState({
+            비밀번호확인: e.target.value
+        });
+    }
+
+    onChangeUserName=(e)=>{
+        this.setState({
+            이름: e.target.value
+        });
+    }
+
+    onChangeUserEmail=(e)=>{
+        this.setState({
+            이메일: e.target.value
+        });
+    }
+
+    onChangeUserHp=(e)=>{
+        this.setState({
+            휴대폰: e.target.value
+        });
+    }
+
+
+    // CHECKBOX EVENT   /////////////////////////////////////////////////////////////////////
+    // 1. 체크박스 온체인지 이벤트
+    // 2. 상태관리 변수(속성) checked1 => VALUE 저장 TRUE OR FALSE
+    // 3. 조건문 
+    // 4. 5개의 과일중 체크된 항목들 저장할 배열 선언 사용
+    onChangeCheckEvent1=(e)=>{
+        console.log( e.target.checked ); // 체크드 선택이되면 true 선택을 해제하면 false 로 결과 출력
+        console.log( e.target.value );   // 무슨 과일을 체크(선택) 했니?
+        
+        if( e.target.checked === true ){
+            this.setState({
+                checked1: true, // true  
+                좋아하는과일: [...this.state.좋아하는과일, e.target.value ]
+            })    
+        }
+        else{  // false  딸기를 제외한 배열 재구성하는 필터 메서드
+            this.setState({
+                checked1: false, // true  
+                // 좋아하는과일: this.state.좋아하는과일.filter((item)=>item!=='딸기')
+                좋아하는과일: this.state.좋아하는과일.filter((item)=>item!==e.target.value)
+            })  
+        }
+
+
+
+    }
+    onChangeCheckEvent2=(e)=>{
+        console.log( e.target.checked ); // 체크드 선택이되면 true 선택을 해제하면 false 로 결과 출력
+        console.log( e.target.value );   // 무슨 과일을 체크(선택) 했니?
+        
+        if( e.target.checked === true ){
+            this.setState({
+                checked2: true, // true  
+                좋아하는과일: [...this.state.좋아하는과일, e.target.value ]
+            })    
+        }
+        else{
+            this.setState({
+                checked2: false, // true  
+                // 좋아하는과일: this.state.좋아하는과일.filter((item)=>item!=='사과')
+                좋아하는과일: this.state.좋아하는과일.filter((item)=>item!==e.target.value)
+            })  
+        }
+
+    }
+
+    onChangeCheckEvent3=(e)=>{
+        console.log( e.target.checked ); // 체크드 선택이되면 true 선택을 해제하면 false 로 결과 출력
+        console.log( e.target.value );   // 무슨 과일을 체크(선택) 했니?
+        
+        if( e.target.checked === true ){
+            this.setState({
+                checked3: true, // true  
+                좋아하는과일: [...this.state.좋아하는과일, e.target.value ]
+            })    
+        }
+        else{
+            this.setState({
+                checked3: false, // true  
+                // 좋아하는과일: this.state.좋아하는과일.filter((item)=>item!=='포도')
+                좋아하는과일: this.state.좋아하는과일.filter((item)=>item!==e.target.value)
+            }) 
+        }
+
+    }
+
+    onChangeCheckEvent4=(e)=>{
+        console.log( e.target.checked ); // 체크드 선택이되면 true 선택을 해제하면 false 로 결과 출력
+        console.log( e.target.value );   // 무슨 과일을 체크(선택) 했니?
+        
+       
+        if( e.target.checked === true ){
+            this.setState({
+                checked4: true, // true  
+                좋아하는과일: [...this.state.좋아하는과일, e.target.value ]
+            })    
+        }
+        else{
+            this.setState({
+                checked4: false, // true  
+                // 좋아하는과일: this.state.좋아하는과일.filter((item)=>item!=='수박')
+                좋아하는과일: this.state.좋아하는과일.filter((item)=>item!==e.target.value)
+            })    
+        }
+
+    }
+    onChangeCheckEvent5=(e)=>{
+        console.log( e.target.checked ); // 체크드 선택이되면 true 선택을 해제하면 false 로 결과 출력
+        console.log( e.target.value );   // 무슨 과일을 체크(선택) 했니?
+        
+        if( e.target.checked === true ){
+            this.setState({
+                checked5: true, // true  
+                좋아하는과일: [...this.state.좋아하는과일, e.target.value ]
+            })    
+        }
+        else{
+            this.setState({
+                checked5: false, // true  
+                // 좋아하는과일: this.state.좋아하는과일.filter((item)=>item!=='자몽')
+                좋아하는과일: this.state.좋아하는과일.filter((item)=>item!==e.target.value)
+            })   
+        }
+    }
+
+
+
+
+
+
+
+    // 저장하기 클릭 이벤트
+    onClickSave=(e)=>{
+        e.preventDefault();
+        this.setState({
+            가입정보: [                
+                ...this.state.가입정보,  //새로운 데이터는 현재 데이터 아래에 추가
+                {
+                    아이디: this.state.아이디,
+                    비밀번호: this.state.비밀번호,
+                    비밀번호확인: this.state.비밀번호확인,
+                    이름: this.state.이름,
+                    이메일: this.state.이메일,
+                    휴대폰: this.state.휴대폰,
+                    좋아하는과일: this.state.좋아하는과일,
+                    가입일자: `${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`  // 날짜 객체
+                }
+            ]
+        });
+        alert('저장되었습니다.');
+        
+    }
+
+
+    render() {
+        return (
+            <div id='wrap'>
+                 <div className="container">
+                        <div className="title">
+                            <h1>회원가입</h1>
+                            <h3><i>*</i>필수입력사항</h3>
+                        </div>
+
+                        <div className="content">
+                            <form name='member_form' id='memberForm' method='post' action="./member_form.php">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <label htmlFor="userId">아이디<i>*</i></label>
+                                            <input 
+                                                type="text" 
+                                                name='user_id' 
+                                                id='userId' 
+                                                placeholder='아이디를 입력해주세요'
+                                                onChange={this.onChangeUserId}  /* 키조작으로 상태관리변수 저장 */
+                                                value={this.state.아이디}  /* 상태관리변수 내용이 변경되면 입력상자도 변경된다. */
+                                            />
+                                            <button>중복확인</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <label htmlFor="userPw">비밀번호<i>*</i></label>
+                                            <input 
+                                                type="text" 
+                                                name='user_pw' 
+                                                id='userPw' 
+                                                placeholder='비밀번호를 입력해주세요'
+                                                onChange={this.onChangeUserPw}
+                                                value={this.state.비밀번호}
+                                            />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <label htmlFor="userPwOk">비밀번호확인<i>*</i></label>
+                                            <input 
+                                                type="text" 
+                                                name='user_id_ok' 
+                                                id='userPwOk' 
+                                                placeholder='비밀번호를 한번 더 입력해주세요'
+                                                onChange={this.onChangeUserPwOk}
+                                                value={this.state.비밀번호확인}
+                                            />
+                                            <button>중복확인</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <label htmlFor="userName">이름<i>*</i></label>
+                                            <input 
+                                                type="text" 
+                                                name='user_name' 
+                                                id='userName' 
+                                                placeholder='이름를 입력해주세요'
+                                                onChange={this.onChangeUserName}
+                                                value={this.state.이름}
+                                            />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <label htmlFor="userEmail">이메일<i>*</i></label>
+                                            <input 
+                                                type="text" 
+                                                name='user_email' 
+                                                id='userEmail' 
+                                                placeholder='예: marketkurly@kurly.com'
+                                                onChange={this.onChangeUserEmail}
+                                                value={this.state.이메일}
+                                            />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <label htmlFor="userHp">휴대폰<i>*</i></label>
+                                            <input 
+                                                type="text" 
+                                                name='user_hp' 
+                                                id='userHp' 
+                                                placeholder='숫자만 입력해주세요'
+                                                onChange={this.onChangeUserHp}
+                                                value={this.state.휴대폰}
+                                            />
+                                            <button>중복확인</button>
+                                        </div>
+                                    </li>
+                                    <li className='fruit'>
+                                        <label htmlFor="chk1"><input onChange={this.onChangeCheckEvent1} type="checkbox" name='chk1' id='chk1' value='딸기' checked={this.state.checked1} />딸기</label>
+                                        <label htmlFor="chk2"><input onChange={this.onChangeCheckEvent2} type="checkbox" name='chk2' id='chk2' value='사과' checked={this.state.checked2} />사과</label>
+                                        <label htmlFor="chk3"><input onChange={this.onChangeCheckEvent3} type="checkbox" name='chk3' id='chk3' value='포도' checked={this.state.checked3} />포도</label>
+                                        <label htmlFor="chk4"><input onChange={this.onChangeCheckEvent4} type="checkbox" name='chk4' id='chk4' value='수박' checked={this.state.checked4} />수박</label>
+                                        <label htmlFor="chk5"><input onChange={this.onChangeCheckEvent5} type="checkbox" name='chk5' id='chk5' value='자몽' checked={this.state.checked5} />자몽</label>
+                                    </li>
+                                </ul>  
+                                <div className="btn-box">
+                                    <button  onClick={this.onClickSave}>저장</button>
+                                </div>                              
+                            </form>
+                        </div>
+                </div>   
+            </div>
+        );
+    }
+}
+
+export default WrapComponent;

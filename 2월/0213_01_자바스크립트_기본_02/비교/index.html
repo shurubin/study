@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+
+    <script>
+        'use strict' // 자바스크립 사용 엄격한 모드 실행
+
+        //var 가변변수
+        // var a=10;
+        // var 이름='이순신';
+        // var 이름='김유신';
+
+        // let 이름='류관순';
+        // let 이름='김두환';
+        // let 가변변수  //재선언 지정 불가
+        // const  불변변수 //재선언 지정 불가
+        // alert('자바스크립트 경고창');
+        console.log('자바스크립트 콘솔 로그 출력');
+        document.write('웹문서 내에 출력');
+        document.write('<h1>웹문서 내에 헤딩 태그 출력</h1>');
+
+        // txt;       // not defined(변수선언안함)  var, let, const 키워드를 선언안한상태
+                      // 변수 값도 대입안한상태
+                      // 그래서 오류가 발생한다.
+
+                      // 변수값을 대입하면 오류발생 안함.  이게 느슨한 형태의 자바스크립트
+                      // 이걸 보완하기 위해서 엄격한 모드를 지정사용 맨 위에 'use strict' 표기사용                      
+        let txt = '바보';   // not defined(변수선언안함)  var, let, const 키워드를 선언안한상태 느슨한 자바스크립트 상태
+        let txt1;  // 아무런 값도 지정(정의 또는 설정 또는 대입)안함  undefined 언디파인드
+        let txt2 = '';
+        let txt3 = 0;
+        let txt4 = null;
+        let txt5 = true;
+        const txt6 = '이순신';  // 불변변수
+        
+        txt = '바보 babo 변수값 수정';
+        txt1 = '변수값 수정';
+        txt2 = '변수값 수정 문자열';
+        txt3 = '숫자(Number) 변수인데 변수값 수정 문자열';
+        txt4 = 'null 변수인데 변수값 수정 문자열';
+        txt5 = '불(Boolean) 변수인데 변수값 수정 문자열';
+        // txt6 = '문자열(String) 변수인데 변수값 수정 문자열';   불변변수 변경 불가능
+
+        // ES5
+        // 문자열 +(연결연산자) 변수
+        console.log( 'txt1 ' + txt1 ); // undefined
+
+        // ES6
+        // 탬플릿 리터럴        
+        console.log( `txt ${txt}` ); // ReferenceError: txt is not defined(변수선언안함)
+        console.log( `txt1 ${txt1}` ); // undefined
+        console.log( `txt2 ${txt2}` );
+        console.log( `txt3 ${txt3}` );
+        console.log( `txt4 ${txt4}` );
+        console.log( `txt5 ${txt5}` );
+        console.log( `txt6 ${txt6}` );
+
+        // 연산자
+        // +
+        // -
+        // *
+        // /
+        // %
+        // 자바스크립트 모두 수치가 부동소숫점형식으로 사용
+    
+        let a=899.998;  // Number
+        let b=50;       // 
+        let c; // undefined
+
+        console.log( `c=a+b    ${a+b}=${a}+${b}` ) ;
+        console.log( `c=a-b    ${a-b}=${a}-${b}` ) ;
+        console.log( `c=a*b    ${a*b}=${a}*${b}` ) ;
+        console.log( `c=a/b    ${a/b}=${a}/${b}` ) ;
+        console.log( `c=a%b    ${a%b}=${a}%${b}` ) ;
+        console.log( `c=a**b   ${a**b}=${a}**${b}` ) ;
+
+        let arr = [];  // Array
+        let obj = {};  // Object
+
+
+        arr = ['사과','바나나','앵두','자몽','딸기', 98];
+        console.log( `배열 ${arr}` );
+        console.log( `배열 길이 arr.length ${arr.length}` );
+        console.log( `배열 arr[인덱스번호 0-5]` );
+        console.log( `배열 arr[0] ${arr[0]}` );
+        console.log( `배열 arr[1] ${arr[1]}` );
+        console.log( `배열 arr[2] ${arr[2]}` );
+        console.log( `배열 arr[3] ${arr[3]}` );
+        console.log( `배열 arr[4] ${arr[4]}` );
+        console.log( `배열 arr[5] ${arr[5]}` );
+
+        // 자료형 중 가장 중요한 자료형
+        // 속성 : 값  한쌍으로 이루어진 형태
+        // 키(Key) : 값(Value)  한쌍으로 이루어진 형태
+        // 객체 리터럴 방식 
+        // let obj = new Object()  //생성자 방식
+        // let obj = {}
+        obj = {
+            이름: '이순신',  // 이름 속성(Property 프로퍼티  Properties 프로퍼티스 ) : 값(Value)
+            국어: 89,
+            영어: 99,
+            수학: 98,
+            총점: function(){ // 속성에 펑션(function(){}) 이 있으면 메서드(Method) 라 칭한다.(함수)
+                console.log( `총점 =  ${this.국어+this.영어+this.수학}` );
+            },
+            평균: function(){
+                console.log(`평균 = ${(this.국어+this.영어+this.수학)/3}` );
+            }
+        }
+       
+
+        // 객체이름.속성  //속성을 사용하면 값을 보여준다.
+        console.log( obj );
+        console.log( `obj = ${obj}` );
+        console.log( `obj = ${JSON.stringify(obj)}` );  //객체형태를 문자열로 변환
+        console.log( `obj.이름 = ${obj.이름}` );  // 객체이름 닷 속성이름
+        console.log( `obj.국어 = ${obj.국어}` );  // 객체이름 닷 속성이름
+        console.log( `obj.영어 = ${obj.영어}` );  // 객체이름 닷 속성이름
+        console.log( `obj.수학 = ${obj.수학}` );  // 객체이름 닷 속성이름
+        console.log( `obj.총점 = ${obj.총점}` );  // 객체이름 닷 속성이름
+        console.log( `obj.평균 = ${obj.평균}` );  // 객체이름 닷 속성이름
+
+
+        // 객체2
+        const wedding = {
+            init: function(){
+                this.header();
+                this.section1();
+                this.section2();
+                this.section3();
+                this.footer();
+            },
+            header: function(){
+                console.log('header');
+            },
+            section1: function(){
+                console.log('section1');
+            },
+            section2: function(){
+                console.log('section2');
+            },
+            section3: function(){
+                console.log('section3');
+
+                const 회원 = {
+                    이름:'이순신',
+                    이메일:'moonseonjong@naver.com',
+                    휴대폰:'01079425305'
+                }
+                // $.ajax({
+                //     url:'./insert.php',
+                //     type:'post',
+                //     data: 회원,
+                //     success: function(res){
+                //         console.log(res);
+                //         // location.href=index.html;
+                //     },
+                //     error: function(err){
+                //         console.log(res);
+                //     }
+                // });
+
+            },
+            footer: function(){
+                console.log('footer');
+            }
+        }
+
+        wedding.init();
+        // 자료형 문자열, 숫자, 불, undefined, 배열, 객체 ....
+        console.log( typeof txt );
+        console.log( typeof txt1 );
+        console.log( typeof txt2 );
+        console.log( typeof txt3 );
+        console.log( typeof txt4 );
+        console.log( typeof txt5 );
+        console.log( typeof txt6 );
+        console.log( typeof arr );
+        console.log( typeof obj );
+        console.log( typeof 89 );
+        console.log( typeof 150.678 );
+
+
+        
+
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+@import url("./fonts.css");
+@import url("./reset.css");
+@import url("./skip.css");
+#wrap {
+  width: 100%;
+}
+#wrap #skip {
+  width: 100%;
+  background: #f0f0f0;
+}
+#wrap #header {
+  width: 100%;
+  height: 100px;
+  background: #c99;
+}
+#wrap #main #section1 {
+  width: 100%;
+  height: 600px;
+  background: #add;
+}
+#wrap #main #section2 {
+  width: 100%;
+  height: 600px;
+  background: #654;
+}
+#wrap #main #section3 {
+  width: 100%;
+  height: 600px;
+  background: #195;
+}
+#wrap #footer {
+  width: 100%;
+  height: 300px;
+  background: #888;
+}

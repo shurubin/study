@@ -1,0 +1,88 @@
+데이터베이스 목록보기
+show databases;
+
+USER 데이터베이스를 만들기
+create database user;
+
+개인이름 데이터베이스를 만들기
+create database susubini03;
+
+user 데이터베이스 사용
+use user;
+
+susubini03 데이터베이스 사용
+use susubini03;
+
+use 데이터베이스 사용
+use mysql
+
+use 데이터베이스 안에 있는 테이블을 모두 보여라
+show tables;
+
+user테이블의 구조를 보여라
+desc user;
+
+user테이블 안에 모든 목록 중 사용자 아이디를 보여라
+select * from user;
+
+
+////////////////////////////////////////////////////////
+
+TO DO LIST 테이블 만들기
+
+테이블 이름 todo_list
+
+필드명  타입    길이    주키(프라이머리 키)     자동증가번호(오토인크리먼트)    코멘트
+idx     int             PRIMARY KEY             AUTO_INCREMENT             자동증가번호
+todo_list VARCHAR(250)  NOT NULL(빈값 허용 안함)                            오늘의 할일
+create_date     timestamp(타임스탬프)
+
+
+
+테이블만들기
+
+create table todo_list (
+    idx     int     NOT NULL     PRIMARY KEY     AUTO_INCREMENT,
+    todo_list   VARCHAR(250)    NOT NULL,
+    create_date timestamp   DEFAULT     CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+테이블에 데이터 삽입하기(insert into 테이블명() values())
+
+INSERT INTO todo_list(todo_list, create_date)
+VALUES
+("피부과가기", now()),
+("과제하기", now()),
+("복습하기", now()),
+("정보처리기사 응시하기", now()),
+("안전하게 귀가하기", now());
+
+
+데이터 조회하기
+SELECT * FROM todo_list;
+
+
+
+
+테이블 만들기
+
+테이블 이름 address
+
+필드명  타입    길이    주키(프라이머리 키)     자동증가번호(오토인크리먼트)    코멘트
+idx     int             PRIMARY KEY             AUTO_INCREMENT             자동증가번호
+name    VARCHAR(50)  NOT NULL(빈값 허용 안함)
+hp  VARCHAR(13)  NOT NULL(빈값 허용 안함)
+addr    VARCHAR(250)  NOT NULL(빈값 허용 안함)   
+create_date     timestamp(타임스탬프)
+
+create table address (
+    idx     int     NOT NULL    PRIMARY KEY     AUTO_INCREMENT,
+    name    VARCHAR(50)     NOT NULL,
+    hp    VARCHAR(13)     NOT NULL,
+    addr    VARCHAR(250)     NOT NULL,
+    create_date timestamp   DEFAULT     CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+

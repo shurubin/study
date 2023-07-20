@@ -1,0 +1,24 @@
+@media all and (max-width: 1200px) {
+  #wrap #header {
+    height: 70px;
+    float: left;
+  }
+  #wrap #header .container .gap {
+    display: inline-block;
+  }
+  #wrap #header .container .gap .logo {
+    width: 97px;
+    height: 100%;
+    padding: 0 10px;
+  }
+  #wrap #header .container .gap .logo a img {
+    width: 100%;
+    height: 50%;
+  }
+  #wrap #header .container .gap .prmenu {
+    display: none;
+  }
+  #wrap #main #section1 {
+    padding-top: 70px;
+  }
+}

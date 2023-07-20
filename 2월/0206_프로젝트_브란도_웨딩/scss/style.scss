@@ -1,0 +1,897 @@
+@import url("./fonts.css");
+@import url("./reset.css");
+@import url("./skip.css");
+
+#wrap {
+    width: 100%;
+    height: 100%;  
+    #header {
+        width: 100%;
+        height: 86px;
+        background: #93e4cf;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        .container {
+            width: 100%;
+            max-width: 1170px;
+            height: 100%;
+            margin: 0 auto;
+            .gap {
+                width: 100%;
+                height: 100%;
+                padding: 0 15px;
+                display: flex;
+                .left {
+                    width: 38%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;                    
+                    ul {
+                        display: flex;
+                        li {
+
+                            padding: 0 30px 0 0;
+                            a {
+                                color: #2e443f;
+                                font-weight: 600;
+                                font-size: 14px;
+                                &:hover {
+                                    color: #d32b55;
+                                }                                
+                                &:active {
+                                    color: #d32b55;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+                
+                .center {
+                    width: 24%;
+                    height: 100%;
+                    a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        background: url(../img/logo-pink2.png) no-repeat 50% 50%;
+                        background-size: cover;
+                    }
+                        
+                    
+                }
+
+                .right {
+                    width: 38%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    ul {
+                        display: flex;
+                        li {
+                            font-weight: 600;
+                            font-size: 14px;
+                            padding: 0 0 0 30px;
+                            a{
+                                color: #2e443f;
+                                font-weight: 600;
+                                font-size: 14px;
+                                &:hover {
+                                    color: #d32b55;
+                                }                                
+                                &:active {
+                                    color: #d32b55;
+                                }
+                            }
+                        }
+                    }                  
+                }
+
+
+            }
+        }
+
+    }
+
+    #main {
+        z-index: 2;
+        width: 100%;
+        position: relative;
+        #section1 {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url(../img/wedding-img3.jpg) no-repeat 70% 50%;
+            background-size: cover;
+            &::before {
+                content: '';
+                z-index: 1;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(37, 37, 37, 0.7);
+            }
+            .container {
+                width: 100%;
+                max-width: 1170px;
+                height: 100%;
+                margin: 0 auto;
+                .gap {
+                    height: 100%;
+                    padding: 0 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .logo {
+                        z-index: 2;
+                        position: relative;
+                        text-align: center;
+                        width: 307px;
+                        user-select: none;
+                        figure {
+                            width: 100%;
+                            img {width: 100%;}
+                        }
+                        hr {
+                            width: 100%;
+                            height: 4px;
+                            border-top: 1px solid #93e4cf;
+                            border-bottom: 1px solid #93e4cf;
+                            margin: 40px 0;
+                        }
+                        h3 {
+                            font-size: 18px;
+                            color: #fff;
+                            font-weight: 500;
+                            
+                        }
+                        h2 {
+                            font-size: 24px;
+                            color: #85d4c0;
+                            font-weight: 700;
+                            margin: 5px 0 0 0;
+                        }
+                    }
+
+                }
+            }
+            
+        }
+        #section2 {
+            width:100%;
+            padding: 130px 0;
+            background: #fff;            
+            .container {
+                width:100%;
+                max-width:1170px;
+                margin: 0 auto;
+                .title {
+                    width: 100%;
+                    text-align: center;
+                    padding: 0 0 90px 0;
+                    h2 {
+                        display: inline-block;
+                        font-size: 24px;
+                        color: #e15276; 
+                        position: relative;
+                        font-weight: 700;
+                        &::before{
+                            content:'';
+                            position: absolute;
+                            left: -60px;
+                            top: 50%;
+                            margin: -0.5px 0 0 0;
+                            width: 40px;
+                            height: 1px;
+                            background: #93e4cf;
+                        }                           
+                        &::after{
+                            content:'';
+                            position: absolute;
+                            right: -60px;
+                            top: 50%;
+                            margin: -0.5px 0 0 0;
+                            width: 40px;
+                            height: 1px;
+                            background: #93e4cf;
+                        }                           
+                    }
+                }
+                .content {
+                    width: 100%;
+                    display: flex;
+                    .left  {
+                        width: 50%;
+                        height: 350px;
+                        .content-box {
+                            width:100%;
+                            > ul {
+                                width:100%;
+                                display: flex;
+                                > li {
+                                    width:50%;
+                                    &.left-image {
+                                        width:100%;
+                                        > .gap {
+                                            padding: 0 15px;
+                                            .img-box {
+                                                width:100%;
+                                                figure {
+                                                    width:100%;
+                                                    img {
+                                                        width:100%;
+                                                        outline: 4px solid rgba(255,255,255, 0.3);
+                                                        outline-offset: -15px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &.left-text  {
+                                        width:100%;
+                                        .gap {
+                                            padding: 0 15px;
+                                            .text-box {
+                                                width:100%;
+                                                ul {
+                                                    width:100%;
+                                                    li {
+                                                        text-align: left;
+                                                        width:80%;
+                                                        h2 {
+                                                            padding:0 0 10px 0;
+                                                            i {
+                                                                font-size: 40px;
+                                                                color:#85d4c0;
+                                                            }
+                                                        }
+                                                        h3 {
+                                                            font-size: 18px;
+                                                            font-weight: 700; 
+                                                            color:#85d4c0;
+                                                            line-height: 130%;
+                                                            letter-spacing: -0.3px;
+                                                        }
+                                                        h4 {
+                                                            font-size: 13px;
+                                                            font-weight: 600;
+                                                            padding: 20px 0;
+                                                        }
+                                                        p {
+                                                            font-size: 13px;
+                                                            line-height: 170%;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .icon-box {
+                            user-select: none;
+                            display: flex;
+                            width:100%;
+                            padding: 30px 0 0 0;
+                            text-align: center;
+                            .left  {
+                                width:50%;   
+                                a {
+                                    margin: 0 10px;
+                                    color:#333;                                    
+                                    i {
+                                        font-size: 14px;
+                                    }
+                                }                             
+                            } 
+                            .right {
+                                width:50%;
+                            } 
+                        }
+                    }
+                    .right {
+                        width: 50%;
+                        height: 350px;
+                        .content-box {
+                            width:100%;
+                            > ul {
+                                width:100%;
+                                display: flex;
+                                > li {
+                                    width:50%;
+                                    &.left-image {
+                                        width:100%;
+                                        > .gap {
+                                            padding: 0 15px;
+                                            .img-box {
+                                                width:100%;
+                                                figure {
+                                                    width:100%;
+                                                    img {
+                                                        width:100%;
+                                                        outline: 4px solid rgba(255,255,255, 0.3);
+                                                        outline-offset: -15px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &.left-text  {
+                                        width:100%;
+                                        .gap {
+                                            padding: 0 15px;
+                                            .text-box {
+                                                width:100%;
+                                                ul {
+                                                    width:100%;
+                                                    li {
+                                                        text-align: left;
+                                                        width:80%;
+                                                        h2 {
+                                                            padding:0 0 10px 0;
+                                                            i {
+                                                                font-size: 40px;
+                                                                color:#85d4c0;
+                                                            }
+                                                        }
+                                                        h3 {
+                                                            font-size: 18px;
+                                                            font-weight: 700; 
+                                                            color:#85d4c0;
+                                                            line-height: 130%;
+                                                            letter-spacing: -0.3px;
+                                                        }
+                                                        h4 {
+                                                            font-size: 13px;
+                                                            font-weight: 600;
+                                                            padding: 20px 0;
+                                                        }
+                                                        p {
+                                                            font-size: 13px;
+                                                            line-height: 170%;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .icon-box {       
+                            user-select: none;                     
+                            display: flex;
+                            width:100%;
+                            padding: 30px 0 0 0;
+                            text-align: center;
+                            .left  {
+                                width:50%;   
+                                a {
+                                    margin: 0 10px;
+                                    color:#333;                                    
+                                    i {
+                                        font-size: 14px;
+                                    }
+                                }                             
+                            } 
+                            .right {
+                                width:50%;
+                            } 
+                        }
+                    }
+                }
+            }            
+        }
+        #section3 {
+            width:100%;
+            height: 346px;
+            background: url(../img/wedding-img2.jpg) no-repeat 50% 50% fixed;
+            background-size: 100% auto;
+            .container {
+                width:100%;
+                max-width:1170px;
+                margin: 0 auto;
+                height: 100%;
+                .gap {
+                    width:100%;
+                    height: 100%;
+                    padding: 0 15px;
+                    .title {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;    
+                        align-items: center;
+                        justify-content: center;
+                        h2 {                       
+                            font-size: 24px;
+                            color: #85d4c0;; 
+                            font-weight: 700;
+                        }
+                    }
+                }
+
+            }
+        }
+        #section4 {
+            width:100%;
+            background: #fff;
+            padding: 130px 0;
+            border-bottom: 1px solid #ccc;
+            .container {
+                width: 1170px;
+                margin:0 auto;
+                > .gap {
+                    width: 100%;
+                    .title {
+                        width: 100%;
+                        text-align: center;
+                        padding: 0 0 90px 0;
+                        h2 {
+                            display: inline-block;
+                            font-size: 24px;
+                            color: #e15276; 
+                            position: relative;
+                            font-weight: 700;
+                            &::before{
+                                content:'';
+                                position: absolute;
+                                left: -60px;
+                                top: 50%;
+                                margin: -0.5px 0 0 0;
+                                width: 40px;
+                                height: 1px;
+                                background: #93e4cf;
+                            }                           
+                            &::after{
+                                content:'';
+                                position: absolute;
+                                right: -60px;
+                                top: 50%;
+                                margin: -0.5px 0 0 0;
+                                width: 40px;
+                                height: 1px;
+                                background: #93e4cf;
+                            }                           
+                        }
+                    }
+                    .content {
+                        width: 100%;                        
+                        ul {                            
+                            width: 100%;
+                            display: flex;
+                            li {
+                                width: 33.33333%;
+                                .col-gap {
+                                    width:100%;
+                                    padding: 0 15px;
+                                    text-align: center;
+                                    .box {
+                                        width:100%;
+                                        border: 5px solid #eee;
+                                        .gap {
+                                            width:100%;
+                                            padding: 35px 60px;
+                                            h2 {
+                                                padding: 0 0 15px 0;
+                                                i {
+                                                    font-size: 60px;
+                                                    color: #85d4c0;
+                                                }                                    
+                                            }
+                                            h3 { font-size: 15px;font-weight: 600;}
+                                            hr {border:0;background: #ccc;width:100%;height:1px;margin: 25px 0;}
+                                            p {color: #929292; font-size: 13px;padding: 0 0 10px 0;}
+                                            h4 {color: #929292; font-size: 13px;}
+                                        }
+                                    }
+
+                                               
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #section5 {
+            width: 100%;
+            padding: 130px 0;
+            background: #fff;
+            .container {
+                width: 100%;
+                max-width: 1170px;
+                margin: 0 auto;
+                .gap {
+                    width: 100%;
+                    .title {
+                        width: 100%;
+                        text-align: center;
+                        padding: 0 0 90px 0;
+                        h2 {
+                            display: inline-block;
+                            font-size: 24px;
+                            color: #e15276; 
+                            position: relative;
+                            font-weight: 700;
+                            &::before{
+                                content:'';
+                                position: absolute;
+                                left: -60px;
+                                top: 50%;
+                                margin: -0.5px 0 0 0;
+                                width: 40px;
+                                height: 1px;
+                                background: #93e4cf;
+                            }                           
+                            &::after{
+                                content:'';
+                                position: absolute;
+                                right: -60px;
+                                top: 50%;
+                                margin: -0.5px 0 0 0;
+                                width: 40px;
+                                height: 1px;
+                                background: #93e4cf;
+                            }                           
+                        }
+                    }
+                    .content {
+                        width: 100%;
+                        overflow: hidden;
+                        .gallery-box {
+                            width: 1181px;
+                            margin: 0 0 0 -11px;
+                            ul {
+                                width: 100%;
+                                display: flex;
+                                flex-flow: row wrap; 
+                                li {
+                                    width: 25%; 
+                                    .col-gap {
+                                          
+                                        width: auto;  
+                                        margin: 0 0 11px 11px;
+                                        overflow: hidden;  
+
+                                        a {
+                                            display: block;
+                                            width: 100%;
+                                            figure {
+                                                width: 100%;
+                                                img {
+                                                    width: 100%;
+                                                    transition: all 0.3s; 
+                                                    &:hover {                                                        
+                                                        transform: scale(1.1);
+                                                        opacity: 0.2;
+                                                        cursor: url(../img/icon-zoom.png), auto;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #section6 {
+            width:100%;
+            height: 500px + 130px + 130px;
+            background: url(../img/wedding-img16.jpg) no-repeat 50% 80%;
+            background-size: cover;
+            padding: 130px 0;
+            position: relative;
+            &::before {
+                content:'';
+                z-index: 1;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(37, 37, 37, 0.5);
+            }
+            .container {
+                z-index: 2;
+                position: relative;
+                width: 1170px;
+                max-width: 100%;
+                margin: 0 auto;
+                .gap {
+                    width: 100%;
+                    .content {
+                        width: 100%;
+                        >ul {
+                            width: 100%;
+                            display: flex;
+                            >li{
+                                width: 50%;
+                                .col-gap {
+                                    width: auto;
+                                    margin: 0 15px;
+                                    .content-box {
+                                        width: 100%;
+                                        height: 500px;
+                                        outline: 5px solid rgba(255,255,255,0.3);
+                                        outline-offset: -20px;                                     
+                                        &.left {
+                                            background: url(../img/wedding-img17.jpg) no-repeat 50% 50%;
+                                            background-size: cover;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            h2 {
+                                                width: 60%;
+                                                font-weight: 600;
+                                                font-size: 28px;
+                                                font-family: Montserrat;
+                                                color: #fff;
+                                                line-height: 150%;
+                                                text-align: center;
+                                            }
+                                        }
+                                        &.right {
+                                            background: #93e4cf;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            .content-wrap {
+                                                width: 75%;
+                                                .content-head {
+                                                    font-size: 24px;
+                                                    font-weight: 600;
+                                                    color: #626262;
+                                                    text-align: center;
+                                                    padding-bottom: 30px;
+
+                                                }
+                                                #messageForm {
+                                                    padding: 25px 0 10px 0;
+                                                    ul {
+                                                        width: 100%;
+                                                        li {
+                                                            width: 100%;
+                                                            padding: 8px 0;
+                                                            &:nth-child(3){
+                                                                display: flex;
+                                                                justify-content: space-between;
+                                                            }
+                                                            &:last-child {
+                                                                text-align: center; //확인 가운데 정렬 안됨
+                                                            }
+                                                            input {
+                                                                width: 100%;
+                                                                height: 47px;
+                                                                background: #fff;
+                                                                padding: 0 0 0 15px;
+                                                                border: 0;
+                                                                border-radius: 2px;
+                                                                &::placeholder{
+                                                                    color: #ccc;
+                                                                }      
+                                                                &:focus {
+                                                                    outline: 0;
+                                                                }                                                                                                                        
+
+                                                            }
+                                                            div {
+                                                                width: 47%;
+                                                                select {
+                                                                    width: 100%;
+                                                                    height: 47px;
+                                                                    background: #fff url(../img/select-arrow.png) no-repeat 97% 50%;
+                                                                    border: 0;
+                                                                    //원래의 모양을 사용 안 함 appearance
+                                                                    appearance: none;
+                                                                    padding: 0 15px;
+                                                                    color: #626262;
+                                                                    resize: none;
+                                                                    border-radius: 3px;
+                                                                    &:focus {
+                                                                        outline: 0;
+                                                                    }
+
+                                                                }
+                                                            }
+                                                            
+                                                            //메모장 텍스트에이리어 textarea                                                           
+                                                            // textarea[id='textarea'] {
+                                                            // textarea[name='textarea'] {
+                                                            textarea {
+                                                                width: 100%;
+                                                                height: 100%;
+                                                                background: #fff;
+                                                                border: 0;
+                                                                padding: 15px;
+                                                                font-size: 14px;
+                                                                color: #626262;
+                                                                &:focus {
+                                                                    outline:0;
+                                                                }
+                                                                &::placeholder {
+                                                                    color: #ccc;
+                                                                }
+
+                                                            }
+
+                                                            button {
+                                                                padding: 0 15px;
+                                                                height: 50px;
+                                                                background-color: #000;
+                                                                color: #fff;
+                                                                border: 3px solid #000;
+                                                                border-radius: 2px;
+                                                                font-size: 13px;
+                                                                font-weight: 600;
+                                                                transition: all 0.3s;
+                                                                cursor: pointer;
+                                                                // text-transform: uppercase; 대문자로 바꿈
+                                                                // text-transform: lowercase; 소문자로 바꿈
+                                                                // text-transform: capitalize; 앞글자만 대문자로 바꿈
+
+                                                                &:hover {
+                                                                    background: #fff;
+                                                                    color: #000;
+                                                                }
+                                                            }
+
+
+                                                        }
+                                                    }
+                                                }
+                                                .content-footer {
+                                                    display: none;
+                                                    font-size: 13px;
+                                                    color: #626262;
+                                                    text-align: center;
+                                                    padding: 10px 15px;
+                                                    border: 2px solid #cc3;
+                                                    &.foot1 {
+                                                        &.on {display: block;}
+                                                    }
+                                                    
+                                                    &.foot2 {
+                                                        &.on {display: block;}
+                                                    }
+                                                }
+
+
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+            
+            
+        }
+        #section7 {
+            width:100%;
+            height: 339.375px + 130px + 130px;
+            background: #fff;
+            padding: 130px 0;
+            .container {
+                width: 100%;
+                max-width: 1170px;
+                margin: auto;
+                .gap {
+                    padding: 0 15px;
+                    .title {
+                        width: 100%;
+                        text-align: center;
+                        h2 {
+                            display: inline-block;
+                            font-size: 24px;
+                            color: #e15276; 
+                            position: relative;
+                            font-weight: 700;
+                            &::before{
+                                content:'';
+                                position: absolute;
+                                left: -60px;
+                                top: 50%;
+                                margin: -0.5px 0 0 0;
+                                width: 40px;
+                                height: 1px;
+                                background: #93e4cf;
+                            }                           
+                            &::after{
+                                content:'';
+                                position: absolute;
+                                right: -60px;
+                                top: 50%;
+                                margin: -0.5px 0 0 0;
+                                width: 40px;
+                                height: 1px;
+                                background: #93e4cf;
+                            }                           
+                        }
+                    }
+                    .content {
+                        width: 100%;
+                        p {
+                            width: 456px;
+                            margin: 0 auto;
+                            line-height: 180%;
+                            font-size: 13px;
+                            color: #626262;
+                            text-align: center;
+                            font-family: 'Roboto';
+                            padding: 80px 0;
+
+                        }
+                        span {
+                            display: block;
+                            width: 100%;
+                            max-width: 945px;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: space-around; //이미지 양옆을 동일하게 여백을 줌
+                            //justify-content: space-between; //
+                            //justify-content: space-evenly; //여백을 전부 똑같이 분배
+
+                            a {
+                                img {
+                                    width: auto;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #section8 {
+            width:100%;
+            height: 675.250px + 130px + 130px;
+            background: #f7f7f7;
+            padding: 130px 0;            
+        }
+        #section9 {
+            width:100%;
+            height: 614.594px + 130px + 130px;
+            background: #fff;
+            padding: 130px 0; 
+        }
+        #section10 {
+            width:100%;
+            height: 294.375px + 130px + 80px;
+            background: #fff;
+            padding: 130px 0 80px 0; 
+        }
+        #section11 {
+            width:100%;
+            height: 420px;
+            background: #fff;
+            iframe {
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+        }
+    }
+
+    #footer {
+        z-index: 1;
+        position: relative;
+        width: 100%;
+        height: 300px;
+        background-color: #00f7ff;
+    }
+    
+
+}

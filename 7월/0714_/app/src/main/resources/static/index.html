@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+
+    
+    <div id="wrap">
+        <div class="container">
+            <div class="title">
+                <h1>Spring Boot Project</h1>
+            </div>
+
+            <div id="app">
+                {{ message }}
+            </div>
+
+            <script>
+                var app = new Vue({
+                  el: '#app',
+                  data: {
+                    message: '이 페이지는 ' + new Date() + ' 에 로드 되었습니다'
+                  }
+                })
+            </script>
+
+
+            <nav id="nav">
+                <a href="./index.html">HOME</a>
+                <a href="/writeForm.do">WRITE</a>
+                <a href="/list.do">LIST</a>
+                <a href="/signup_form.html">회원가입</a>
+            </nav>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+#modal {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, 0.7);
+    .wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container {
+            position: relative;  
+            width: 500px;
+            height: 800px;
+            background: #fff;    
+            text-align: right;                 
+            .img-box {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            button {
+                position: absolute;
+                right:0;
+                bottom: 0;
+                padding: 0, 30px;
+                height: 50px;
+                background: #000;
+                color: #fff;
+                font-size: 17px;
+                border: 0;
+                cursor: pointer;
+                transition: all 0.3s;
+                &:hover {
+                    background-color: #444;
+                }
+            }
+        }
+    }
+}

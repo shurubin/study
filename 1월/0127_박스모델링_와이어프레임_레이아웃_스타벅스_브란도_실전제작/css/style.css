@@ -1,0 +1,93 @@
+@charset "utf-8";
+@import url('./fonts.css');
+@import url('./reset.css');
+
+/* DOM(Document Object Model) */
+/* #wrap > ul {} 자식 >를 쓰면 바로 밑의 항목만
+   #wrap ul {} 자손 자식 손자 모두 포함(>미사용) */
+
+#wrap {width: 100%;}
+
+/* 스킵메뉴 */
+#wrap #skip { position:fixed; left:0; top:0; z-index:4; width: 100%; font-size:0;}
+#wrap #skip li {width: 100%;}
+#wrap #skip li a {
+    width: 100%; 
+    background-color: rgb(0,0,0);
+    font-size: 20px;
+    color: rgb(255,255,255);
+    display: block;
+    text-align: center;
+    line-height: 0;
+}
+#wrap #skip li a:focus{
+    font-size: 20px;
+    line-height: 50px;
+}
+
+/* 헤더영역 */
+#wrap #header {
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:3;
+    width: 100%; 
+    height:120px;
+    border-top:2px solid rgb(0,0,0);
+    border-bottom:1px solid rgb(0,0,0);
+    background: rgb(246,245,239)
+
+}
+
+
+/* 메인영역 */
+#wrap #main {position:relative; z-index:2; width:100%; margin:120px 0 0 0;}
+#wrap #main #section1 {width:100%;height: 652.797px;background:url(../img/2023_newyear_top_bg.jpg) no-repeat 50% 50%; background-size: cover;}
+#wrap #main #section2 {
+    width:100%;
+    height:62px;
+    background-image:linear-gradient(to right, rgb(0,0,0) 50%, rgb(255,255,255) 50%);
+    /* background-image:linear-gradient(to left, rgb(0,0,0) 50%, rgb(255,255,255) 50%);
+    background-image:linear-gradient(-90deg, rgb(0,0,0) 50%, rgb(255,255,255) 50%);
+    background-image:linear-gradient(to top, rgb(0,0,0) 50%, rgb(255,255,255) 50%);
+    background-image:linear-gradient(to bottom, rgb(0,0,0) 50%, rgb(255,255,255) 50%);
+    background-image:linear-gradient(45deg, rgb(0,0,0) 50%, rgb(255,255,255) 50%);
+    background-image:linear-gradient(-45deg, rgb(0,0,0) 50%, rgb(255,255,255) 50%);
+    background-image:linear-gradient(90deg, rgb(0,0,0) 50%, rgb(255,255,255) 50%);
+    background-image:linear-gradient(45deg, rgb(0,0,0) 50%, rgb(255,255,255) 50%); */
+}
+/* 백그라운드 이미지를 활용 그라이디언트지정 (방향, 색상, 백분율)*/
+#wrap #main #section3 {width:100%;height: 170.172px;background:rgb(30,57,50); padding:30px 0 40px 0;}
+
+#wrap #main #section4 {width:100%;height: 573px;background:url(../img/2023_newyear_promotion_bg.jpg) no-repeat 50% 50%; background-size: cover;}
+
+#wrap #main #section5 {
+    width:100%;
+    height: 400px;
+    /* background:url(../img/221220_pc_reserve_left_bg.png)no-repeat 0 50%, 왼쪽이미지
+               url(../img/221220_pc_resserve_right_bg.png)no-repeat 100% 50%, 오른쪽이미지
+               url(../img/221220_pc_reserve_logo.png)no-repeat 21% 50%, 가운데 로고 이미지
+               url(../img/2212201_pc_reserve_coffee_bg.png)no-repeat 35% 50%, 가운데 커피 이미지
+               url(../img/221220_pc_reserve_bg.png) no-repeat 50% 50%; 아이보리 배경 이미지 !!합쳐서 쓴 것!! 아래는 분해하여 작성. 내용은 동일함 */
+               /* 위에 있는 배경을 처음에 넣어준다.  */
+    
+    background-image: url(../img/221220_pc_reserve_left_bg.png),
+                      url(../img/221220_pc_resserve_right_bg.png),
+                      url(../img/221220_pc_reserve_logo.png),
+                      url(../img/2212201_pc_reserve_coffee_bg.png),
+                      url(../img/221220_pc_reserve_bg.png);
+    background-repeat: no-repeat, no-repeat,no-repeat,no-repeat,no-repeat;
+    background-position : 0 50%, 100% 50%, 21% 50%, 35% 50%, 50% 50%; 
+    background-attachment: scroll,scroll,scroll,scroll,scroll;        
+    background-size: auto, auto, auto, auto, cover;
+}
+
+#wrap #main #section6 {width:100%;height: 800px;background:url(../img/2022_Chrismas2_PTF_bg.png) no-repeat 50% 50% fixed; background-size: cover;}
+
+#wrap #main #section7 {width:100%;height: 400px;background:url(../img/reserve_bg_pc.png) no-repeat 50% 100%; background-size: auto 350px;}
+
+#wrap #main #section8 {width:100%;height: 400px;background:url(../img/store_bg.jpg) no-repeat 50% 50%; background-size: cover;}
+ 
+
+/* 푸터영역 */
+#wrap #footer {position:relative; z-index:1; width:100%;height:534px;padding:32px 0 35px 0;background: rgb(44,42,41);}

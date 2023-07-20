@@ -1,0 +1,294 @@
+@import url(./fonts.css);
+@import url(./reset.css);
+@import url(./skip.css);
+#wrap {
+  width: 100%;
+}
+#wrap #header {
+  width: 100%;
+  height: 86px;
+  background: #93e4cf;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+#wrap #main {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+}
+#wrap #main #section1 {
+  position: relatibe;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/wedding-img3.jpg) no-repeat 50% 50%;
+}
+#wrap #main #section1::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(37, 37, 37, 0.3);
+}
+#wrap #main #section2 {
+  width: 100%;
+  height: 711.875px;
+  padding: 130px 0;
+  background: #fff;
+}
+#wrap #main #section3 {
+  width: 100%;
+  height: 346px;
+  background: url(../img/wedding-img2.jpg) no-repeat 50% 50% fixed;
+  background-size: 100% auto;
+}
+#wrap #main #section4 {
+  width: 100%;
+  background: #fff;
+  padding: 130px 0;
+  border-bottom: 1px solid #CCC;
+}
+#wrap #main #section4 .container {
+  width: 1170px;
+  margin: auto;
+}
+#wrap #main #section4 .container > .gap {
+  width: 100%;
+}
+#wrap #main #section4 .container > .gap .title {
+  width: 100%;
+  text-align: center;
+  padding: 0 0 90px 0;
+}
+#wrap #main #section4 .container > .gap .title h2 {
+  display: inline-block;
+  font-size: 24px;
+  color: #e15276;
+  background-color: #fff;
+  position: relative;
+  font-weight: 700;
+}
+#wrap #main #section4 .container > .gap .title h2::before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  margin: -0.5px 0 0 0;
+  width: 40px;
+  height: 1px;
+  background-color: #93e4cf;
+}
+#wrap #main #section4 .container > .gap .title h2::after {
+  content: "";
+  position: absolute;
+  right: -60px;
+  top: 50%;
+  margin: -0.5px 0 0 0;
+  width: 40px;
+  height: 1px;
+  background-color: #93e4cf;
+}
+#wrap #main #section4 .container > .gap .content {
+  width: 100%;
+}
+#wrap #main #section4 .container > .gap .content ul {
+  width: 100%;
+}
+#wrap #main #section4 .container > .gap .content ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#wrap #main #section4 .container > .gap .content ul li {
+  width: 33.33333%;
+  float: left;
+}
+#wrap #main #section4 .container > .gap .content ul li .col-gap {
+  width: 100%;
+  padding: 0 15px;
+  text-align: center;
+}
+#wrap #main #section4 .container > .gap .content ul li .col-gap .box {
+  border: 5px solid #eee;
+  width: 100%;
+}
+#wrap #main #section4 .container > .gap .content ul li .col-gap .box .gap {
+  width: 100%;
+  padding: 40px 60px;
+}
+#wrap #main #section4 .container > .gap .content ul li .col-gap .box .gap h2 {
+  padding: 0 0 15px 0;
+}
+#wrap #main #section4 .container > .gap .content ul li .col-gap .box .gap h2 i {
+  font-size: 60px;
+  color: #85d4c0;
+}
+#wrap #main #section4 .container > .gap .content ul li .col-gap .box .gap h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+#wrap #main #section4 .container > .gap .content ul li .col-gap .box .gap hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  width: 100%;
+  height: 1px;
+  margin: 25px 0;
+}
+#wrap #main #section4 .container > .gap .content ul li .col-gap .box .gap p {
+  color: #929292;
+  font-size: 13px;
+  padding: 0 0 10px 0;
+}
+#wrap #main #section4 .container > .gap .content ul li .col-gap .box .gap h4 {
+  color: #929292;
+  font-size: 13px;
+}
+#wrap #main #section5 {
+  width: 100%;
+  padding: 130px 0;
+  background: #fff;
+}
+#wrap #main #section5 .container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+#wrap #main #section5 .container .gap {
+  width: 100%;
+}
+#wrap #main #section5 .container .gap .title {
+  width: 100%;
+  text-align: center;
+  padding: 0 0 90px 0;
+}
+#wrap #main #section5 .container .gap .title h2 {
+  display: inline-block;
+  font-size: 24px;
+  color: #e15276;
+  background-color: #fff;
+  position: relative;
+  font-weight: 700;
+}
+#wrap #main #section5 .container .gap .title h2::before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  margin: -0.5px 0 0 0;
+  width: 40px;
+  height: 1px;
+  background-color: #93e4cf;
+}
+#wrap #main #section5 .container .gap .title h2::after {
+  content: "";
+  position: absolute;
+  right: -60px;
+  top: 50%;
+  margin: -0.5px 0 0 0;
+  width: 40px;
+  height: 1px;
+  background-color: #93e4cf;
+}
+#wrap #main #section5 .container .gap .content {
+  width: 100%;
+}
+#wrap #main #section5 .container .gap .content .gallery-box {
+  width: 1181px;
+  margin: 0 0 0 -11px;
+  overflow: hidden;
+}
+#wrap #main #section5 .container .gap .content .gallery-box ul {
+  width: 100%;
+}
+#wrap #main #section5 .container .gap .content .gallery-box ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#wrap #main #section5 .container .gap .content .gallery-box ul li {
+  float: left;
+  width: 25%;
+}
+#wrap #main #section5 .container .gap .content .gallery-box ul li .col-gap {
+  overflow: hidden;
+  width: auto;
+  margin: 0 0 11px 11px;
+}
+#wrap #main #section5 .container .gap .content .gallery-box ul li .col-gap a {
+  display: block;
+  width: 100%;
+}
+#wrap #main #section5 .container .gap .content .gallery-box ul li .col-gap a figure {
+  width: 100%;
+}
+#wrap #main #section5 .container .gap .content .gallery-box ul li .col-gap a figure img {
+  width: 100%;
+  transition: all 0.3s;
+}
+#wrap #main #section5 .container .gap .content .gallery-box ul li .col-gap a figure img:hover {
+  transform: scale(1.2);
+  opacity: 0.3;
+}
+#wrap #main #section6 {
+  width: 100%;
+  height: 760px;
+  background: url(../img/wedding-img16.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  padding: 130px 0;
+}
+#wrap #main #section6::before {
+  content: "";
+  z-index: 1;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(37, 37, 37, 0.3);
+}
+#wrap #main #section7 {
+  width: 100%;
+  height: 599.375px;
+  background: #fff;
+  padding: 130px 0;
+}
+#wrap #main #section8 {
+  width: 100%;
+  height: 935.25px;
+  background: #f7f7f7;
+  padding: 130px 0;
+}
+#wrap #main #section9 {
+  width: 100%;
+  height: 874.594px;
+  background: #fff;
+  padding: 130px 0;
+}
+#wrap #main #section10 {
+  width: 100%;
+  height: 504.375px;
+  background: #fff;
+  padding: 130px 0 80px 0;
+  border-top: 1px solid #dcdcdc;
+}
+#wrap #main #section11 {
+  width: 100%;
+  height: 420px;
+  background: #fff;
+}
+#wrap #main #section11 iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+#wrap #footer {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: #dcdcdc;
+}

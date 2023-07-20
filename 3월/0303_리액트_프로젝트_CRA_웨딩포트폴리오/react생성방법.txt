@@ -1,0 +1,14 @@
+리액트 프로젝트 생성
+npx create-react-app app
+
+경로이동  
+cd app
+
+리액트 서버 구동
+npm start
+
+react app 서버
+http://localhost:3000/
+http://127.0.0.1:3000/
+http://192.168.40.126:3000/  (ipconfig IPv4 주소)
+

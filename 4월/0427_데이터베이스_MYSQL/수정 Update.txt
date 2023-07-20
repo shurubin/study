@@ -1,0 +1,94 @@
+조회 select
+수정 update
+삭제 delete
+입력 insert
+
+CRUD
+Create : 데이터베이스생성 => 테이블생성 => 데이터입력
+Read : 조회
+Update : 수정
+Delete : 삭제
+
+update 수정할 때 사용하는 명령어
+
+update 테이블이름 set 필드명 = '수정할 값 where 조건
+
+문제1)
+필드 todo_list 의 내용을 '러시아의 전쟁 만행 참혹' 으로 수정하라
+
+입력문
+update todo_list set todo_list = '러시아의 전쟁 만행 참혹' where idx = 13;
+결과
+Query OK, 1 row affected (0.02 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+확인 >> idx 13번째 줄의 필드 todo_list가 '러시아의 전쟁 만행' 참혹으로 변경됨
+
+문제2)
+테이블 todo_list의 테이블을  수정하라
+내용이 '테스트'인 모든 레코드를 '미국의 국빈방문'으로 수정하라
+
+입력문
+update todo_list set todo_list = '미국의 국빈방문' where todo_list = "테스트";
+결과
+>> todo_list필드가 '테스트' 인 항목이 '미국의 국빈방문'으로 변경됨 
+
+문제3)
+테이블 todo_list의 테이블을  수정하라
+내용에 '테스트'가 포함된 모든 레코드를 '국제 국방력 순위 9위'으로 수정하라
+
+입력문
+update todo_list set todo_list = '미국의 국빈방문' where todo_list like "%테스트%";
+결과
+>> todo_list필드가 '테스트' 인 항목이 '미국의 국빈방문'으로 변경됨 
+***
+= 은 같은 조건일 경우 % 와일드 카드가 포함된 것은 like 사용
+
+문제)
+테이블이름이 todo_list
+조건은 idx가 3,5,8 번인 레코드 수정
+수정필드 todo_list 수정내용은 연잎핫도그
+
+입력문
+update todo_list set todo_list = '연잎핫도그' where idx = 3 or idx = 5 or idx = 8;
+줄이기
+update todo_list set todo_list = '연잎핫도그' where idx in (3, 5, 8);
+결과
+>> idx 3, 5, 8의 todo_list 필드가 '연잎핫도그' 로 변경됨
+
+
+조건
+todo_list 내용이 연잎이 포함되지 않은 레코드를 모두 '우거지 뼈다귀 감자탕'으로 수정
+
+입력문
+update todo_list set todo_list = '우거지 뼈다귀 감자탕' where todo_list not like "%연잎%";
+
+update todo_list set create_date = '2023-04-21 12:39:34'
+where create_date between date('2023-04-20') and date('2023-04-21')
+and hour(create_date) between 13 and 14
+and minute(create_date) between 50 and 59;
+>> create_date 04-20~21 중 13~14시 50~59 사이의 데이터를 '2023-04-21 12:39:34'로 변경됨
+
+////////////////////////////////////////////////////////////////////////////////
+
+삭제 Delete
+
+delete from 테이블이름 조건
+
+delete from 테이블이름 where idx=5;
+
+
+
+
+idx가 8인 항목 삭제
+
+입력문
+delete from todo_list where idx=8;
+
+todo_list가 연잎핫도그인 것 모두 삭제
+
+입력문
+delete from todo_list where todo_list="연잎핫도그";
+
+
+모두 삭제
+delete from todo_list;

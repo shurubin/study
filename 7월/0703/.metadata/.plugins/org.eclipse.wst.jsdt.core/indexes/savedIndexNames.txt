@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+D:\학생방\풀스택과정_황수빈\7월\0703\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2151658809.index
+1963678187.index
+2080093609.index
+4115152542.index
+2877720148.index
